@@ -1,0 +1,36 @@
+p 120.0 95.0 {M1 livre} 1 n
+p 120.0 260.0 {M1 operando} 0 s
+p 650.0 95.0 {M2 livre} 1 n
+p 650.0 260.0 {M2 operando} 0 s
+t 205.0 165.0 fimM1 n 0 w n {} ne
+t 565.0 160.0 inicM2 n 0 w n {} ne
+t 30.0 170.0 inicM1 n 0 w n {} ne
+t 725.0 165.0 fimM2 n 0 w n {} ne
+p 390.0 90.0 bufferLivre 3 n
+t 475.0 160.0 {saiPeça} n 0 w n {} ne
+t 300.0 165.0 {entraPeça} n 0 w n {} ne
+p 390.0 255.0 bufferOcupado 0 s
+n 95.0 20.0 n2 1 {Máquina 1}
+n 375.0 20.0 n3 1 Buffer
+n 620.0 20.0 n4 1 {Máquina 2}
+t 280.0 415.0 entradaPallet n 0 w n {} ne
+t 495.0 415.0 saidaPallet n 0 w n {} ne
+p 390.0 415.0 palletsLivre 3 n
+n 375.0 350.0 n0 1 Pallets
+e palletsLivre saidaPallet 1 n
+e entradaPallet palletsLivre 1 n
+e {M1 livre} inicM1 1 n
+e inicM1 {M1 operando} 1 n
+e {M2 operando} fimM2 1 n
+e fimM2 {M2 livre} 1 n
+e {M1 operando} fimM1 1 n
+e fimM1 {M1 livre} 1 n
+e {M2 livre} inicM2 1 n
+e inicM2 {M2 operando} 1 n
+e {saiPeça} bufferLivre 1 n
+e bufferOcupado {saiPeça} 1 n
+e {entraPeça} bufferOcupado 1 n
+e bufferLivre {entraPeça} 1 n
+h sistemaModular
+
+

@@ -1,0 +1,3192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Module Name="exp5" xmlns:ns2="http://waters.sourceforge.net/xsd/base" xmlns="http://waters.sourceforge.net/xsd/module">
+    <EventDeclList>
+        <EventDecl Kind="CONTROLLABLE" Name="t1"/>
+        <EventDecl Kind="CONTROLLABLE" Name="t2"/>
+        <EventDecl Kind="PROPOSITION" Name=":accepting"/>
+        <EventDecl Kind="CONTROLLABLE" Name="f1"/>
+        <EventDecl Kind="CONTROLLABLE" Name="f2"/>
+        <EventDecl Kind="CONTROLLABLE" Name="r1"/>
+        <EventDecl Kind="CONTROLLABLE" Name="r2"/>
+    </EventDeclList>
+    <ComponentList>
+        <SimpleComponent Kind="PLANT" Name="Torno">
+            <Graph>
+                <NodeList>
+                    <SimpleNode Initial="true" Name="TL">
+                        <EventList>
+                            <SimpleIdentifier Name=":accepting"/>
+                        </EventList>
+                        <PointGeometry>
+                            <Point X="80" Y="96"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="-7" Y="11"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="TT">
+                        <PointGeometry>
+                            <Point X="192" Y="96"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="-7" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                </NodeList>
+                <EdgeList>
+                    <Edge Source="TL" Target="TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-6" Y="-24"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="136" Y="65"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="TT" Target="TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-10" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="142" Y="114"/>
+                        </SplineGeometry>
+                    </Edge>
+                </EdgeList>
+            </Graph>
+        </SimpleComponent>
+        <SimpleComponent Kind="PLANT" Name="Fresa">
+            <Graph>
+                <NodeList>
+                    <SimpleNode Initial="true" Name="FL">
+                        <EventList>
+                            <SimpleIdentifier Name=":accepting"/>
+                        </EventList>
+                        <PointGeometry>
+                            <Point X="112" Y="144"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FT">
+                        <PointGeometry>
+                            <Point X="240" Y="144"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                </NodeList>
+                <EdgeList>
+                    <Edge Source="FL" Target="FT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-11" Y="-25"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="182" Y="109"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT" Target="FL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-6" Y="8"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="181" Y="169"/>
+                        </SplineGeometry>
+                    </Edge>
+                </EdgeList>
+            </Graph>
+        </SimpleComponent>
+        <SimpleComponent Kind="PLANT" Name="TornoFresa">
+            <Graph>
+                <NodeList>
+                    <SimpleNode Initial="true" Name="TLFL">
+                        <EventList>
+                            <SimpleIdentifier Name=":accepting"/>
+                        </EventList>
+                        <PointGeometry>
+                            <Point X="48" Y="160"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="-24" Y="12"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="TTFL">
+                        <PointGeometry>
+                            <Point X="176" Y="48"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="-16" Y="-26"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="TLFT">
+                        <PointGeometry>
+                            <Point X="176" Y="272"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="-16" Y="15"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="TTFT">
+                        <PointGeometry>
+                            <Point X="304" Y="160"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="11"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                </NodeList>
+                <EdgeList>
+                    <Edge Source="TLFL" Target="TLFT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="90" Y="244"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="TLFL" Target="TTFL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-1" Y="-29"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="80" Y="68"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="TLFT" Target="TLFL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="-24"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="TTFL" Target="TLFL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="16" Y="-7"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="TLFT" Target="TTFT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="272" Y="241"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="TTFL" Target="TTFT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="17" Y="-6"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="267" Y="72"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="TTFT" Target="TTFL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-33" Y="-7"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="TTFT" Target="TLFT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-17" Y="-25"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                </EdgeList>
+            </Graph>
+        </SimpleComponent>
+        <SimpleComponent Kind="PLANT" Name="Fresa||Torno">
+            <Graph>
+                <NodeList>
+                    <SimpleNode Initial="true" Name="FL.TL">
+                        <EventList>
+                            <SimpleIdentifier Name=":accepting"/>
+                        </EventList>
+                        <PointGeometry>
+                            <Point X="79" Y="78"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FL.TT">
+                        <PointGeometry>
+                            <Point X="167" Y="80"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FT.TL">
+                        <PointGeometry>
+                            <Point X="78" Y="166"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FT.TT">
+                        <PointGeometry>
+                            <Point X="165" Y="166"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                </NodeList>
+                <EdgeList>
+                    <Edge Source="FL.TL" Target="FL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="FL.TL" Target="FT.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="FL.TT" Target="FL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="123" Y="57"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.TT" Target="FT.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="187" Y="124"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT.TL" Target="FL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="57" Y="121"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT.TL" Target="FT.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="121" Y="187"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT.TT" Target="FL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="FT.TT" Target="FT.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                </EdgeList>
+            </Graph>
+        </SimpleComponent>
+        <SimpleComponent Kind="PLANT" Name="Robo">
+            <Graph>
+                <NodeList>
+                    <SimpleNode Initial="true" Name="RL">
+                        <EventList>
+                            <SimpleIdentifier Name=":accepting"/>
+                        </EventList>
+                        <PointGeometry>
+                            <Point X="192" Y="96"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="-7" Y="11"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="RB">
+                        <PointGeometry>
+                            <Point X="64" Y="96"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="RS">
+                        <PointGeometry>
+                            <Point X="304" Y="96"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="-10" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                </NodeList>
+                <EdgeList>
+                    <Edge Source="RL" Target="RB">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-7" Y="-28"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="129" Y="84"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="RL" Target="RS">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-9" Y="-20"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="248" Y="80"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="RS" Target="RL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-4" Y="5"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="249" Y="109"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="RB" Target="RL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-7" Y="8"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="129" Y="107"/>
+                        </SplineGeometry>
+                    </Edge>
+                </EdgeList>
+            </Graph>
+        </SimpleComponent>
+        <SimpleComponent Kind="PLANT" Name="Fresa||Robo||Torno">
+            <Graph>
+                <NodeList>
+                    <SimpleNode Name="FL.RB.TL">
+                        <PointGeometry>
+                            <Point X="202" Y="57"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FL.RB.TT">
+                        <PointGeometry>
+                            <Point X="270" Y="59"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Initial="true" Name="FL.RL.TL">
+                        <EventList>
+                            <SimpleIdentifier Name=":accepting"/>
+                        </EventList>
+                        <PointGeometry>
+                            <Point X="112" Y="99"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FL.RL.TT">
+                        <PointGeometry>
+                            <Point X="184" Y="111"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FL.RS.TL">
+                        <PointGeometry>
+                            <Point X="64" Y="186"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FL.RS.TT">
+                        <PointGeometry>
+                            <Point X="144" Y="223"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FT.RB.TL">
+                        <PointGeometry>
+                            <Point X="233" Y="140"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FT.RB.TT">
+                        <PointGeometry>
+                            <Point X="296" Y="135"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FT.RL.TL">
+                        <PointGeometry>
+                            <Point X="119" Y="171"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FT.RL.TT">
+                        <PointGeometry>
+                            <Point X="201" Y="194"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FT.RS.TL">
+                        <PointGeometry>
+                            <Point X="61" Y="253"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="FT.RS.TT">
+                        <PointGeometry>
+                            <Point X="135" Y="285"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                </NodeList>
+                <EdgeList>
+                    <Edge Source="FL.RB.TL" Target="FL.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="240" Y="46"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RB.TL" Target="FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="152" Y="65"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RB.TL" Target="FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="223" Y="92"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RB.TT" Target="FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="230" Y="78"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RB.TT" Target="FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="295" Y="93"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RL.TL" Target="FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="144" Y="97"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RL.TL" Target="FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="108" Y="131"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RL.TT" Target="FL.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="191" Y="77"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RL.TT" Target="FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="195" Y="154"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RS.TL" Target="FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="75" Y="136"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RS.TL" Target="FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="97" Y="209"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RS.TL" Target="FT.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="50" Y="222"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FL.RS.TT" Target="FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="FL.RS.TT" Target="FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="FT.RB.TL" Target="FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="FT.RB.TL" Target="FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="FT.RB.TT" Target="FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="259" Y="171"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT.RL.TL" Target="FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="84" Y="176"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT.RL.TL" Target="FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="161" Y="186"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT.RL.TT" Target="FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="176" Y="217"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT.RL.TT" Target="FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="225" Y="171"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT.RS.TL" Target="FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="83" Y="216"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT.RS.TL" Target="FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="93" Y="281"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="FT.RS.TT" Target="FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="173" Y="251"/>
+                        </SplineGeometry>
+                    </Edge>
+                </EdgeList>
+            </Graph>
+        </SimpleComponent>
+        <SimpleComponent Kind="PLANT" Name="Buffer||Fresa||Robo||Torno">
+            <Graph>
+                <NodeList>
+                    <SimpleNode Name="B0.FL.RB.TL">
+                        <PointGeometry>
+                            <Point X="140" Y="134"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.FL.RB.TT">
+                        <PointGeometry>
+                            <Point X="155" Y="176"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Initial="true" Name="B0.FL.RL.TL">
+                        <EventList>
+                            <SimpleIdentifier Name=":accepting"/>
+                        </EventList>
+                        <PointGeometry>
+                            <Point X="68" Y="49"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.FL.RL.TT">
+                        <PointGeometry>
+                            <Point X="98" Y="79"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.FL.RS.TL">
+                        <PointGeometry>
+                            <Point X="62" Y="98"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.FL.RS.TT">
+                        <PointGeometry>
+                            <Point X="72" Y="124"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.FT.RB.TL">
+                        <PointGeometry>
+                            <Point X="74" Y="369"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.FT.RB.TT">
+                        <PointGeometry>
+                            <Point X="68" Y="441"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.FT.RL.TL">
+                        <PointGeometry>
+                            <Point X="93" Y="184"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.FT.RL.TT">
+                        <PointGeometry>
+                            <Point X="77" Y="235"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.FT.RS.TL">
+                        <PointGeometry>
+                            <Point X="122" Y="243"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.FT.RS.TT">
+                        <PointGeometry>
+                            <Point X="89" Y="269"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FL.RB.TL">
+                        <PointGeometry>
+                            <Point X="70" Y="399"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FL.RB.TT">
+                        <PointGeometry>
+                            <Point X="54" Y="470"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FL.RL.TL">
+                        <PointGeometry>
+                            <Point X="134" Y="212"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FL.RL.TT">
+                        <PointGeometry>
+                            <Point X="114" Y="270"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FL.RS.TL">
+                        <PointGeometry>
+                            <Point X="138" Y="305"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FL.RS.TT">
+                        <PointGeometry>
+                            <Point X="118" Y="336"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FT.RB.TL">
+                        <PointGeometry>
+                            <Point X="130" Y="685"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FT.RB.TT">
+                        <PointGeometry>
+                            <Point X="157" Y="763"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FT.RL.TL">
+                        <PointGeometry>
+                            <Point X="122" Y="438"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FT.RL.TT">
+                        <PointGeometry>
+                            <Point X="117" Y="503"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FT.RS.TL">
+                        <PointGeometry>
+                            <Point X="147" Y="531"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1.FT.RS.TT">
+                        <PointGeometry>
+                            <Point X="146" Y="563"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FL.RB.TL">
+                        <PointGeometry>
+                            <Point X="113" Y="717"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FL.RB.TT">
+                        <PointGeometry>
+                            <Point X="156" Y="794"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FL.RL.TL">
+                        <PointGeometry>
+                            <Point X="89" Y="504"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FL.RL.TT">
+                        <PointGeometry>
+                            <Point X="90" Y="568"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FL.RS.TL">
+                        <PointGeometry>
+                            <Point X="113" Y="609"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FL.RS.TT">
+                        <PointGeometry>
+                            <Point X="121" Y="643"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FT.RB.TL">
+                        <PointGeometry>
+                            <Point X="139" Y="1011"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FT.RB.TT">
+                        <PointGeometry>
+                            <Point X="156" Y="1091"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FT.RL.TL">
+                        <PointGeometry>
+                            <Point X="100" Y="762"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FT.RL.TT">
+                        <PointGeometry>
+                            <Point X="130" Y="829"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FT.RS.TL">
+                        <PointGeometry>
+                            <Point X="71" Y="866"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2.FT.RS.TT">
+                        <PointGeometry>
+                            <Point X="96" Y="894"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FL.RB.TL">
+                        <PointGeometry>
+                            <Point X="159" Y="1043"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FL.RB.TT">
+                        <PointGeometry>
+                            <Point X="176" Y="1118"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FL.RL.TL">
+                        <PointGeometry>
+                            <Point X="98" Y="828"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FL.RL.TT">
+                        <PointGeometry>
+                            <Point X="139" Y="896"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FL.RS.TL">
+                        <PointGeometry>
+                            <Point X="80" Y="940"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FL.RS.TT">
+                        <PointGeometry>
+                            <Point X="104" Y="972"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FT.RB.TL">
+                        <PointGeometry>
+                            <Point X="137" Y="1285"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FT.RB.TT">
+                        <PointGeometry>
+                            <Point X="143" Y="1357"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FT.RL.TL">
+                        <PointGeometry>
+                            <Point X="97" Y="1082"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FT.RL.TT">
+                        <PointGeometry>
+                            <Point X="111" Y="1140"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FT.RS.TL">
+                        <PointGeometry>
+                            <Point X="63" Y="1173"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3.FT.RS.TT">
+                        <PointGeometry>
+                            <Point X="65" Y="1203"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4.FL.RB.TL">
+                        <PointGeometry>
+                            <Point X="174" Y="1292"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4.FL.RB.TT">
+                        <PointGeometry>
+                            <Point X="184" Y="1354"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4.FL.RL.TL">
+                        <PointGeometry>
+                            <Point X="133" Y="1144"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4.FL.RL.TT">
+                        <PointGeometry>
+                            <Point X="144" Y="1198"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4.FL.RS.TL">
+                        <PointGeometry>
+                            <Point X="90" Y="1231"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4.FL.RS.TT">
+                        <PointGeometry>
+                            <Point X="87" Y="1263"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4.FT.RB.TL">
+                        <PointGeometry>
+                            <Point X="68" Y="1465"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4.FT.RB.TT">
+                        <PointGeometry>
+                            <Point X="56" Y="1517"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4.FT.RL.TL">
+                        <PointGeometry>
+                            <Point X="99" Y="1313"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4.FT.RL.TT">
+                        <PointGeometry>
+                            <Point X="93" Y="1366"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="5" Y="5"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                </NodeList>
+                <EdgeList>
+                    <Edge Source="B0.FL.RB.TL" Target="B0.FL.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="151" Y="151"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FL.RB.TL" Target="B1.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="139" Y="169"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FL.RB.TT" Target="B1.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="129" Y="217"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FL.RL.TL" Target="B0.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="83" Y="58"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FL.RL.TT" Target="B0.FL.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="121" Y="101"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FL.RS.TL" Target="B0.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="62" Y="69"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FL.RS.TL" Target="B0.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.FL.RS.TT" Target="B0.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="85" Y="98"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FT.RB.TL" Target="B0.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="73" Y="405"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FT.RB.TL" Target="B1.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="99" Y="401"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FT.RB.TT" Target="B1.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.FT.RL.TL" Target="B0.FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="72" Y="139"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FT.RL.TL" Target="B0.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="82" Y="206"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FT.RL.TT" Target="B0.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="70" Y="177"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FT.RL.TT" Target="B0.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="69" Y="299"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FT.RS.TL" Target="B0.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="109" Y="210"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FT.RS.TL" Target="B0.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="105" Y="254"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0.FT.RS.TT" Target="B0.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="79" Y="251"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RB.TL" Target="B0.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="69" Y="382"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RB.TL" Target="B1.FL.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="56" Y="433"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RB.TL" Target="B2.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.FL.RB.TT" Target="B0.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="57" Y="455"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RB.TT" Target="B2.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="67" Y="520"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RL.TL" Target="B0.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="114" Y="195"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RL.TL" Target="B1.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="121" Y="238"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RL.TT" Target="B0.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.FL.RL.TT" Target="B1.FL.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="95" Y="335"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RS.TL" Target="B0.FT.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="134" Y="272"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RS.TL" Target="B1.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="141" Y="256"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RS.TL" Target="B1.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="130" Y="320"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RS.TT" Target="B0.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="101" Y="303"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FL.RS.TT" Target="B1.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.FT.RB.TL" Target="B1.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="147" Y="723"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FT.RB.TL" Target="B2.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="117" Y="725"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FT.RB.TT" Target="B2.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.FT.RL.TL" Target="B1.FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="136" Y="371"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FT.RL.TL" Target="B1.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="122" Y="469"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FT.RL.TT" Target="B1.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="115" Y="419"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FT.RL.TT" Target="B1.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="130" Y="593"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FT.RS.TL" Target="B1.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="139" Y="483"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FT.RS.TL" Target="B1.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="151" Y="547"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1.FT.RS.TT" Target="B1.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="134" Y="533"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2.FL.RB.TL" Target="B1.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FL.RB.TL" Target="B2.FL.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FL.RB.TL" Target="B3.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FL.RB.TT" Target="B1.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="160" Y="779"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2.FL.RB.TT" Target="B3.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="153" Y="846"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2.FL.RL.TL" Target="B1.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FL.RL.TL" Target="B2.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="86" Y="536"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2.FL.RL.TT" Target="B1.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FL.RL.TT" Target="B2.FL.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="96" Y="643"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2.FL.RS.TL" Target="B1.FT.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FL.RS.TL" Target="B2.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FL.RS.TL" Target="B2.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FL.RS.TT" Target="B1.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="137" Y="604"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2.FL.RS.TT" Target="B2.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="102" Y="607"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2.FT.RB.TL" Target="B2.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FT.RB.TL" Target="B3.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FT.RB.TT" Target="B3.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FT.RL.TL" Target="B2.FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="100" Y="685"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2.FT.RL.TL" Target="B2.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FT.RL.TT" Target="B2.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FT.RL.TT" Target="B2.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.FT.RS.TL" Target="B2.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="80" Y="814"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2.FT.RS.TL" Target="B2.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="80" Y="881"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2.FT.RS.TT" Target="B2.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.FL.RB.TL" Target="B2.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="151" Y="1027"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FL.RB.TL" Target="B3.FL.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="173" Y="1081"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FL.RB.TL" Target="B4.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.FL.RB.TT" Target="B2.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="169" Y="1105"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FL.RB.TT" Target="B4.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="165" Y="1161"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FL.RL.TL" Target="B2.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="96" Y="795"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FL.RL.TL" Target="B3.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.FL.RL.TT" Target="B2.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="138" Y="863"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FL.RL.TT" Target="B3.FL.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="155" Y="969"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FL.RS.TL" Target="B2.FT.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="71" Y="904"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FL.RS.TL" Target="B3.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="84" Y="884"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FL.RS.TL" Target="B3.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="90" Y="957"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FL.RS.TT" Target="B2.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.FL.RS.TT" Target="B3.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="123" Y="935"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FT.RB.TL" Target="B3.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.FT.RB.TL" Target="B4.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="118" Y="1303"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FT.RB.TT" Target="B4.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="118" Y="1367"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FT.RL.TL" Target="B3.FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="83" Y="1012"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FT.RL.TL" Target="B3.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="101" Y="1112"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FT.RL.TT" Target="B3.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.FT.RL.TT" Target="B3.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="122" Y="1215"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FT.RS.TL" Target="B3.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="75" Y="1127"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FT.RS.TL" Target="B3.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="59" Y="1189"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3.FT.RS.TT" Target="B3.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.FL.RB.TL" Target="B3.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="157" Y="1292"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FL.RB.TL" Target="B4.FL.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="183" Y="1326"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FL.RB.TT" Target="B3.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="165" Y="1361"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FL.RL.TL" Target="B3.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.FL.RL.TL" Target="B4.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="141" Y="1173"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FL.RL.TT" Target="B3.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="127" Y="1172"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FL.RL.TT" Target="B4.FL.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="163" Y="1247"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FL.RS.TL" Target="B3.FT.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.FL.RS.TL" Target="B4.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="112" Y="1190"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FL.RS.TL" Target="B4.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="86" Y="1249"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FL.RS.TT" Target="B3.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="71" Y="1236"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FL.RS.TT" Target="B4.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="116" Y="1234"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FT.RB.TL" Target="B4.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.FT.RL.TL" Target="B4.FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.FT.RL.TL" Target="B4.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.FT.RL.TT" Target="B4.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="85" Y="1318"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B4.FT.RL.TT" Target="B4.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="0" Y="10"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                    </Edge>
+                </EdgeList>
+            </Graph>
+        </SimpleComponent>
+        <SimpleComponent Kind="PLANT" Name="ControleBloqueio">
+            <Graph>
+                <NodeList>
+                    <SimpleNode Name="B1">
+                        <PointGeometry>
+                            <Point X="224" Y="176"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Initial="true" Name="B0">
+                        <EventList>
+                            <SimpleIdentifier Name=":accepting"/>
+                        </EventList>
+                        <PointGeometry>
+                            <Point X="160" Y="176"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4">
+                        <PointGeometry>
+                            <Point X="400" Y="176"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2">
+                        <PointGeometry>
+                            <Point X="272" Y="176"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3">
+                        <PointGeometry>
+                            <Point X="336" Y="176"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                </NodeList>
+                <EdgeList>
+                    <Edge Source="B0" Target="B1">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-7" Y="-25"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="193" Y="160"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1" Target="B0">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2" Target="B1">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3" Target="B2">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4" Target="B3">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1" Target="B2">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-7" Y="-22"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="248" Y="158"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2" Target="B3">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-6" Y="-22"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="304" Y="161"/>
+                        </SplineGeometry>
+                        <EndPointGeometry>
+                            <Point X="-80" Y="32"/>
+                        </EndPointGeometry>
+                    </Edge>
+                    <Edge Source="B3" Target="B4">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-5" Y="-21"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="367" Y="160"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B0" Target="B0">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-10" Y="-23"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="165" Y="147"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1" Target="B1">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-11" Y="-23"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="228" Y="148"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2" Target="B2">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-9" Y="-22"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="275" Y="148"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B3" Target="B3">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-8" Y="-21"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="338" Y="147"/>
+                        </SplineGeometry>
+                    </Edge>
+                </EdgeList>
+            </Graph>
+        </SimpleComponent>
+        <SimpleComponent Kind="PLANT" Name="Buffer||ControleBloqueio||Fresa||Robo||Torno">
+            <Graph>
+                <NodeList>
+                    <SimpleNode Name="B0.B0.FL.RB.TL"/>
+                    <SimpleNode Name="B0.B0.FL.RB.TT"/>
+                    <SimpleNode Initial="true" Name="B0.B0.FL.RL.TL">
+                        <EventList>
+                            <SimpleIdentifier Name=":accepting"/>
+                        </EventList>
+                    </SimpleNode>
+                    <SimpleNode Name="B0.B0.FL.RL.TT"/>
+                    <SimpleNode Name="B0.B0.FL.RS.TL"/>
+                    <SimpleNode Name="B0.B0.FL.RS.TT"/>
+                    <SimpleNode Name="B0.B0.FT.RB.TL"/>
+                    <SimpleNode Name="B0.B0.FT.RB.TT"/>
+                    <SimpleNode Name="B0.B0.FT.RL.TL"/>
+                    <SimpleNode Name="B0.B0.FT.RL.TT"/>
+                    <SimpleNode Name="B0.B0.FT.RS.TL"/>
+                    <SimpleNode Name="B0.B0.FT.RS.TT"/>
+                    <SimpleNode Name="B1.B1.FL.RB.TL"/>
+                    <SimpleNode Name="B1.B1.FL.RB.TT"/>
+                    <SimpleNode Name="B1.B1.FL.RL.TL"/>
+                    <SimpleNode Name="B1.B1.FL.RL.TT"/>
+                    <SimpleNode Name="B1.B1.FL.RS.TL"/>
+                    <SimpleNode Name="B1.B1.FL.RS.TT"/>
+                    <SimpleNode Name="B1.B1.FT.RB.TL"/>
+                    <SimpleNode Name="B1.B1.FT.RB.TT"/>
+                    <SimpleNode Name="B1.B1.FT.RL.TL"/>
+                    <SimpleNode Name="B1.B1.FT.RL.TT"/>
+                    <SimpleNode Name="B1.B1.FT.RS.TL"/>
+                    <SimpleNode Name="B1.B1.FT.RS.TT"/>
+                    <SimpleNode Name="B2.B2.FL.RB.TL"/>
+                    <SimpleNode Name="B2.B2.FL.RB.TT"/>
+                    <SimpleNode Name="B2.B2.FL.RL.TL"/>
+                    <SimpleNode Name="B2.B2.FL.RL.TT"/>
+                    <SimpleNode Name="B2.B2.FL.RS.TL"/>
+                    <SimpleNode Name="B2.B2.FL.RS.TT"/>
+                    <SimpleNode Name="B2.B2.FT.RB.TL"/>
+                    <SimpleNode Name="B2.B2.FT.RB.TT"/>
+                    <SimpleNode Name="B2.B2.FT.RL.TL"/>
+                    <SimpleNode Name="B2.B2.FT.RL.TT"/>
+                    <SimpleNode Name="B2.B2.FT.RS.TL"/>
+                    <SimpleNode Name="B2.B2.FT.RS.TT"/>
+                    <SimpleNode Name="B3.B3.FL.RB.TL"/>
+                    <SimpleNode Name="B3.B3.FL.RB.TT"/>
+                    <SimpleNode Name="B3.B3.FL.RL.TL"/>
+                    <SimpleNode Name="B3.B3.FL.RL.TT"/>
+                    <SimpleNode Name="B3.B3.FL.RS.TL"/>
+                    <SimpleNode Name="B3.B3.FL.RS.TT"/>
+                    <SimpleNode Name="B3.B3.FT.RB.TL"/>
+                    <SimpleNode Name="B3.B3.FT.RB.TT"/>
+                    <SimpleNode Name="B3.B3.FT.RL.TL"/>
+                    <SimpleNode Name="B3.B3.FT.RL.TT"/>
+                    <SimpleNode Name="B3.B3.FT.RS.TL"/>
+                    <SimpleNode Name="B3.B3.FT.RS.TT"/>
+                    <SimpleNode Name="B4.B4.FL.RL.TL"/>
+                    <SimpleNode Name="B4.B4.FL.RL.TT"/>
+                    <SimpleNode Name="B4.B4.FL.RS.TL"/>
+                    <SimpleNode Name="B4.B4.FL.RS.TT"/>
+                    <SimpleNode Name="B4.B4.FT.RL.TL"/>
+                    <SimpleNode Name="B4.B4.FT.RL.TT"/>
+                </NodeList>
+                <EdgeList>
+                    <Edge Source="B0.B0.FL.RB.TL" Target="B0.B0.FL.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FL.RB.TL" Target="B1.B1.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FL.RB.TT" Target="B1.B1.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FL.RL.TL" Target="B0.B0.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FL.RL.TT" Target="B0.B0.FL.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FL.RS.TL" Target="B0.B0.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FL.RS.TL" Target="B0.B0.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FL.RS.TT" Target="B0.B0.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FT.RB.TL" Target="B0.B0.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FT.RB.TL" Target="B1.B1.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FT.RB.TT" Target="B1.B1.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FT.RL.TL" Target="B0.B0.FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FT.RL.TL" Target="B0.B0.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FT.RL.TT" Target="B0.B0.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FT.RL.TT" Target="B0.B0.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FT.RS.TL" Target="B0.B0.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FT.RS.TL" Target="B0.B0.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B0.B0.FT.RS.TT" Target="B0.B0.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RB.TL" Target="B0.B0.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RB.TL" Target="B1.B1.FL.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RB.TL" Target="B2.B2.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RB.TT" Target="B0.B0.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RB.TT" Target="B2.B2.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RL.TL" Target="B0.B0.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RL.TL" Target="B1.B1.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RL.TT" Target="B0.B0.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RL.TT" Target="B1.B1.FL.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RS.TL" Target="B0.B0.FT.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RS.TL" Target="B1.B1.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RS.TL" Target="B1.B1.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RS.TT" Target="B0.B0.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FL.RS.TT" Target="B1.B1.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FT.RB.TL" Target="B1.B1.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FT.RB.TL" Target="B2.B2.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FT.RB.TT" Target="B2.B2.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FT.RL.TL" Target="B1.B1.FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FT.RL.TL" Target="B1.B1.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FT.RL.TT" Target="B1.B1.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FT.RL.TT" Target="B1.B1.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FT.RS.TL" Target="B1.B1.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FT.RS.TL" Target="B1.B1.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1.B1.FT.RS.TT" Target="B1.B1.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RB.TL" Target="B1.B1.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RB.TL" Target="B2.B2.FL.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RB.TL" Target="B3.B3.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RB.TT" Target="B1.B1.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RB.TT" Target="B3.B3.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RL.TL" Target="B1.B1.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RL.TL" Target="B2.B2.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RL.TT" Target="B1.B1.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RL.TT" Target="B2.B2.FL.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RS.TL" Target="B1.B1.FT.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RS.TL" Target="B2.B2.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RS.TL" Target="B2.B2.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RS.TT" Target="B1.B1.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FL.RS.TT" Target="B2.B2.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FT.RB.TL" Target="B2.B2.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FT.RB.TL" Target="B3.B3.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FT.RB.TT" Target="B3.B3.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FT.RL.TL" Target="B2.B2.FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FT.RL.TL" Target="B2.B2.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FT.RL.TT" Target="B2.B2.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FT.RL.TT" Target="B2.B2.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FT.RS.TL" Target="B2.B2.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FT.RS.TL" Target="B2.B2.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2.B2.FT.RS.TT" Target="B2.B2.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RB.TL" Target="B2.B2.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RB.TL" Target="B3.B3.FL.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RB.TL" Target="B4.B4.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RB.TT" Target="B2.B2.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RB.TT" Target="B4.B4.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RL.TL" Target="B2.B2.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RL.TL" Target="B3.B3.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RL.TT" Target="B2.B2.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RL.TT" Target="B3.B3.FL.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RS.TL" Target="B2.B2.FT.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RS.TL" Target="B3.B3.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RS.TL" Target="B3.B3.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RS.TT" Target="B2.B2.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FL.RS.TT" Target="B3.B3.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FT.RB.TL" Target="B3.B3.FT.RB.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FT.RB.TL" Target="B4.B4.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FT.RB.TT" Target="B4.B4.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FT.RL.TL" Target="B3.B3.FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FT.RL.TL" Target="B3.B3.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FT.RL.TT" Target="B3.B3.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FT.RL.TT" Target="B3.B3.FT.RB.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FT.RS.TL" Target="B3.B3.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FT.RS.TL" Target="B3.B3.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3.B3.FT.RS.TT" Target="B3.B3.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FL.RL.TL" Target="B3.B3.FT.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FL.RL.TL" Target="B4.B4.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FL.RL.TT" Target="B3.B3.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FL.RS.TL" Target="B3.B3.FT.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FL.RS.TL" Target="B4.B4.FL.RL.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FL.RS.TL" Target="B4.B4.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FL.RS.TT" Target="B3.B3.FT.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FL.RS.TT" Target="B4.B4.FL.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FT.RL.TL" Target="B4.B4.FL.RS.TL">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FT.RL.TL" Target="B4.B4.FT.RL.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="t1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4.B4.FT.RL.TT" Target="B4.B4.FL.RS.TT">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f2"/>
+                        </LabelBlock>
+                    </Edge>
+                </EdgeList>
+            </Graph>
+        </SimpleComponent>
+        <SimpleComponent Kind="PLANT" Name="Buffer">
+            <Graph>
+                <NodeList>
+                    <SimpleNode Initial="true" Name="B0">
+                        <EventList>
+                            <SimpleIdentifier Name=":accepting"/>
+                        </EventList>
+                        <PointGeometry>
+                            <Point X="96" Y="128"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B1">
+                        <PointGeometry>
+                            <Point X="160" Y="128"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B2">
+                        <PointGeometry>
+                            <Point X="208" Y="128"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B4">
+                        <PointGeometry>
+                            <Point X="336" Y="128"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                    <SimpleNode Name="B3">
+                        <PointGeometry>
+                            <Point X="272" Y="128"/>
+                        </PointGeometry>
+                        <LabelGeometry Anchor="NW">
+                            <Point X="0" Y="10"/>
+                        </LabelGeometry>
+                    </SimpleNode>
+                </NodeList>
+                <EdgeList>
+                    <Edge Source="B0" Target="B1">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-7" Y="-25"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="129" Y="112"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B1" Target="B0">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B2" Target="B1">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B3" Target="B2">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B4" Target="B3">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="f1"/>
+                        </LabelBlock>
+                    </Edge>
+                    <Edge Source="B1" Target="B2">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-7" Y="-22"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="184" Y="110"/>
+                        </SplineGeometry>
+                    </Edge>
+                    <Edge Source="B2" Target="B3">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-6" Y="-22"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="240" Y="113"/>
+                        </SplineGeometry>
+                        <EndPointGeometry>
+                            <Point X="272" Y="128"/>
+                        </EndPointGeometry>
+                    </Edge>
+                    <Edge Source="B3" Target="B4">
+                        <LabelBlock>
+                            <SimpleIdentifier Name="r1"/>
+                            <LabelGeometry Anchor="NW">
+                                <Point X="-5" Y="-21"/>
+                            </LabelGeometry>
+                        </LabelBlock>
+                        <SplineGeometry>
+                            <Point X="304" Y="113"/>
+                        </SplineGeometry>
+                    </Edge>
+                </EdgeList>
+            </Graph>
+        </SimpleComponent>
+    </ComponentList>
+</Module>

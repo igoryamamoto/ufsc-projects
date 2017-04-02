@@ -1,0 +1,90 @@
+Tina version 3.4.4 -- 01/05/16 -- LAAS/CNRS
+
+mode -R
+
+INPUT NET ------------------------------------------------------- 
+
+parsed net modeloGlobal
+
+7 places, 4 transitions
+
+net modeloGlobal
+tr fimM1 {M1 operando} {buffer livre} -> {M1 livre} {buffer ocupado} 
+tr fimM2' {M2 operando} -> {M2 livre} palletsLivres 
+tr inicM1' {M1 livre} palletsLivres -> {M1 operando} 
+tr inicM2 {M2 livre} {buffer ocupado} -> {M2 operando} {buffer livre} 
+pl {M1 livre} (1)
+pl {M2 livre} (1)
+pl {buffer livre} (3)
+pl palletsLivres (5)
+
+0.000s
+
+REACHABILITY ANALYSIS ------------------------------------------- 
+
+bounded
+
+16 marking(s), 28 transition(s)
+
+MARKINGS:
+
+0 : {M1 livre} {M2 livre} {buffer livre}*3 palletsLivres*5
+1 : {M1 operando} {M2 livre} {buffer livre}*3 palletsLivres*4
+2 : {M1 livre} {M2 livre} {buffer livre}*2 {buffer ocupado} palletsLivres*4
+3 : {M1 operando} {M2 livre} {buffer livre}*2 {buffer ocupado} palletsLivres*3
+4 : {M1 livre} {M2 operando} {buffer livre}*3 palletsLivres*4
+5 : {M1 livre} {M2 livre} {buffer livre} {buffer ocupado}*2 palletsLivres*3
+6 : {M1 operando} {M2 operando} {buffer livre}*3 palletsLivres*3
+7 : {M1 operando} {M2 livre} {buffer livre} {buffer ocupado}*2 palletsLivres*2
+8 : {M1 livre} {M2 operando} {buffer livre}*2 {buffer ocupado} palletsLivres*3
+9 : {M1 livre} {M2 livre} {buffer ocupado}*3 palletsLivres*2
+10 : {M1 operando} {M2 operando} {buffer livre}*2 {buffer ocupado} palletsLivres*2
+11 : {M1 operando} {M2 livre} {buffer ocupado}*3 palletsLivres
+12 : {M1 livre} {M2 operando} {buffer livre} {buffer ocupado}*2 palletsLivres*2
+13 : {M1 operando} {M2 operando} {buffer livre} {buffer ocupado}*2 palletsLivres
+14 : {M1 livre} {M2 operando} {buffer ocupado}*3 palletsLivres
+15 : {M1 operando} {M2 operando} {buffer ocupado}*3
+
+REACHABILITY GRAPH:
+
+0 -> inicM1'/1
+1 -> fimM1/2
+2 -> inicM1'/3, inicM2/4
+3 -> fimM1/5, inicM2/6
+4 -> fimM2'/0, inicM1'/6
+5 -> inicM1'/7, inicM2/8
+6 -> fimM1/8, fimM2'/1
+7 -> fimM1/9, inicM2/10
+8 -> fimM2'/2, inicM1'/10
+9 -> inicM1'/11, inicM2/12
+10 -> fimM1/12, fimM2'/3
+11 -> inicM2/13
+12 -> fimM2'/5, inicM1'/13
+13 -> fimM1/14, fimM2'/7
+14 -> fimM2'/9, inicM1'/15
+15 -> fimM2'/11
+
+0.000s
+
+LIVENESS ANALYSIS ----------------------------------------------- 
+
+live
+reversible
+
+0 dead marking(s), 16 live marking(s)
+0 dead transition(s), 4 live transition(s)
+
+STRONG CONNECTED COMPONENTS:
+
+0 : 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0
+
+SCC GRAPH:
+
+0 -> fimM2'/0, inicM1'/0, fimM1/0, inicM2/0
+
+0.000s
+
+ANALYSIS COMPLETED ---------------------------------------------- 
+
+
+

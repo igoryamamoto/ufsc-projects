@@ -1,0 +1,27 @@
+p 110.0 65.0 F1 0 n
+p 110.0 275.0 OP2 0 n
+t 30.0 180.0 fim_P7 n 0 w n {} ne
+t 265.0 100.0 inic_P7_L2 n 0 w n {} ne
+t 265.0 230.0 inic_P7_P3 s 0 w n {} ne
+p 355.0 230.0 P6_pronto 0 n
+p 355.0 100.0 P5_pronto 0 n
+p 110.0 130.0 F2 0 n
+p 110.0 195.0 F3 0 n
+n 180.0 20.0 n22 1 {Restrição P7}
+e fim_P7 F1 1 n
+e fim_P7 F2 1 n
+e fim_P7 F3 1 n
+e fim_P7 OP2 1 n
+e F1 inic_P7_L2 1 n
+e F2 inic_P7_L2 1 n
+e F3 inic_P7_L2 1 n
+e OP2 inic_P7_L2 1 n
+e F1 inic_P7_P3 1 n
+e F2 inic_P7_P3 1 n
+e F3 inic_P7_P3 1 n
+e OP2 inic_P7_P3 1 n
+e P5_pronto inic_P7_L2 1 n
+e P6_pronto inic_P7_P3 1 n
+h restP7
+
+

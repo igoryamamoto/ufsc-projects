@@ -1,0 +1,78 @@
+p 295.0 325.0 J_onibus 0 e
+p 185.0 640.0 J_trabalhando 0 s
+p 180.0 60.0 J_casa 1 n
+t 180.0 115.0 t0 0 w n
+t 295.0 225.0 t1 0 0 n
+t 80.0 230.0 t2 0 0 n
+p 80.0 320.0 J_carro 0 w
+t 80.0 395.0 t3 30 40 w
+t 295.0 400.0 t4 60 w e
+t 185.0 555.0 t5 0 0 w
+p 180.0 185.0 J_saindo 0 s
+p 950.0 315.0 F_carona 0 e
+p 840.0 470.0 F_chegando 0 n
+p 840.0 630.0 F_trabalhando 0 s
+p 835.0 50.0 F_casa 1 n
+t 835.0 105.0 t6 0 w n
+t 950.0 215.0 t7 0 0 n
+t 735.0 220.0 t8 0 0 n
+p 735.0 310.0 F_carro 0 w
+t 735.0 385.0 t9 20 30 w
+t 950.0 390.0 t10 40 50 e
+t 840.0 545.0 t11 0 0 e
+p 835.0 175.0 F_saindo 0 s
+n 90.0 45.0 n0 1 John
+n 740.0 35.0 n1 1 Fred
+n 440.0 45.0 n4 1 {Relógio}
+t 455.0 365.0 c1 10 10 e
+p 455.0 450.0 7h20_8h00 0 e
+p 455.0 285.0 7h10_7h20 0 e
+t 455.0 200.0 c0 430 430 e
+p 455.0 120.0 0h00_7h10 1 e
+t 455.0 530.0 c2 40 40 e
+p 455.0 600.0 8h00_8h10 0 e
+t 455.0 660.0 c3 10 10 e
+n 1160.0 40.0 n5 1 Cronometro
+t 1200.0 180.0 10min w 10 10 e {} ne
+p 1200.0 105.0 Cr0min 0 n
+t 1200.0 320.0 t18 10 10 ne
+p 185.0 470.0 J_chegando 0 n
+p 1200.0 245.0 10_20min 0 w
+e 10min 10_20min 1 n
+e 10_20min t18 1 n
+e Cr0min 10min 1 n
+e t6 Cr0min 1 n
+e 8h00_8h10 c3 1 n
+e c2 8h00_8h10 1 n
+e 7h20_8h00 c2 1 n
+e c1 7h20_8h00 1 n
+e 7h10_7h20 c1 1 n
+e c0 7h10_7h20 1 n
+e 0h00_7h10 c0 1 n
+e F_casa t6 1 n
+e t6 F_saindo 1 n
+e F_saindo t7 1 n
+e t7 F_carona 1 n
+e F_saindo t8 1 n
+e t8 F_carro 1 n
+e F_carro t9 1 n
+e F_carona t10 1 n
+e t10 F_chegando 1 n
+e t9 F_chegando 1 n
+e F_chegando t11 1 n
+e t11 F_trabalhando 1 n
+e t5 J_trabalhando 1 n
+e J_chegando t5 1 n
+e t3 J_chegando 1 n
+e t4 J_chegando 1 n
+e J_onibus t4 1 n
+e J_carro t3 1 n
+e t2 J_carro 1 n
+e J_saindo t2 1 n
+e t1 J_onibus 1 n
+e J_saindo t1 1 n
+e t0 J_saindo 1 n
+e J_casa t0 1 n
+h John_Fred
+
+

@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Universidade Federal de Santa Catarina             
+% Departamento de Automação e Sistemas                    
+%                                                           
+% (c)2016	Iago de Oliveira Silvestre
+%			Ígor Assis Rocha Yamamoto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass [12pt, a4paper, portugese] {article}
+
+\usepackage[brazil]{varioref}
+\usepackage{epic,eepic,epsfig,graphics}
+\usepackage{graphicx,epsfig,psfrag}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[english,brazil]{babel}
+\usepackage[latin1]{inputenc}
+
+\author{
+	{Iago de Oliveira Silvestre}\\
+	{Ígor Assis Rocha Yamamoto}
+}
+\title{
+	{Experiência 2}\\
+	{\large Modelagem por redes de Petri}\\
+}
+\date{Abril de 2016}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+%\maketitle
+\begin{titlepage}
+	\centering
+	{\LARGE Universidade Federal de Santa Catarina \par}
+	\vspace{4cm}
+	{\Huge\bfseries Experiência 2\par}
+	\vspace{1cm}
+	{\scshape\Large Modelagem por Redes de Petri\par}
+	\vspace{4cm}
+	Alunos\par
+	{\large Iago de Oliveira Silvestre\par}
+	{\large Ígor Assis Rocha Yamamoto\par}
+	\vspace{1.5cm}
+	Professores\par
+	{\large Max Hering de Queiroz\par}
+	{\large Fábio Luíz Baldissera}
+
+	\vfill
+% Bottom of the page
+	{\large Abril de 2016\par}
+\end{titlepage}
+
+
+
+\section{Problema}
+Considere uma pequena fábrica composta de duas máquinas $M_1$ e $M_2$ interligadas por um armazém B com capacidade para três peças conforme a figura abaixo. Os eventos \textit{inic$M_1$} e \textit{inic$M_2$} representam o início de operação das máquinas $M_1$ e $M_2$ e removem uma peça da sua entrada. Os eventos \textit{fim$M_1$} e \textit{fim$M_2$} representam o final de operação destas máquinas e acrescentam uma peça à sua saída. As peças são carregadas em pallets na entrada e descarregadas destes na saída, com devolução dos pallets vazios na entrada para nova carga; desta forma a entrada de $M_1$ sempre poderá receber peças e a saída de $M_2$ sempre poderá entregar peças.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=1]{figuras/figura1.jpg}
+	\caption{Fábrica} 
+	\label{dardo}	
+\end{figure}
+
+
+
+\section{Atividades}
+\subsection{Modelagem e análise da fábrica}
+\begin{itemize}
+\item Modelar o comportamento das máquinas e do armazém e a seguir obter o modelo global da fábrica por composição. 
+\item Verificar a existência ou não de bloqueio por análise de alcançabilidade (grafo de marcações).
+\item Simular o modelo global da fábrica. Comentar comportamentos característicos (reinicialização, bloqueio, vivacidade).
+\item Determinar o valor mínimo de peças para que o comportamento em termos de estado do sistema não se modifique.
+\end{itemize}
+\subsection{Modelagem e análise da fábrica modificada}
+\begin{itemize}
+\item Modelar o comportamento da fábrica evitando que as duas máquinas estejam em operação no mesmo tempo. Utilizar o número de peças mínimo que foi determinado anteriormente.
+\item Verificar a existência ou não de bloqueio pela análise de alcançabilidade do modelo global. Simular este comportamento característico da fábrica.
+\item Indicar como corrigir o modelo global em rede de Petri para evitar eventuais bloqueios na fábrica. Refazer as análises e simulações anteriores neste caso. Interpretar as modificações feitas no modelo, dando o significado do mecanismo introduzido.
+\end{itemize}
+
+
+\section{Solução}
+
+
+\end{document}

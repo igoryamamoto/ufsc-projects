@@ -1,0 +1,10 @@
+
+State Machine - |topo|contador_ascii:L0|EA
+Name EA.D4 EA.D3 EA.D2 EA.D1 EA.INC EA.TESTE EA.INICIO 
+EA.INICIO 0 0 0 0 0 0 0 
+EA.TESTE 0 0 0 0 0 1 1 
+EA.INC 0 0 0 0 1 0 1 
+EA.D1 0 0 0 1 0 0 1 
+EA.D2 0 0 1 0 0 0 1 
+EA.D3 0 1 0 0 0 0 1 
+EA.D4 1 0 0 0 0 0 1 

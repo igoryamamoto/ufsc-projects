@@ -1,0 +1,271 @@
+t 570.0 190.0 inic_P1 n 0 w n {} ne
+t 1175.0 205.0 inic_P2 n 0 w n {} ne
+t 1390.0 205.0 fim_P2 n 0 w n {} ne
+t 725.0 985.0 inic_P3 n 0 0 c {} ne
+t 530.0 460.0 {fim_P1!} n 0 w n {} ne
+t 780.0 460.0 {inic_P1!} n 0 w n {} ne
+p 615.0 550.0 OP1 0 n
+p 615.0 390.0 F1 0 n
+t 1175.0 485.0 {fim_P2!} n 0 w n {} ne
+t 1420.0 485.0 {inic_P2!} n 0 w n {} ne
+p 1290.0 485.0 F3 0 n
+p 1290.0 550.0 {OP1!} 0 n
+p 1290.0 425.0 {F1!} 0 n
+t 900.0 1305.0 {inic_P3_L2!} n 0 w n {} ne
+p 785.0 1305.0 {F3!} 0 n
+p 785.0 1360.0 {OP2!!} 0 n
+p 785.0 1205.0 {F2!} 0 n
+p 655.0 985.0 iniciando_P3 0 s
+t 865.0 190.0 inic_P4' n 0 w n {} ne
+p 950.0 515.0 OP1' 0 n
+p 950.0 425.0 F1' 0 n
+t 1235.0 805.0 fim_P5' n 0 w n {} ne
+t 865.0 460.0 fim_P4'' n 0 w n {} ne
+t 1020.0 1075.0 fim_P5'' n 0 w n {} ne
+t 1315.0 1705.0 inic_P6'' e 0 w n {} ne
+t 985.0 1700.0 fim_P6'' n 0 w n {} ne
+t 1540.0 955.0 {inic_P7porL2-} w 0 w n {} ne
+t 1540.0 1075.0 {inic_P7porL3-} w 0 w n {} ne
+t 1885.0 1025.0 {fim_P7-} n 0 w n {} ne
+t 1735.0 1025.0 {inic_p7-} n 0 0 c {} ne
+p 1925.0 1025.0 {P7_pronto-} 0 s
+p 1615.0 1260.0 {F1-} 0 n
+p 1615.0 1515.0 {OP2-} 0 n
+t 1540.0 1425.0 {fim_P7-*} n 0 w n {} ne
+t 1800.0 1305.0 {inic_P7porL2-*} n 0 w n {} ne
+t 1800.0 1465.0 {inic_P7porP3-*} s 0 w n {} ne
+p 1895.0 1465.0 {P6_pronto-} 0 n
+p 45.0 765.0 {Pr_pre-} 0 s
+p 60.0 1315.0 {Pr_pre-*} 0 s
+p 1895.0 1305.0 {P5_pronto-} 0 n
+n 20.0 20.0 n12 1 {Sistema Modular}
+p 615.0 485.0 F2 0 n
+n 925.0 325.0 n13 1 {Restrição P4}
+n 1265.0 325.0 n10 1 {Restrição P2}
+t 1045.0 460.0 inic_P4'' e 0 w n {} ne
+t 85.0 765.0 {inic_L2-} n 0 w n {} ne
+p 170.0 765.0 {iniciando_L2-} 0 s
+t 235.0 765.0 {inic_P3porL2-} n 0 w n {} ne
+p 300.0 765.0 {L2_operando-} 0 s
+t 385.0 765.0 {fim_L2-} n 0 w n {} ne
+t 575.0 930.0 inic_P3porL2 n 0 w n {} ne
+t 865.0 985.0 fim_P3 n 0 w n {} ne
+p 930.0 985.0 P3_pronto 0 n
+t 120.0 1315.0 {inic_L3-} n 0 w n {} ne
+p 180.0 1315.0 {iniciando_L3-} 0 s
+t 245.0 1315.0 {inic_P3porL3-} n 0 w n {} ne
+p 310.0 1315.0 {L3_operando-} 0 s
+t 395.0 1315.0 {fim_L3-} n 0 w n {} ne
+t 900.0 1425.0 {inic_P3_L3!} s 0 w n {} ne
+n 170.0 190.0 n15 1 {Funcionamento L1}
+n 725.0 805.0 n9 1 {Funcionamento P3}
+n 755.0 1155.0 n11 1 {Restrição P3}
+p 1140.0 990.0 F2' 0 n
+p 1140.0 1075.0 OP2' 0 n
+p 1140.0 1155.0 P3_pronto' 0 n
+t 1275.0 1075.0 inic_P5'' e 0 w n {} ne
+n 1620.0 865.0 n20 1 {Funcionamento P7}
+n 1100.0 930.0 n21 1 {Restrição P5}
+n 1080.0 680.0 n18 1 {Funcionamento P5}
+p 1615.0 1340.0 {F2-} 0 n
+p 1615.0 1425.0 {F3-} 0 n
+n 1095.0 1305.0 n19 1 {Funcionamento P6}
+t 1045.0 1425.0 inic_P6' n 0 w n {} ne
+t 1200.0 1430.0 fim_P6' n 0 w n {} ne
+p 1275.0 1430.0 P6_pronto' 0 n
+n 1095.0 1580.0 n23 1 {Restrição P6}
+p 1130.0 1620.0 F3' 0 n
+p 1130.0 1705.0 OP2'' 0 n
+n 1710.0 1205.0 n22 1 {Restrição P7}
+p 1130.0 1770.0 P3_pronto''' 0 n
+t 125.0 300.0 {inic_L1-} n 0 w n {} ne
+p 50.0 300.0 materia_prima 100 s
+p 170.0 300.0 {iniciando_L1-} 0 s
+t 235.0 300.0 {inic_P1-} n 0 w n {} ne
+p 300.0 300.0 pecasEmL1 0 s
+t 360.0 300.0 {fim_L1-} n 0 w n {} ne
+p 450.0 300.0 Pr_pre 0 s
+p 245.0 1445.0 pedidosPr2 0 s
+p 395.0 1445.0 P7porL3' 0 s
+p 360.0 360.0 {P2_pronto!} 0 s
+t 695.0 190.0 fim_P1 n 0 w n {} ne
+p 780.0 190.0 P1_pronto 0 n
+n 605.0 325.0 n7 1 {Restrição P1}
+n 575.0 55.0 n2 1 {Funcionamento P1}
+n 900.0 50.0 n14 1 {Funcionamento P4}
+p 1045.0 550.0 P1_pronto' 0 s
+p 1420.0 575.0 P4_pronto 0 s
+t 1015.0 190.0 fim_p4' n 0 w n {} ne
+p 1100.0 190.0 P4_pronto' 0 n
+n 1240.0 20.0 n8 1 {Funcionamento P2}
+p 1455.0 205.0 P2_pronto 0 n
+p 235.0 895.0 pedidosPr1 0 s
+p 385.0 895.0 P7porL2' 0 s
+p 505.0 765.0 {Pr1-} 0 n
+t 645.0 1305.0 {fim_P3!} n 0 w n {} ne
+p 460.0 835.0 P7_pronto 0 s
+p 460.0 1385.0 P7_pronto' 0 s
+t 575.0 1020.0 inic_P3porL3 n 0 w n {} ne
+p 1320.0 805.0 P5_pronto' 0 n
+t 1050.0 805.0 inic_P5' n 0 w n {} ne
+p 1540.0 1170.0 P7porL3 0 s
+p 1540.0 900.0 P7porL2 0 n
+p 1645.0 1025.0 {iniciando_P7-} 0 s
+p 1315.0 1800.0 pedidosPr2' 0 s
+p 1275.0 1170.0 pedidosPr1' 0 s
+p 790.0 985.0 P3_operando 0 s
+p 1125.0 805.0 P5_operando' 0 s
+p 1805.0 1025.0 {P7_operando-} 0 s
+p 1120.0 1430.0 P6_operando' 0 s
+p 1270.0 205.0 P2_operando 0 s
+p 935.0 190.0 P4_operando' 0 s
+p 630.0 190.0 P1_operando 0 s
+p 85.0 455.0 F1'' 0 s
+p 145.0 455.0 F2'' 0 s
+p 200.0 455.0 F3'' 0 s
+p 260.0 455.0 OP1'' 0 s
+n 70.0 860.0 n16 1 {Funcionamento L2}
+p 195.0 620.0 F1''' 0 s
+p 310.0 620.0 F3''' 0 s
+p 370.0 620.0 OP2 0 s
+n 55.0 1410.0 n17 1 {Funcionamento L3}
+p 190.0 1165.0 F1'''' 0 s
+p 330.0 1165.0 F3'''' 0 s
+p 265.0 1165.0 F2'''' 0 s
+p 400.0 1165.0 OP2'''' 0 s
+p 255.0 620.0 F2''' 0 s
+p 505.0 1315.0 {Pr_2-} 0 n
+e F1'''' 0.1024163823 285.0 {fim_L3-} 0.1038106954 159.8061325 1 n
+e F2'''' 0.084207786 211.9858486 {fim_L3-} 0.1194503337 121.6963434 1 n
+e F3'''' 0.08534637074 123.3085561 {fim_L3-} 0.1350915298 89.27485648 2 n
+e OP2'''' {fim_L3-} 1 n
+e {inic_L3-} OP2'''' 1 n
+e {inic_L3-} F3'''' 2 n
+e {inic_L3-} F2'''' 1 n
+e {inic_L3-} F1'''' 1 n
+e OP2 {fim_L2-} 1 n
+e F3''' 0.0895243262 108.756609 {fim_L2-} 0.1020114088 78.60025445 1 n
+e F2''' 0.07891136473 180.7678069 {fim_L2-} 0.07078924163 118.5326959 2 n
+e F1''' 0.08245897022 238.2708543 {fim_L2-} 0.06000621134 160.2560451 1 n
+e {inic_L2-} 0.0749047623 79.94138478 OP2 0.7119251083 84.40379138 1 n
+e {inic_L2-} 0.09110980907 66.91879407 F3''' 0.6987918088 63.2455532 1 n
+e {inic_L2-} 0.1123950764 55.85975743 F2''' 0.6860402999 43.46262762 2 sw
+e {inic_L2-} 0.1467091487 45.5006868 F1''' 0.6733408448 49.64876635 1 n
+e F1'' 0.8722796676 165.4871596 {fim_L1-} 0.8671790092 172.7425831 2 n
+e F2'' 0.8455009576 115.1086443 {fim_L1-} 0.8539960322 161.2079403 1 n
+e F3'' 0.8031103509 79.37883849 {fim_L1-} 0.8276031745 149.4121816 1 n
+e OP1'' 0.9907572104 86.14522622 {fim_L1-} 0.6646236453 86.092973 1 n
+e {inic_L1-} 0.8881114915 77.3369252 OP1'' 0.2757572272 49.64876635 1 n
+e {inic_L1-} 0.8022908612 46.4865572 F3'' 0.362781374 46.09772229 1 n
+e {inic_L1-} 0.7404621379 50.08991915 F2'' 0.3058200867 43.65775991 1 n
+e {inic_L1-} 0.6178784161 47.42362281 F1'' 0.262218626 39.11521443 2 n
+e P7_pronto {fim_L2-} 1 n
+e P7_pronto' {fim_L3-} 1 n
+e P7porL3' {fim_L3-} 1 n
+e P7porL2' {fim_L2-} 1 n
+e {inic_P7porL3-} P7porL3 1 n
+e {inic_P7porL2-} P7porL2 1 n
+e {inic_P3porL3-} pedidosPr2 1 n
+e {inic_P3porL2-} pedidosPr1 1 n
+e {OP2!!} {inic_P3_L3!} 1 n
+e {F3!} {inic_P3_L3!} 1 n
+e {F2!} {inic_P3_L3!} 1 n
+e P4_pronto {inic_P2!} 1 n
+e iniciando_P3 inic_P3 1 n
+e inic_P3porL3 iniciando_P3 1 n
+e inic_P3porL2 iniciando_P3 1 n
+e {fim_P3!} {F2!} 1 n
+e {fim_P3!} {F3!} 1 n
+e {F3!} {inic_P3_L2!} 1 n
+e {F2!} {inic_P3_L2!} 1 n
+e {fim_P3!} {OP2!!} 1 n
+e {OP2!!} {inic_P3_L2!} 1 n
+e {fim_P2!} {F1!} 1 n
+e {fim_P2!} F3 1 n
+e F3 {inic_P2!} 1 n
+e {F1!} {inic_P2!} 1 n
+e {fim_P2!} {OP1!} 1 n
+e {OP1!} {inic_P2!} 1 n
+e OP1 {inic_P1!} 1 n
+e {fim_P1!} OP1 1 n
+e F1 {inic_P1!} 1 n
+e F2 {inic_P1!} 1 n
+e {fim_P1!} F2 1 n
+e {fim_P1!} F1 1 n
+e P3_operando fim_P3 1 n
+e inic_P3 P3_operando 1 n
+e fim_P3 P3_pronto 1 n
+e P2_operando fim_P2 1 n
+e inic_P2 P2_operando 1 n
+e fim_P2 P2_pronto 1 n
+e fim_P1 P1_pronto 1 n
+e inic_P1 P1_operando 1 n
+e P1_operando fim_P1 1 n
+e pedidosPr2' inic_P6'' 1 n
+e inic_P6' P6_operando' 1 n
+e P6_operando' fim_P6' 1 n
+e fim_P6' P6_pronto' 1 n
+e F3' inic_P6'' 2 n
+e OP2'' inic_P6'' 1 n
+e P3_pronto''' inic_P6'' 1 n
+e fim_P6'' F3' 2 n
+e fim_P6'' OP2'' 1 n
+e fim_P5'' OP2' 1 n
+e fim_P5'' F2' 2 w
+e fim_P4'' OP1' 1 n
+e fim_P4'' F1' 2 s
+e F2' inic_P5'' 2 nw
+e OP2' inic_P5'' 1 n
+e P3_pronto' inic_P5'' 1 n
+e inic_P5' P5_operando' 1 n
+e P5_operando' fim_P5' 1 n
+e fim_P5' P5_pronto' 1 n
+e P1_pronto' inic_P4'' 1 n
+e OP1' inic_P4'' 1 n
+e F1' inic_P4'' 2 n
+e fim_p4' P4_pronto' 1 n
+e P4_operando' fim_p4' 1 n
+e inic_P4' P4_operando' 1 n
+e materia_prima {inic_L1-} 1 n
+e {L3_operando-} {fim_L3-} 1 n
+e {inic_P3porL3-} {L3_operando-} 1 n
+e {iniciando_L3-} {inic_P3porL3-} 1 n
+e {inic_L3-} {iniciando_L3-} 1 n
+e {fim_L3-} {Pr_2-} 1 n
+e {fim_L2-} {Pr1-} 1 n
+e {inic_L2-} {iniciando_L2-} 1 n
+e {iniciando_L2-} {inic_P3porL2-} 1 n
+e {inic_P3porL2-} {L2_operando-} 1 n
+e {L2_operando-} {fim_L2-} 1 n
+e pecasEmL1 {fim_L1-} 1 n
+e {inic_P1-} pecasEmL1 1 n
+e {iniciando_L1-} {inic_P1-} 1 n
+e {inic_L1-} {iniciando_L1-} 1 n
+e {P6_pronto-} {inic_P7porP3-*} 1 n
+e {P5_pronto-} {inic_P7porL2-*} 1 n
+e {OP2-} {inic_P7porP3-*} 1 n
+e {F3-} {inic_P7porP3-*} 1 n
+e {F2-} {inic_P7porP3-*} 1 n
+e {F1-} {inic_P7porP3-*} 1 n
+e {OP2-} {inic_P7porL2-*} 1 n
+e {F3-} {inic_P7porL2-*} 1 n
+e {F2-} {inic_P7porL2-*} 1 n
+e {F1-} {inic_P7porL2-*} 1 n
+e {fim_P7-*} {OP2-} 1 n
+e {fim_P7-*} {F3-} 1 n
+e {fim_P7-*} {F2-} 1 n
+e {fim_P7-*} {F1-} 1 n
+e {iniciando_P7-} {inic_p7-} 1 n
+e {inic_P7porL3-} {iniciando_P7-} 1 n
+e {inic_P7porL2-} {iniciando_P7-} 1 n
+e {fim_P7-} {P7_pronto-} 1 n
+e {P7_operando-} {fim_P7-} 1 n
+e {inic_p7-} {P7_operando-} 1 n
+e {Pr_pre-} {inic_L2-} 1 n
+e {Pr_pre-*} {inic_L3-} 1 n
+e pedidosPr1' inic_P5'' 1 n
+e {P2_pronto!} {fim_L1-} 1 n
+e {fim_L1-} Pr_pre 1 n
+h SistemaModular2_v6
+
+

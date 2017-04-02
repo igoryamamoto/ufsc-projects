@@ -1,0 +1,20 @@
+p 225.0 100.0 P3_livre 1 n
+p 225.0 210.0 P3_operando 0 s
+t 165.0 150.0 inic_P3 n 0 0 c {} ne
+p 120.0 150.0 iniciando_P3 0 s
+t 45.0 105.0 inic_P3_L2 n 0 w n {} ne
+t 45.0 175.0 inic_P3_L3 n 0 w n {} ne
+t 280.0 145.0 fim_P3 n 0 w n {} ne
+p 350.0 145.0 P3_pronto 0 n
+n 165.0 20.0 n9 1 {Funcionamento P3}
+e iniciando_P3 inic_P3 1 n
+e inic_P3_L3 iniciando_P3 1 n
+e inic_P3_L2 iniciando_P3 1 n
+e P3_livre inic_P3 1 n
+e fim_P3 P3_livre 1 n
+e P3_operando fim_P3 1 n
+e inic_P3 P3_operando 1 n
+e fim_P3 P3_pronto 1 n
+h Funcionamento_P3
+
+

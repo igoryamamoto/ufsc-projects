@@ -1,0 +1,14 @@
+p 105.0 105.0 P1_livre 1 n
+p 105.0 230.0 P1_operando 0 s
+t 30.0 165.0 inic_P1 n 0 w n {} ne
+t 235.0 165.0 fim_P1 n 0 w n {} ne
+p 310.0 165.0 P1_pronto 0 n
+n 55.0 20.0 n2 1 {Funcionamento P1}
+e fim_P1 P1_pronto 1 n
+e inic_P1 P1_operando 1 n
+e P1_operando fim_P1 1 n
+e fim_P1 P1_livre 1 n
+e P1_livre inic_P1 1 n
+h Funcionamento_P1
+
+

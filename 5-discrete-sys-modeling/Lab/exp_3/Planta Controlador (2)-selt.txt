@@ -1,0 +1,127 @@
+Selt version 3.3.0 -- 12/15/14 -- LAAS/CNRS
+ktz loaded, 178 states, 466 transitions
+0.000s
+
+- [](PecaEmE1 <= 1);
+FALSE
+  state 0: {Cil. Recuado} PecaMagazine*4 RotE2 SoproDesligado VacuoDesligado
+  -AvancarCil ... (preserving T)->
+  state 29: {Cil. Recuado} PecaEmE1*2 RotE2 SoproLigado VacuoDesligado
+  -DesligarSopro ... (preserving - (1 >= PecaEmE1))->
+  state 46: {Cil. Recuado} PecaEmE1*2 RotE2 SoproDesligado VacuoDesligado
+  [accepting all]
+0.016s
+
+- 
+-[](SoproLigado/\VacuoLigado);
+= LTL typing error: unbound propositional variable -[]
+
+- -([](SoproLigado/\VacuoLigado);
+LTL syntax error: parentheses mismatch
+
+- [](SoproLigado/\VacuoLigado);
+FALSE
+  state 0: {Cil. Recuado} PecaMagazine*4 RotE2 SoproDesligado VacuoDesligado
+  -AvancarCil ... (preserving T)->
+  state 41: {Cil. Recuado} RotE2 SoproLigado VacuoDesligado
+  -DesligarSopro ... (preserving - SoproLigado \/ - VacuoLigado)->
+  state 42: {Cil. Recuado} RotE2 SoproDesligado VacuoDesligado
+  [accepting all]
+0.000s
+
+- <>(SoproLigado/\VacuoLigado);
+FALSE
+  state 0: {Cil. Recuado} PecaMagazine*4 RotE2 SoproDesligado VacuoDesligado
+  -AvancarCil ... (preserving - SoproLigado \/ - VacuoLigado)->
+* [accepting] state 43: {Cil. Recuado} RotE2 SoproDesligado VacuoDesligado
+  -LigarSopro ... (preserving - SoproLigado \/ - VacuoLigado)->
+  state 43: {Cil. Recuado} RotE2 SoproDesligado VacuoDesligado
+0.031s
+
+- -[](
+= ;
+LTL syntax error: keyword ; cannot be used as operator
+
+- (-[])(SoproLigado/\VacuoLigado);
+LTL typing error: unbound propositional variable -[]
+
+- (-)[](SoproLigado/\VacuoLigado);
+LTL syntax error: ill-formed formula, skipping )[](SoproLigado/\VacuoLigado);
+
+- []-(SoproLigado/\VacuoLigado);
+LTL typing error: unbound propositional variable []-
+
+- []<>
+= ;
+LTL typing error: unbound propositional variable []<>
+
+- - [](SoproLigado/\VacuoLigado);
+TRUE
+0.047s
+
+- [] <>(SoproLigado/\VacuoLigado);
+FALSE
+  state 0: {Cil. Recuado} PecaMagazine*4 RotE2 SoproDesligado VacuoDesligado
+  -AvancarCil ... (preserving T)->
+  state 41: {Cil. Recuado} RotE2 SoproLigado VacuoDesligado
+  -DesligarSopro ... (preserving - VacuoLigado \/ - SoproLigado)->
+* [accepting] state 42: {Cil. Recuado} RotE2 SoproDesligado VacuoDesligado
+  -LigarSopro ... (preserving - SoproLigado \/ - VacuoLigado)->
+  state 42: {Cil. Recuado} RotE2 SoproDesligado VacuoDesligado
+0.031s
+
+- <>(VacuoLigado);
+FALSE
+  state 0: {Cil. Recuado} PecaMagazine*4 RotE2 SoproDesligado VacuoDesligado
+  -AvancarCil ... (preserving - VacuoLigado)->
+* [accepting] state 17: {Cil. Recuado} PecaEmE1*3 RotE1 SoproDesligado VacuoDesligado
+  -LigarSopro ... (preserving - VacuoLigado)->
+  state 17: {Cil. Recuado} PecaEmE1*3 RotE1 SoproDesligado VacuoDesligado
+0.031s
+
+- [] <>(VacuoLigado);
+FALSE
+  state 0: {Cil. Recuado} PecaMagazine*4 RotE2 SoproDesligado VacuoDesligado
+  -AvancarCil ... (preserving T)->
+  state 41: {Cil. Recuado} RotE2 SoproLigado VacuoDesligado
+  -DesligarSopro ... (preserving - VacuoLigado)->
+* [accepting] state 42: {Cil. Recuado} RotE2 SoproDesligado VacuoDesligado
+  -LigarSopro ... (preserving - VacuoLigado)->
+  state 42: {Cil. Recuado} RotE2 SoproDesligado VacuoDesligado
+0.047s
+
+- [] - (VacuoLigado)
+= ;
+FALSE
+  state 0: {Cil. Recuado} PecaMagazine*4 RotE2 SoproDesligado VacuoDesligado
+  -AvancarCil ... (preserving T)->
+  state 39: {Cil. Recuado} RotE2 SoproDesligado VacuoLigado
+  -DesligarVacuo ... (preserving VacuoLigado)->
+  state 42: {Cil. Recuado} RotE2 SoproDesligado VacuoDesligado
+  [accepting all]
+0.016s
+
+- SoproDesligado=>(SoproDesligado U VacuoLigado);
+FALSE
+  state 0: {Cil. Recuado} PecaMagazine*4 RotE2 SoproDesligado VacuoDesligado
+  -AvancarCil ... (preserving - VacuoLigado /\ SoproDesligado)->
+  state 1: {Cil. Avancado} PecaEmE1 PecaMagazine*3 RotE2 SoproDesligado VacuoDesligado
+  -LigarSopro ... (preserving - VacuoLigado)->
+  state 18: {Cil. Recuado} PecaEmE1*3 RotE1 SoproLigado VacuoDesligado
+  -DesligarSopro ... (preserving - VacuoLigado /\ - SoproDesligado)->
+  state 20: {Cil. Recuado} PecaEmE1*3 RotE1 SoproDesligado VacuoDesligado
+  [accepting all]
+0.047s
+
+- PecaEmE1=>(<>PecaEmE2);
+LTL typing error: unbound propositional variable PecaEmE2
+
+- PecaEmE1=>(<> PecaEmE2);
+LTL typing error: unbound propositional variable PecaEmE2
+
+- PecaEmE1=>(<> Rot_E1_E2);
+TRUE
+0.031s
+
+- 
+

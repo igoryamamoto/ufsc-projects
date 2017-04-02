@@ -1,0 +1,49 @@
+t 100.0 110.0 AvancarCil w 0 w n {} ne
+t 220.0 110.0 RecuarCil e 0 w n {} ne
+p 165.0 155.0 {Cil. Avancado} 0 s
+t 350.0 250.0 Rot_E2_E1 w 0 w n {} ne
+t 470.0 250.0 Rot_E1_E2 e 0 w n {} ne
+p 695.0 250.0 VacuoDesligado 1 s
+p 410.0 310.0 RotE1 0 s
+p 410.0 200.0 RotE2 1 n
+t 650.0 170.0 DesligarVacuo s 0 w n {} ne
+t 745.0 175.0 LigarVacuo s 0 w n {} ne
+p 965.0 85.0 SoproDesligado 1 n
+p 965.0 245.0 SoproLigado 0 s
+t 1025.0 165.0 DesligarSopro e 0 w n {} ne
+t 905.0 165.0 LigarSopro w 0 w n {} ne
+p 700.0 85.0 VacuoLigado 0 n
+p 55.0 50.0 PecaMagazine 4 n
+p 165.0 55.0 {Cil. Recuado} 1 n
+p 165.0 365.0 PecaEmE1 0 n
+p 610.0 440.0 PecaEmE2 0 n
+e AvancarCil {Cil. Avancado} 1 n
+e {Cil. Avancado} RecuarCil 1 n
+e RecuarCil {Cil. Recuado} 1 n
+e {Cil. Recuado} AvancarCil 1 n
+e Rot_E2_E1 RotE1 1 n
+e RotE1 Rot_E1_E2 1 n
+e Rot_E1_E2 RotE2 1 n
+e RotE2 Rot_E2_E1 1 n
+e DesligarVacuo VacuoDesligado 1 n
+e VacuoDesligado LigarVacuo 1 n
+e LigarVacuo VacuoLigado 1 n
+e VacuoLigado DesligarVacuo 1 n
+e LigarSopro SoproLigado 1 n
+e SoproLigado DesligarSopro 1 n
+e DesligarSopro SoproDesligado 1 n
+e SoproDesligado LigarSopro 1 n
+e PecaMagazine AvancarCil 1 n
+e RotE1 LigarVacuo ?1 n
+e VacuoLigado Rot_E1_E2 ?1 n
+e RotE2 DesligarVacuo ?1 n
+e VacuoDesligado LigarSopro ?1 n
+e AvancarCil PecaEmE1 1 n
+e PecaEmE1 Rot_E2_E1 1 n
+e LigarSopro 0.6980366309 533.1660154 PecaMagazine 0.7423247324 518.602931 1 n
+e Rot_E1_E2 PecaEmE2 1 n
+e PecaEmE2 LigarSopro 1 n
+e PecaEmE1 0.375 80.61017306 AvancarCil 0.7120241468 76.15773106 ?-1 n
+h {Planta Controlador (1)}
+
+

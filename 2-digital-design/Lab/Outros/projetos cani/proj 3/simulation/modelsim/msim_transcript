@@ -1,0 +1,217 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do topo_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/projetos/proj 3/topo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity topo
+# -- Compiling architecture topo_estru of topo
+# vcom -93 -work work {C:/altera/13.0sp1/projetos/proj 3/decog7seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decog7seg
+# -- Compiling architecture decog_bhv of decog7seg
+# vcom -93 -work work {C:/altera/13.0sp1/projetos/proj 3/contador_ascii.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity contador_ascii
+# -- Compiling architecture FSM_beh of contador_ascii
+# 
+vsim work.topo
+# vsim work.topo 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.topo(topo_estru)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.contador_ascii(fsm_beh)
+# Loading work.decog7seg(decog_bhv)
+add wave  \
+sim:/topo/valor
+# Load canceled
+run
+add wave -position end  sim:/topo/CLOCK_27
+add wave -position end  sim:/topo/TD_RESET
+add wave -position end  sim:/topo/LEDG
+add wave -position end  sim:/topo/TD_RESET
+run -next
+# Nothing left to do.
+# 
+# Load canceled
+force -freeze sim:/topo/CLOCK_27 1 0, 0 {50 ps} -r 100
+run
+run -all
+# Break key hit 
+# Break in Process line__20 at C:/altera/13.0sp1/projetos/proj 3/contador_ascii.vhd line 20
+vsim work.topo
+# vsim work.topo 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.topo(topo_estru)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.contador_ascii(fsm_beh)
+# Loading work.decog7seg(decog_bhv)
+add wave -position insertpoint  \
+sim:/topo/KEY
+add wave -position insertpoint  \
+sim:/topo/HEX0
+add wave -position insertpoint  \
+sim:/topo/HEX1
+add wave -position insertpoint  \
+sim:/topo/LEDG
+add wave -position insertpoint  \
+sim:/topo/CLOCK_27
+add wave -position insertpoint  \
+sim:/topo/TD_RESET
+add wave -position insertpoint  \
+sim:/topo/valor
+force -freeze sim:/topo/CLOCK_27 1 0, 0 {50 ps} -r 100
+force -freeze sim:/topo/KEY(0) 1 0
+# Load canceled
+noforce sim:/topo/KEY(0)
+force -freeze sim:/topo/KEY(0) 0 0
+run -next
+force -freeze sim:/topo/KEY(0) 1 0
+run -next
+run -next
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# Break key hit 
+# Simulation stop requested.

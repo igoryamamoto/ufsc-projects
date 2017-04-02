@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Informática Industrial II</title>
+    <meta name="generator" content="LibreOffice 4.2.2.1 (Linux)">
+    <meta name="author" content="Rômulo Silva de Oliveira">
+    <meta name="created" content="0;0">
+    <meta name="changed" content="20150306;83717115525785">
+    <meta name="Originator" content="Microsoft Word 11">
+    <meta name="ProgId" content="Word.Document">
+    <meta name="CHANGEDBY" content="Rômulo Oliveira">
+    <meta name="CHANGEDBY" content="Rômulo Oliveira">
+    <meta name="CHANGEDBY" content="Rômulo Oliveira">
+    <meta name="CHANGEDBY" content="Rômulo Oliveira">
+    <meta name="CHANGEDBY" content="Rômulo Oliveira">
+    <meta name="CHANGEDBY" content="Rômulo Oliveira">
+    <meta name="CHANGEDBY" content="Rômulo Oliveira">
+    <meta name="CHANGEDBY" content="Rômulo Oliveira">
+    <style type="text/css">
+	<!--
+		p { color: #000000 }
+		h2 { color: #000000 }
+		blockquote { color: #000000 }
+		a:link { color: #0000ff }
+		a:visited { color: #0000ff }
+	-->
+	</style>
+  </head>
+  <body dir="ltr" style="background: transparent" lang="pt-BR" link="#0000ff" text="#000000"
+    vlink="#0000ff">
+    <h2>DAS5306: Programação Concorrente e Sistemas de Tempo Real</h2>
+    <h2>Trabalhos para 2016/1</h2>
+    <blockquote style="margin-top: 0.18cm; margin-bottom: 0.18cm">Sugestão para
+      quem usa Windows normalmente: virtualbox</blockquote>
+    <blockquote style="margin-top: 0.18cm; margin-bottom: 0.18cm"><br>
+      <br>
+    </blockquote>
+    <h3>T1 - Trabalho do controlador de sistemas contínuos: sequencial</h3>
+    <p>Implementar o controle e a supervisão do sistema descrito <a href="controle-caldeira-2.pdf">aqui</a>.
+      <br>
+      <br>
+      <a href="aquecedor2008_1.jar">Simulador</a> é usado para simular uma
+      unidade de caldeira e é chamado com: <br>
+      java -jar aquecedor2008_1.jar &lt;número-porta-escutada&gt;</p>
+    <p>A caldeira possui instrumentação embutida e aceita os seguintes comandos:
+      <br>
+      "sta0" lê valor de Ta <br>
+      "st-0" lê valor de T <br>
+      "sti0" lê valor de Ti <br>
+      "sno0" lê valor de No <br>
+      "sh-0" lê valor de H <br>
+      "ani123.4" define valor de Ni como 123.4 <br>
+      "aq-567.8" define valor de Q como 567.8 <br>
+      "ana123.4" define valor de Na como 123.4 <br>
+      "anf123.4" define valor de Nf como 123.4 </p>
+    <p>Cuidado com a formatação dos valores em ponto flutuante.</p>
+    <p>Implementar em C no Linux o programa CONTROLADOR, o qual deve incluir as
+      seguintes funcionalidades de controle: </p>
+    <p>- Laço de controle como tarefa periódica para a temperatura;<br>
+      - Laço de controle como tarefa periódica para o nível;<br>
+      - Uso do tanque auxiliar e da saída de água;<br>
+      - Informações na tela sobre a situação corrente;<br>
+      - Entrada através do teclado dos valores de referência para nível e
+      temperatura;<br>
+      - Armazenagem periódica dos valores lidos de temperatura e armazenagem
+      desses dados<br>
+      em arquivo, através de buffer duplo.</p>
+    <p><br>
+      Outros requisitos: <br>
+      - Não usar threads;<br>
+      - Período do controlador de temperatura deve ser 90ms;<br>
+      - Período do controlador de nível deve ser 70ms;<br>
+      - Atualização da tela pode ser com sleep simples de 1 segundo.<br>
+    </p>
+    <br>
+    <h3><br>
+    </h3>
+    <h3>T2 - Trabalho de tempo real</h3>
+    Partindo do programa controlador desenvolvido para o trabalho T1,meça o
+    tempo de resposta do laço principal. <br>
+    <p> Ao final do laço, mas antes de calcular o novo t de acordar, obtenha a
+      hora atual t1. Com "t1 - t" temos o tempo de resposta desta execução.
+      Cuidado com a divisão de segundos e nanosegundos. <br>
+      <br>
+      Armazene esta informação em um array e depois de algum tempo apresente um
+      histograma destas medições. Principalmente, identifique o pior caso, isto
+      é, o maior tempo de resposta observado. <br>
+      <br>
+      Faça a experiência com o computador com baixa atividade e também com o
+      computador fazendo downloads de servidores com grande capacidade. Compare
+      os histogramas obtidos para os dois casos de carga no computador. <br>
+      <br>
+      Até que período seria possível levar o controlador nestas condições de
+      execução ? </p>
+    <p>Usar as funções clock_nanosleep e clock_gettime.</p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <h3>T3 - Trabalho do controlador de sistemas contínuos: concorrente</h3>
+    <p>Implementar o controle e a supervisão do sistema descrito <a href="file:///C:/Users/R%C3%B4mulo/Documents/My%20Dropbox/ROMULO/Disciplinas/Disc-G-II2/Pagina-web/controle-caldeira-2.pdf">aqui</a>.
+      <br>
+      <br>
+      <a href="file:///C:/Users/R%C3%B4mulo/Documents/My%20Dropbox/ROMULO/Disciplinas/Disc-G-II2/Pagina-web/aquecedor2008_1.jar">Simulador</a>
+      é usado para simular uma unidade de caldeira e é chamado com: <br>
+      java -jar aquecedor2008_1.jar &lt;número-porta-escutada&gt;</p>
+    <p>A caldeira possui instrumentação embutida e aceita os seguintes comandos:
+      <br>
+      "sta0" lê valor de Ta <br>
+      "st-0" lê valor de T <br>
+      "sti0" lê valor de Ti <br>
+      "sno0" lê valor de No <br>
+      "sh-0" lê valor de H <br>
+      "ani123.4" define valor de Ni como 123.4 <br>
+      "aq-567.8" define valor de Q como 567.8 <br>
+      "ana123.4" define valor de Na como 123.4 <br>
+      "anf123.4" define valor de Nf como 123.4 </p>
+    <p>Cuidado com a formatação dos valores em ponto flutuante.</p>
+    <p>Implementar em C no Linux o programa CONTROLADOR, o qual deve incluir as
+      seguintes funcionalidades de controle: </p>
+    <p>- Laço de controle como tarefa periódica para a temperatura;<br>
+      - Laço de controle como tarefa periódica para o nível;<br>
+      - Uso do tanque auxiliar e da saída de água;<br>
+      - Informações na tela sobre a situação corrente;<br>
+      - Entrada através do teclado dos valores de referência para nível e
+      temperatura;<br>
+      - Armazenagem periódica dos valores lidos de temperatura e armazenagem
+      desses dados<br>
+      em arquivo, através de buffer duplo.</p>
+    <p><br>
+      Outros requisitos: <br>
+      - Usar mutex para proteger as variáveis compartilhadas;<br>
+      - Tarefas periódicas implementadas com precisão e não com sleep fixo;<br>
+      - Período do controlador de temperatura deve ser 90ms;<br>
+      - Período do controlador de nível deve ser 70ms;<br>
+      - Atualização da tela pode ser com sleep simples de 1 segundo.<br>
+      <br>
+      <br>
+    </p>
+    Alguns aspectos para a composição da nota do trabalho do controlador: <br>
+    - Fez no Linux, em C, usando a biblioteca das pthreads ? <br>
+    - Foi usado um mutex para cada estrutura compartilhada ? <br>
+    - A aplicação apresenta valores dos sensores na tela ? <br>
+    - A aplicação possui laços de controle para temperatura e nível ? <br>
+    - A aplicação acessa teclado durante a execução do controlador, afeta valor
+    de referência ? <br>
+    - A aplicação grava leituras em arquivo ?<br>
+    - As tarefas de controle são realmente periódicas ?<br>
+    - Existe algum warning na compilação ?<br>
+    <br>
+    <br>
+    <h3>T4 – Trabalho da Simulação Concorrente</h3>
+    <p style="margin-top: 0.49cm; margin-bottom: 0.42cm">Implemente uma
+      simulação usando programação concorrente, onde os elementos ativos
+      (pessoas, carros, máquinas, etc) são representados por threads, e as
+      contenções entre eles (elevador, cruzamento, peças, etc) são representados
+      por monitores acessados pelas threads.</p>
+    <p style="margin-top: 0.49cm; margin-bottom: 0.42cm">A simulação será
+      construida como um programa concorrente em C usando a biblioteca das
+      pthreads. Os elementos ativos são representados por threads, e a descrição
+      do ambiente onde ocorre a interação entre eles deve ser feita através de
+      variáveis globais compartilhadas, cujo acesso é regulado por monitores. A
+      evolução do estado do sistema ocorre conforme a dinâmica do sistema
+      simulado. Sleep pode ser usado para simular ações demoradas.</p>
+    <p style="margin-top: 0.49cm; margin-bottom: 0.42cm">Exemplos de sistemas
+      que podem ser simulados: tráfego urbano, tráfego aéreo, tráfego
+      ferroviário, manufatura, bolsa de valores, sistemas militares, sistemas
+      ecológicos, etc.</p>
+    <p style="margin-top: 0.49cm; margin-bottom: 0.42cm">Cada grupo deve
+      descrever sua proposta e obter aprovação para ela antes de implementar.
+      Cada grupo deve implementar uma simulação diferente.</p>
+    <p style="margin-top: 0.49cm; margin-bottom: 0.42cm">A simulação será
+      realizada por um programa único composto por muitas threads. O uso de
+      comunicação via UDP é opcional, não será cobrado. Mas pode ser usado caso
+      o grupo julgue conveniente para a simulação em questão.</p>
+    <br>
+    <br>
+  </body>
+</html>

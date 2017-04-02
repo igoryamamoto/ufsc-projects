@@ -1,0 +1,1554 @@
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 23.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 23.0000 		 Href = 2.0000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 23.0000 	 erro_h = 2.0000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 23.0000 		 Href = 2.0000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 23.0000 	 erro_h = 2.0000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 23.0000 		 Href = 2.0000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 23.0000 	 erro_h = 2.0000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 100.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 20.0000 	 erro_h = 2.5000 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 1000000.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 42.9425 		 No = 0.0000 	
+T = 19.5803 		 H = 2.0706 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.4197 	 erro_h = 0.4294 	 Na = 8.3942 		 Ta = 0.0000 	
+						 Q = 20985.5078 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 32.0889 		 No = 0.0000 	
+T = 19.4205 		 H = 2.1791 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.5795 	 erro_h = 0.3209 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 28977.2031 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 23.5488 		 No = 0.0000 	
+T = 19.4962 		 H = 2.2645 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.5038 	 erro_h = 0.2355 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 25188.0645 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 17.1308 		 No = 0.0000 	
+T = 19.6338 		 H = 2.3287 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.3662 	 erro_h = 0.1713 	 Na = 7.3248 		 Ta = 0.0000 	
+						 Q = 18311.9766 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 12.4968 		 No = 0.0000 	
+T = 19.7301 		 H = 2.3750 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.2699 	 erro_h = 0.1250 	 Na = 5.3976 		 Ta = 0.0000 	
+						 Q = 13494.1104 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 9.0989 		 No = 0.0000 	
+T = 19.8001 		 H = 2.4090 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.1999 	 erro_h = 0.0910 	 Na = 3.9975 		 Ta = 0.0000 	
+						 Q = 9993.6484 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 6.6171 		 No = 0.0000 	
+T = 19.8522 		 H = 2.4338 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.1478 	 erro_h = 0.0662 	 Na = 2.9556 		 Ta = 0.0000 	
+						 Q = 7388.8779 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 4.8067 		 No = 0.0000 	
+T = 19.8906 		 H = 2.4519 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.1094 	 erro_h = 0.0481 	 Na = 2.1873 		 Ta = 0.0000 	
+						 Q = 5468.3687 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 3.4702 		 No = 0.0000 	
+T = 19.9193 		 H = 2.4653 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0807 	 erro_h = 0.0347 	 Na = 1.6148 		 Ta = 0.0000 	
+						 Q = 4037.0942 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 2.5161 		 No = 0.0000 	
+T = 19.9402 		 H = 2.4748 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0598 	 erro_h = 0.0252 	 Na = 1.1959 		 Ta = 0.0000 	
+						 Q = 2989.7690 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 1.8166 		 No = 0.0000 	
+T = 19.9555 		 H = 2.4818 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0445 	 erro_h = 0.0182 	 Na = 0.8904 		 Ta = 0.0000 	
+						 Q = 2225.9712 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 1.3047 		 No = 0.0000 	
+T = 19.9667 		 H = 2.4870 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0333 	 erro_h = 0.0130 	 Na = 0.6654 		 Ta = 0.0000 	
+						 Q = 1663.5895 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.9374 		 No = 0.0000 	
+T = 19.9749 		 H = 2.4906 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0251 	 erro_h = 0.0094 	 Na = 0.5014 		 Ta = 0.0000 	
+						 Q = 1253.6049 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.6705 		 No = 0.0000 	
+T = 19.9809 		 H = 2.4933 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0191 	 erro_h = 0.0067 	 Na = 0.3829 		 Ta = 0.0000 	
+						 Q = 957.2983 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.4734 		 No = 0.0000 	
+T = 19.9852 		 H = 2.4953 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0148 	 erro_h = 0.0047 	 Na = 0.2958 		 Ta = 0.0000 	
+						 Q = 739.4791 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.3319 		 No = 0.0000 	
+T = 19.9884 		 H = 2.4967 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0116 	 erro_h = 0.0033 	 Na = 0.2324 		 Ta = 0.0000 	
+						 Q = 581.0737 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.2297 		 No = 0.0000 	
+T = 19.9907 		 H = 2.4977 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0093 	 erro_h = 0.0023 	 Na = 0.1868 		 Ta = 0.0000 	
+						 Q = 466.9189 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.1545 		 No = 0.0000 	
+T = 19.9923 		 H = 2.4985 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0077 	 erro_h = 0.0015 	 Na = 0.1532 		 Ta = 0.0000 	
+						 Q = 383.0910 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.1009 		 No = 0.0000 	
+T = 19.9935 		 H = 2.4990 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0065 	 erro_h = 0.0010 	 Na = 0.1290 		 Ta = 0.0000 	
+						 Q = 322.5327 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0632 		 No = 0.0000 	
+T = 19.9944 		 H = 2.4994 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0056 	 erro_h = 0.0006 	 Na = 0.1117 		 Ta = 0.0000 	
+						 Q = 279.2358 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0340 		 No = 0.0000 	
+T = 19.9950 		 H = 2.4997 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0050 	 erro_h = 0.0003 	 Na = 0.0991 		 Ta = 0.0000 	
+						 Q = 247.6692 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0135 		 No = 0.0000 	
+T = 19.9955 		 H = 2.4999 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0045 	 erro_h = 0.0001 	 Na = 0.0898 		 Ta = 0.0000 	
+						 Q = 224.3996 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9958 		 H = 2.5000 		 Nf = 0.0009 		 Ti = 0.0000 	
+erro_t = 0.0042 	 erro_h = -0.0000 	 Na = 0.0831 		 Ta = 0.0000 	
+						 Q = 207.8056 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9960 		 H = 2.5001 		 Nf = 0.0118 		 Ti = 0.0000 	
+erro_t = 0.0040 	 erro_h = -0.0001 	 Na = 0.0801 		 Ta = 0.0000 	
+						 Q = 200.2716 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9960 		 H = 2.5002 		 Nf = 0.0207 		 Ti = 0.0000 	
+erro_t = 0.0040 	 erro_h = -0.0002 	 Na = 0.0792 		 Ta = 0.0000 	
+						 Q = 198.0782 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5003 		 Nf = 0.0268 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0003 	 Na = 0.0790 		 Ta = 0.0000 	
+						 Q = 197.4106 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5003 		 Nf = 0.0311 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0003 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5004 		 Nf = 0.0357 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0004 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5004 		 Nf = 0.0386 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0004 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5004 		 Nf = 0.0407 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0004 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5004 		 Nf = 0.0431 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0004 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5004 		 Nf = 0.0449 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0004 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0450 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0464 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0470 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0473 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0488 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1272 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0483 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0491 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1283 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0492 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0484 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0484 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0493 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0491 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0483 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0490 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0493 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0493 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0487 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0491 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0495 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1276 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0491 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0494 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1281 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0493 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0499 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1287 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0494 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0494 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1287 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0494 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0492 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1289 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0497 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0495 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1283 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0496 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0495 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1287 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1281 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0492 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1288 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1287 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1281 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0491 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1279 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1286 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1286 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1280 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1288 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1289 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1285 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1277 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0498 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1290 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1289 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1279 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1283 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1284 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1284 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1287 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1291 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1290 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1282 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1286 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1289 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1288 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1287 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1294 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1286 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1278 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1282 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1285 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1284 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1284 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1292 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1288 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1287 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1294 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1299 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1292 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1292 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1290 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1284 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1293 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1289 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1284 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1286 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1285 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1277 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1284 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1280 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1273 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1279 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1276 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9960 		 H = 2.5025 		 Nf = 0.2540 		 Ti = 0.0000 	
+erro_t = 0.0040 	 erro_h = -0.0025 	 Na = 0.0790 		 Ta = 0.0000 	
+						 Q = 197.5060 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5021 		 Nf = 0.2867 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0021 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5017 		 Nf = 0.2516 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0017 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5015 		 Nf = 0.2240 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0015 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5012 		 Nf = 0.1241 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0012 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5011 		 Nf = 0.1084 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0011 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5010 		 Nf = 0.0951 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0010 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5009 		 Nf = 0.0853 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0009 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5008 		 Nf = 0.0776 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0008 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5007 		 Nf = 0.0710 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0007 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5007 		 Nf = 0.0660 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0007 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5006 		 Nf = 0.0630 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0006 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5006 		 Nf = 0.0593 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0006 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5006 		 Nf = 0.0572 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0006 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5006 		 Nf = 0.0564 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0006 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0544 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0530 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0524 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0519 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0510 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0509 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0506 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0504 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0507 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0509 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0498 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5006 		 Nf = 0.0606 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0006 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5006 		 Nf = 0.1376 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0006 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5006 		 Nf = 0.1358 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0006 	 Na = 0.0789 		 Ta = 0.0000 	
+						 Q = 197.2198 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.0544 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 19.9961 		 H = 2.5005 		 Nf = 0.1329 		 Ti = 0.0000 	
+erro_t = 0.0039 	 erro_h = -0.0005 	 Na = 0.0788 		 Ta = 0.0000 	
+						 Q = 197.1245 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 20.6537 		 H = 2.4058 		 Nf = 40.5765 		 Ti = 0.0000 	
+erro_t = 4.3463 	 erro_h = -0.4058 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 217315.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 21.3223 		 H = 2.3321 		 Nf = 33.2088 		 Ti = 0.0000 	
+erro_t = 3.6777 	 erro_h = -0.3321 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 183884.0469 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 21.9940 		 H = 2.2731 		 Nf = 27.3139 		 Ti = 0.0000 	
+erro_t = 3.0060 	 erro_h = -0.2731 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 150298.3125 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 22.6649 		 H = 2.2267 		 Nf = 22.6704 		 Ti = 0.0000 	
+erro_t = 2.3351 	 erro_h = -0.2267 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 116756.4375 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 23.3312 		 H = 2.1916 		 Nf = 19.1565 		 Ti = 0.0000 	
+erro_t = 1.6688 	 erro_h = -0.1916 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 83442.1172 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 23.9904 		 H = 2.1627 		 Nf = 16.2674 		 Ti = 0.0000 	
+erro_t = 1.0096 	 erro_h = -0.1627 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 50480.7461 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.6239 		 H = 2.1397 		 Nf = 13.9663 		 Ti = 0.0000 	
+erro_t = 0.3761 	 erro_h = -0.1397 	 Na = 7.5222 		 Ta = 0.0000 	
+						 Q = 18805.5039 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.8966 		 H = 2.1147 		 Nf = 11.4672 		 Ti = 0.0000 	
+erro_t = 0.1034 	 erro_h = -0.1147 	 Na = 2.0688 		 Ta = 0.0000 	
+						 Q = 5172.0620 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9898 		 H = 2.0877 		 Nf = 8.7682 		 Ti = 0.0000 	
+erro_t = 0.0102 	 erro_h = -0.0877 	 Na = 0.2047 		 Ta = 0.0000 	
+						 Q = 511.6463 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9934 		 H = 2.0686 		 Nf = 6.9971 		 Ti = 0.0000 	
+erro_t = 0.0066 	 erro_h = -0.0686 	 Na = 0.1325 		 Ta = 0.0000 	
+						 Q = 331.2111 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9943 		 H = 2.0536 		 Nf = 5.4736 		 Ti = 0.0000 	
+erro_t = 0.0057 	 erro_h = -0.0536 	 Na = 0.1138 		 Ta = 0.0000 	
+						 Q = 284.5764 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9945 		 H = 2.0419 		 Nf = 4.1858 		 Ti = 0.0000 	
+erro_t = 0.0055 	 erro_h = -0.0419 	 Na = 0.1091 		 Ta = 0.0000 	
+						 Q = 272.6555 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0328 		 Nf = 3.3898 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0328 	 Na = 0.1078 		 Ta = 0.0000 	
+						 Q = 269.6037 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0257 		 Nf = 2.6762 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0257 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.8408 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0164 		 Nf = 1.6440 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0164 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0130 		 Nf = 1.4028 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0130 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0103 		 Nf = 1.1327 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0103 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0081 		 Nf = 0.8143 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0081 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0065 		 Nf = 0.7581 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0065 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0052 		 Nf = 0.6314 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0052 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0042 		 Nf = 0.4218 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0042 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0034 		 Nf = 0.4506 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0034 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0028 		 Nf = 0.3917 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0028 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0024 		 Nf = 0.2363 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0024 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0020 		 Nf = 0.3063 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0020 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0017 		 Nf = 0.2784 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0017 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0015 		 Nf = 0.1475 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0015 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0013 		 Nf = 0.2374 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0013 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0012 		 Nf = 0.2237 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0012 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0010 		 Nf = 0.1043 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0010 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0010 		 Nf = 0.2039 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0010 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0009 		 Nf = 0.1980 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0009 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0008 		 Nf = 0.0849 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0008 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0008 		 Nf = 0.1887 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0008 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0008 		 Nf = 0.1862 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0008 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0008 		 Nf = 0.0760 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0008 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0007 		 Nf = 0.1806 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0007 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0007 		 Nf = 0.1803 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0007 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0007 		 Nf = 0.0716 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0007 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0007 		 Nf = 0.1772 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0007 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0007 		 Nf = 0.1774 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0007 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.5000 		 Ni = 43.6485 		 No = 0.0000 	
+T = 24.4881 		 H = 2.0635 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.5119 	 erro_h = 0.4365 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 25593.3770 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.5000 		 Ni = 32.7129 		 No = 0.0000 	
+T = 24.0570 		 H = 2.1729 		 Nf = 10.0000 		 Ti = 0.0000 	
+erro_t = 0.9430 	 erro_h = 0.3271 	 Na = 10.0000 		 Ta = 0.0000 	
+						 Q = 47147.8477 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.5266 		 H = 2.2504 		 Nf = 25.0362 		 Ti = 0.0000 	
+erro_t = 0.4734 	 erro_h = -0.2504 	 Na = 9.4673 		 Ta = 0.0000 	
+						 Q = 23668.1934 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.8634 		 H = 2.2023 		 Nf = 20.2269 		 Ti = 0.0000 	
+erro_t = 0.1366 	 erro_h = -0.2023 	 Na = 2.7326 		 Ta = 0.0000 	
+						 Q = 6831.4551 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9586 		 H = 2.1604 		 Nf = 16.0409 		 Ti = 0.0000 	
+erro_t = 0.0414 	 erro_h = -0.1604 	 Na = 0.8276 		 Ta = 0.0000 	
+						 Q = 2069.0918 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9850 		 H = 2.1258 		 Nf = 12.5823 		 Ti = 0.0000 	
+erro_t = 0.0150 	 erro_h = -0.1258 	 Na = 0.3007 		 Ta = 0.0000 	
+						 Q = 751.6861 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9921 		 H = 2.0984 		 Nf = 9.8444 		 Ti = 0.0000 	
+erro_t = 0.0079 	 erro_h = -0.0984 	 Na = 0.1583 		 Ta = 0.0000 	
+						 Q = 395.7748 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9940 		 H = 2.0768 		 Nf = 7.6818 		 Ti = 0.0000 	
+erro_t = 0.0060 	 erro_h = -0.0768 	 Na = 0.1206 		 Ta = 0.0000 	
+						 Q = 301.5518 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9945 		 H = 2.0602 		 Nf = 6.0249 		 Ti = 0.0000 	
+erro_t = 0.0055 	 erro_h = -0.0602 	 Na = 0.1108 		 Ta = 0.0000 	
+						 Q = 277.0424 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0472 		 Nf = 4.7158 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0472 	 Na = 0.1083 		 Ta = 0.0000 	
+						 Q = 270.7481 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0369 		 Nf = 3.6940 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0369 	 Na = 0.1077 		 Ta = 0.0000 	
+						 Q = 269.1269 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0290 		 Nf = 2.8976 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0290 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.7454 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0227 		 Nf = 2.2697 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0227 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0178 		 Nf = 1.7806 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0178 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0140 		 Nf = 1.4046 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0140 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0111 		 Nf = 1.1075 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0111 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0088 		 Nf = 0.8768 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0088 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0070 		 Nf = 0.7011 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0070 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0056 		 Nf = 0.5601 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0056 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0045 		 Nf = 0.4527 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0045 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0037 		 Nf = 0.3684 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0037 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0030 		 Nf = 0.3017 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0030 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0025 		 Nf = 0.2499 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0025 	 Na = 0.1074 		 Ta = 0.0000 	
+						 Q = 268.5547 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 2.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9946 		 H = 2.0021 		 Nf = 0.2091 		 Ti = 0.0000 	
+erro_t = 0.0054 	 erro_h = -0.0021 	 Na = 0.1075 		 Ta = 0.0000 	
+						 Q = 268.6501 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 0.0000 		 H = 0.0000 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = 0.0000 	 erro_h = 0.0000 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 2.5000 		 Ni = 54.3839 		 No = 0.0000 	
+T = 24.9945 		 H = 1.9562 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = -4.9945 	 erro_h = 0.5438 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 20.0000 		 Href = 25.0000 		 Ni = 54.3839 		 No = 0.0000 	
+T = 24.9945 		 H = 1.9562 		 Nf = 0.0000 		 Ti = 0.0000 	
+erro_t = -4.9945 	 erro_h = 0.5438 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 1.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9945 		 H = 1.9562 		 Nf = 95.6161 		 Ti = 0.0000 	
+erro_t = 0.0055 	 erro_h = -0.9562 	 Na = 0.1095 		 Ta = 0.0000 	
+						 Q = 273.7045 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 25.0000 		 Href = 10.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9945 		 H = 1.9562 		 Nf = 95.7256 		 Ti = 0.0000 	
+erro_t = 0.0055 	 erro_h = -0.9562 	 Na = 0.1095 		 Ta = 0.0000 	
+						 Q = 273.7045 
+----------------------------------Aquecedor de Água--------------------------------- 
+Temperatura 		 Nível 			 Atuadores 		 Sensores
+Tref = 2.0000 		 Href = 1.0000 		 Ni = 0.0000 		 No = 0.0000 	
+T = 24.9945 		 H = 1.9562 		 Nf = 95.6161 		 Ti = 0.0000 	
+erro_t = -22.9945 	 erro_h = -0.9562 	 Na = 0.0000 		 Ta = 0.0000 	
+						 Q = 0.0000 

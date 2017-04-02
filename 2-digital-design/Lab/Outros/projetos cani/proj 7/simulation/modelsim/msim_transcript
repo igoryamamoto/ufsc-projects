@@ -1,0 +1,67 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do topo_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/altera/13.0sp1/projetos/topo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity topo
+# -- Compiling architecture topo_estru of topo
+# vcom -93 -work work {C:/altera/13.0sp1/projetos/c3.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity C3
+# -- Compiling architecture c3_estr of C3
+# vcom -93 -work work {C:/altera/13.0sp1/projetos/c2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity C2
+# -- Compiling architecture c2_estr of C2
+# vcom -93 -work work {C:/altera/13.0sp1/projetos/c1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity C1
+# -- Compiling architecture c1_estr of C1
+# vcom -93 -work work {C:/altera/13.0sp1/projetos/mux.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux
+# -- Compiling architecture mux_estr of mux
+# 
+vsim work.topo
+# vsim work.topo 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.topo(topo_estru)
+# Loading work.c1(c1_estr)
+# Loading work.c2(c2_estr)
+# Loading work.c3(c3_estr)
+# Loading work.mux(mux_estr)
+add wave -position insertpoint  \
+sim:/topo/SW(17) \
+sim:/topo/SW(16)
+add wave -position insertpoint  \
+sim:/topo/SW(2) \
+sim:/topo/SW(1) \
+sim:/topo/SW(0)
+add wave -position insertpoint  \
+sim:/topo/LEDR(0)

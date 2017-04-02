@@ -1,0 +1,19 @@
+n 170.0 20.0 n15 1 {Funcionamento L1}
+t 110.0 165.0 inic_L1 n 0 w n {} ne
+p 50.0 165.0 materia_prima 100 s
+p 170.0 165.0 iniciando_L1 0 s
+t 245.0 165.0 inic_P1 n 0 w n {} ne
+p 340.0 165.0 L1_operando 0 s
+t 425.0 165.0 fim_L1 n 0 w n {} ne
+p 340.0 285.0 P2_pronto 0 s
+p 515.0 165.0 Pr_pre 0 n
+e materia_prima inic_L1 1 n
+e L1_operando fim_L1 1 n
+e inic_P1 L1_operando 1 n
+e iniciando_L1 inic_P1 1 n
+e inic_L1 iniciando_L1 1 n
+e P2_pronto fim_L1 1 n
+e fim_L1 Pr_pre 1 n
+h Funcionamento_L1
+
+

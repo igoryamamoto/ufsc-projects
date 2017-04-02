@@ -1,0 +1,14 @@
+p 130.0 85.0 P2_livre 1 n
+p 130.0 195.0 P2_operando 0 s
+t 30.0 140.0 inic_P2 n 0 w n {} ne
+t 200.0 140.0 fim_P2 n 0 w n {} ne
+p 285.0 140.0 P2_pronto 0 n
+n 70.0 20.0 n8 1 {Funcionamento P2}
+e P2_livre inic_P2 1 n
+e fim_P2 P2_livre 1 n
+e P2_operando fim_P2 1 n
+e inic_P2 P2_operando 1 n
+e fim_P2 P2_pronto 1 n
+h Funcionamento_P2
+
+

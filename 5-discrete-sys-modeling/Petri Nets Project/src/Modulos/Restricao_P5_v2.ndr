@@ -1,0 +1,16 @@
+t 30.0 160.0 fim_P5 n 0 w n {} ne
+p 130.0 80.0 F2 0 n
+p 130.0 160.0 OP2 0 n
+p 130.0 215.0 P3_pronto 0 w
+t 235.0 130.0 inic_P5 e 0 w n {} ne
+n 105.0 20.0 n21 1 {Restrição P5}
+p 130.0 265.0 L2_operando 0 s
+e fim_P5 OP2 1 n
+e fim_P5 F2 1 n
+e F2 inic_P5 2 n
+e OP2 inic_P5 1 n
+e P3_pronto inic_P5 1 n
+e L2_operando inic_P5 ?1 n
+h {Restrição_P5}
+
+

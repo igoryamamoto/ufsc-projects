@@ -1,0 +1,11 @@
+p 165.0 170.0 {buffer ocupado} 0 n
+p 165.0 50.0 {buffer livre} 3 n
+t 40.0 115.0 {entraPeça} n 0 w n {} ne
+t 290.0 110.0 {saiPeça} n 0 w n {} ne
+e {buffer livre} 0.5218147593 29.27456234 {entraPeça} 0.1125079122 63.12685641 1 n
+e {saiPeça} 0.3636510646 39.69886647 {buffer livre} 0.962920205 60.63827151 1 n
+e {buffer ocupado} 0.009633970163 33.06055051 {saiPeça} 0.6603454324 44.94441011 1 n
+e {entraPeça} 0.8326246706 40.31128879 {buffer ocupado} 0.5081546485 39.05124838 1 n
+h buf
+
+

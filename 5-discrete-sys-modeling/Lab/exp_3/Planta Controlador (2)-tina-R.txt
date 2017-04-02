@@ -1,0 +1,675 @@
+Tina version 3.3.0 -- 12/15/14 -- LAAS/CNRS
+
+mode -R
+
+INPUT NET ------------------------------------------------------- 
+
+parsed net {Planta Controlador (2)}
+
+10 places, 8 transitions
+
+net {Planta Controlador (2)}
+tr AvancarCil {Cil. Recuado} PecaMagazine -> {Cil. Avancado} PecaEmE1 
+tr DesligarSopro SoproLigado -> SoproDesligado 
+tr DesligarVacuo VacuoLigado RotE2?1 -> VacuoDesligado 
+tr LigarSopro SoproDesligado VacuoDesligado?1 -> SoproLigado 
+tr LigarVacuo VacuoDesligado RotE1?1 -> VacuoLigado 
+tr RecuarCil {Cil. Avancado} -> {Cil. Recuado} 
+tr Rot_E1_E2 RotE1 VacuoLigado?1 -> RotE2 
+tr Rot_E2_E1 PecaEmE1 RotE2 -> RotE1 
+pl {Cil. Recuado} (1)
+pl PecaMagazine (4)
+pl RotE2 (1)
+pl SoproDesligado (1)
+pl VacuoDesligado (1)
+
+0.000s
+
+REACHABILITY ANALYSIS ------------------------------------------- 
+
+bounded
+
+178 marking(s), 466 transition(s)
+
+MARKINGS:
+
+0 : {Cil. Recuado} PecaMagazine*4 RotE2 SoproDesligado VacuoDesligado
+1 : {Cil. Avancado} PecaEmE1 PecaMagazine*3 RotE2 SoproDesligado VacuoDesligado
+2 : {Cil. Recuado} PecaMagazine*4 RotE2 SoproLigado VacuoDesligado
+3 : {Cil. Avancado} PecaEmE1 PecaMagazine*3 RotE2 SoproLigado VacuoDesligado
+4 : {Cil. Recuado} PecaEmE1 PecaMagazine*3 RotE2 SoproDesligado VacuoDesligado
+5 : {Cil. Avancado} PecaMagazine*3 RotE1 SoproDesligado VacuoDesligado
+6 : {Cil. Recuado} PecaEmE1 PecaMagazine*3 RotE2 SoproLigado VacuoDesligado
+7 : {Cil. Avancado} PecaMagazine*3 RotE1 SoproLigado VacuoDesligado
+8 : {Cil. Avancado} PecaEmE1*2 PecaMagazine*2 RotE2 SoproDesligado VacuoDesligado
+9 : {Cil. Recuado} PecaMagazine*3 RotE1 SoproDesligado VacuoDesligado
+10 : {Cil. Avancado} PecaMagazine*3 RotE1 SoproDesligado VacuoLigado
+11 : {Cil. Avancado} PecaEmE1*2 PecaMagazine*2 RotE2 SoproLigado VacuoDesligado
+12 : {Cil. Recuado} PecaMagazine*3 RotE1 SoproLigado VacuoDesligado
+13 : {Cil. Avancado} PecaMagazine*3 RotE1 SoproLigado VacuoLigado
+14 : {Cil. Recuado} PecaEmE1*2 PecaMagazine*2 RotE2 SoproDesligado VacuoDesligado
+15 : {Cil. Avancado} PecaEmE1 PecaMagazine*2 RotE1 SoproDesligado VacuoDesligado
+16 : {Cil. Recuado} PecaMagazine*3 RotE1 SoproDesligado VacuoLigado
+17 : {Cil. Avancado} PecaMagazine*3 RotE2 SoproDesligado VacuoLigado
+18 : {Cil. Recuado} PecaEmE1*2 PecaMagazine*2 RotE2 SoproLigado VacuoDesligado
+19 : {Cil. Avancado} PecaEmE1 PecaMagazine*2 RotE1 SoproLigado VacuoDesligado
+20 : {Cil. Recuado} PecaMagazine*3 RotE1 SoproLigado VacuoLigado
+21 : {Cil. Avancado} PecaMagazine*3 RotE2 SoproLigado VacuoLigado
+22 : {Cil. Avancado} PecaEmE1*3 PecaMagazine RotE2 SoproDesligado VacuoDesligado
+23 : {Cil. Recuado} PecaEmE1 PecaMagazine*2 RotE1 SoproDesligado VacuoDesligado
+24 : {Cil. Avancado} PecaEmE1 PecaMagazine*2 RotE1 SoproDesligado VacuoLigado
+25 : {Cil. Recuado} PecaMagazine*3 RotE2 SoproDesligado VacuoLigado
+26 : {Cil. Avancado} PecaMagazine*3 RotE2 SoproDesligado VacuoDesligado
+27 : {Cil. Avancado} PecaEmE1*3 PecaMagazine RotE2 SoproLigado VacuoDesligado
+28 : {Cil. Recuado} PecaEmE1 PecaMagazine*2 RotE1 SoproLigado VacuoDesligado
+29 : {Cil. Avancado} PecaEmE1 PecaMagazine*2 RotE1 SoproLigado VacuoLigado
+30 : {Cil. Recuado} PecaMagazine*3 RotE2 SoproLigado VacuoLigado
+31 : {Cil. Avancado} PecaMagazine*3 RotE2 SoproLigado VacuoDesligado
+32 : {Cil. Recuado} PecaEmE1*3 PecaMagazine RotE2 SoproDesligado VacuoDesligado
+33 : {Cil. Avancado} PecaEmE1*2 PecaMagazine RotE1 SoproDesligado VacuoDesligado
+34 : {Cil. Recuado} PecaEmE1 PecaMagazine*2 RotE1 SoproDesligado VacuoLigado
+35 : {Cil. Avancado} PecaEmE1 PecaMagazine*2 RotE2 SoproDesligado VacuoLigado
+36 : {Cil. Recuado} PecaMagazine*3 RotE2 SoproDesligado VacuoDesligado
+37 : {Cil. Recuado} PecaEmE1*3 PecaMagazine RotE2 SoproLigado VacuoDesligado
+38 : {Cil. Avancado} PecaEmE1*2 PecaMagazine RotE1 SoproLigado VacuoDesligado
+39 : {Cil. Recuado} PecaEmE1 PecaMagazine*2 RotE1 SoproLigado VacuoLigado
+40 : {Cil. Avancado} PecaEmE1 PecaMagazine*2 RotE2 SoproLigado VacuoLigado
+41 : {Cil. Recuado} PecaMagazine*3 RotE2 SoproLigado VacuoDesligado
+42 : {Cil. Avancado} PecaEmE1*4 RotE2 SoproDesligado VacuoDesligado
+43 : {Cil. Recuado} PecaEmE1*2 PecaMagazine RotE1 SoproDesligado VacuoDesligado
+44 : {Cil. Avancado} PecaEmE1*2 PecaMagazine RotE1 SoproDesligado VacuoLigado
+45 : {Cil. Recuado} PecaEmE1 PecaMagazine*2 RotE2 SoproDesligado VacuoLigado
+46 : {Cil. Avancado} PecaEmE1 PecaMagazine*2 RotE2 SoproDesligado VacuoDesligado
+47 : {Cil. Avancado} PecaMagazine*2 RotE1 SoproDesligado VacuoLigado
+48 : {Cil. Avancado} PecaEmE1*4 RotE2 SoproLigado VacuoDesligado
+49 : {Cil. Recuado} PecaEmE1*2 PecaMagazine RotE1 SoproLigado VacuoDesligado
+50 : {Cil. Avancado} PecaEmE1*2 PecaMagazine RotE1 SoproLigado VacuoLigado
+51 : {Cil. Recuado} PecaEmE1 PecaMagazine*2 RotE2 SoproLigado VacuoLigado
+52 : {Cil. Avancado} PecaEmE1 PecaMagazine*2 RotE2 SoproLigado VacuoDesligado
+53 : {Cil. Avancado} PecaMagazine*2 RotE1 SoproLigado VacuoLigado
+54 : {Cil. Recuado} PecaEmE1*4 RotE2 SoproDesligado VacuoDesligado
+55 : {Cil. Avancado} PecaEmE1*3 RotE1 SoproDesligado VacuoDesligado
+56 : {Cil. Recuado} PecaEmE1*2 PecaMagazine RotE1 SoproDesligado VacuoLigado
+57 : {Cil. Avancado} PecaEmE1*2 PecaMagazine RotE2 SoproDesligado VacuoLigado
+58 : {Cil. Recuado} PecaEmE1 PecaMagazine*2 RotE2 SoproDesligado VacuoDesligado
+59 : {Cil. Recuado} PecaMagazine*2 RotE1 SoproDesligado VacuoLigado
+60 : {Cil. Avancado} PecaMagazine*2 RotE1 SoproDesligado VacuoDesligado
+61 : {Cil. Avancado} PecaMagazine*2 RotE2 SoproDesligado VacuoLigado
+62 : {Cil. Recuado} PecaEmE1*4 RotE2 SoproLigado VacuoDesligado
+63 : {Cil. Avancado} PecaEmE1*3 RotE1 SoproLigado VacuoDesligado
+64 : {Cil. Recuado} PecaEmE1*2 PecaMagazine RotE1 SoproLigado VacuoLigado
+65 : {Cil. Avancado} PecaEmE1*2 PecaMagazine RotE2 SoproLigado VacuoLigado
+66 : {Cil. Recuado} PecaEmE1 PecaMagazine*2 RotE2 SoproLigado VacuoDesligado
+67 : {Cil. Recuado} PecaMagazine*2 RotE1 SoproLigado VacuoLigado
+68 : {Cil. Avancado} PecaMagazine*2 RotE1 SoproLigado VacuoDesligado
+69 : {Cil. Avancado} PecaMagazine*2 RotE2 SoproLigado VacuoLigado
+70 : {Cil. Recuado} PecaEmE1*3 RotE1 SoproDesligado VacuoDesligado
+71 : {Cil. Avancado} PecaEmE1*3 RotE1 SoproDesligado VacuoLigado
+72 : {Cil. Recuado} PecaEmE1*2 PecaMagazine RotE2 SoproDesligado VacuoLigado
+73 : {Cil. Avancado} PecaEmE1*2 PecaMagazine RotE2 SoproDesligado VacuoDesligado
+74 : {Cil. Avancado} PecaEmE1 PecaMagazine RotE1 SoproDesligado VacuoLigado
+75 : {Cil. Recuado} PecaMagazine*2 RotE1 SoproDesligado VacuoDesligado
+76 : {Cil. Recuado} PecaMagazine*2 RotE2 SoproDesligado VacuoLigado
+77 : {Cil. Avancado} PecaMagazine*2 RotE2 SoproDesligado VacuoDesligado
+78 : {Cil. Recuado} PecaEmE1*3 RotE1 SoproLigado VacuoDesligado
+79 : {Cil. Avancado} PecaEmE1*3 RotE1 SoproLigado VacuoLigado
+80 : {Cil. Recuado} PecaEmE1*2 PecaMagazine RotE2 SoproLigado VacuoLigado
+81 : {Cil. Avancado} PecaEmE1*2 PecaMagazine RotE2 SoproLigado VacuoDesligado
+82 : {Cil. Avancado} PecaEmE1 PecaMagazine RotE1 SoproLigado VacuoLigado
+83 : {Cil. Recuado} PecaMagazine*2 RotE1 SoproLigado VacuoDesligado
+84 : {Cil. Recuado} PecaMagazine*2 RotE2 SoproLigado VacuoLigado
+85 : {Cil. Avancado} PecaMagazine*2 RotE2 SoproLigado VacuoDesligado
+86 : {Cil. Recuado} PecaEmE1*3 RotE1 SoproDesligado VacuoLigado
+87 : {Cil. Avancado} PecaEmE1*3 RotE2 SoproDesligado VacuoLigado
+88 : {Cil. Recuado} PecaEmE1*2 PecaMagazine RotE2 SoproDesligado VacuoDesligado
+89 : {Cil. Recuado} PecaEmE1 PecaMagazine RotE1 SoproDesligado VacuoLigado
+90 : {Cil. Avancado} PecaEmE1 PecaMagazine RotE1 SoproDesligado VacuoDesligado
+91 : {Cil. Avancado} PecaEmE1 PecaMagazine RotE2 SoproDesligado VacuoLigado
+92 : {Cil. Recuado} PecaMagazine*2 RotE2 SoproDesligado VacuoDesligado
+93 : {Cil. Recuado} PecaEmE1*3 RotE1 SoproLigado VacuoLigado
+94 : {Cil. Avancado} PecaEmE1*3 RotE2 SoproLigado VacuoLigado
+95 : {Cil. Recuado} PecaEmE1*2 PecaMagazine RotE2 SoproLigado VacuoDesligado
+96 : {Cil. Recuado} PecaEmE1 PecaMagazine RotE1 SoproLigado VacuoLigado
+97 : {Cil. Avancado} PecaEmE1 PecaMagazine RotE1 SoproLigado VacuoDesligado
+98 : {Cil. Avancado} PecaEmE1 PecaMagazine RotE2 SoproLigado VacuoLigado
+99 : {Cil. Recuado} PecaMagazine*2 RotE2 SoproLigado VacuoDesligado
+100 : {Cil. Recuado} PecaEmE1*3 RotE2 SoproDesligado VacuoLigado
+101 : {Cil. Avancado} PecaEmE1*3 RotE2 SoproDesligado VacuoDesligado
+102 : {Cil. Avancado} PecaEmE1*2 RotE1 SoproDesligado VacuoLigado
+103 : {Cil. Recuado} PecaEmE1 PecaMagazine RotE1 SoproDesligado VacuoDesligado
+104 : {Cil. Recuado} PecaEmE1 PecaMagazine RotE2 SoproDesligado VacuoLigado
+105 : {Cil. Avancado} PecaEmE1 PecaMagazine RotE2 SoproDesligado VacuoDesligado
+106 : {Cil. Avancado} PecaMagazine RotE1 SoproDesligado VacuoLigado
+107 : {Cil. Recuado} PecaEmE1*3 RotE2 SoproLigado VacuoLigado
+108 : {Cil. Avancado} PecaEmE1*3 RotE2 SoproLigado VacuoDesligado
+109 : {Cil. Avancado} PecaEmE1*2 RotE1 SoproLigado VacuoLigado
+110 : {Cil. Recuado} PecaEmE1 PecaMagazine RotE1 SoproLigado VacuoDesligado
+111 : {Cil. Recuado} PecaEmE1 PecaMagazine RotE2 SoproLigado VacuoLigado
+112 : {Cil. Avancado} PecaEmE1 PecaMagazine RotE2 SoproLigado VacuoDesligado
+113 : {Cil. Avancado} PecaMagazine RotE1 SoproLigado VacuoLigado
+114 : {Cil. Recuado} PecaEmE1*3 RotE2 SoproDesligado VacuoDesligado
+115 : {Cil. Recuado} PecaEmE1*2 RotE1 SoproDesligado VacuoLigado
+116 : {Cil. Avancado} PecaEmE1*2 RotE1 SoproDesligado VacuoDesligado
+117 : {Cil. Avancado} PecaEmE1*2 RotE2 SoproDesligado VacuoLigado
+118 : {Cil. Recuado} PecaEmE1 PecaMagazine RotE2 SoproDesligado VacuoDesligado
+119 : {Cil. Recuado} PecaMagazine RotE1 SoproDesligado VacuoLigado
+120 : {Cil. Avancado} PecaMagazine RotE1 SoproDesligado VacuoDesligado
+121 : {Cil. Avancado} PecaMagazine RotE2 SoproDesligado VacuoLigado
+122 : {Cil. Recuado} PecaEmE1*3 RotE2 SoproLigado VacuoDesligado
+123 : {Cil. Recuado} PecaEmE1*2 RotE1 SoproLigado VacuoLigado
+124 : {Cil. Avancado} PecaEmE1*2 RotE1 SoproLigado VacuoDesligado
+125 : {Cil. Avancado} PecaEmE1*2 RotE2 SoproLigado VacuoLigado
+126 : {Cil. Recuado} PecaEmE1 PecaMagazine RotE2 SoproLigado VacuoDesligado
+127 : {Cil. Recuado} PecaMagazine RotE1 SoproLigado VacuoLigado
+128 : {Cil. Avancado} PecaMagazine RotE1 SoproLigado VacuoDesligado
+129 : {Cil. Avancado} PecaMagazine RotE2 SoproLigado VacuoLigado
+130 : {Cil. Recuado} PecaEmE1*2 RotE1 SoproDesligado VacuoDesligado
+131 : {Cil. Recuado} PecaEmE1*2 RotE2 SoproDesligado VacuoLigado
+132 : {Cil. Avancado} PecaEmE1*2 RotE2 SoproDesligado VacuoDesligado
+133 : {Cil. Avancado} PecaEmE1 RotE1 SoproDesligado VacuoLigado
+134 : {Cil. Recuado} PecaMagazine RotE1 SoproDesligado VacuoDesligado
+135 : {Cil. Recuado} PecaMagazine RotE2 SoproDesligado VacuoLigado
+136 : {Cil. Avancado} PecaMagazine RotE2 SoproDesligado VacuoDesligado
+137 : {Cil. Recuado} PecaEmE1*2 RotE1 SoproLigado VacuoDesligado
+138 : {Cil. Recuado} PecaEmE1*2 RotE2 SoproLigado VacuoLigado
+139 : {Cil. Avancado} PecaEmE1*2 RotE2 SoproLigado VacuoDesligado
+140 : {Cil. Avancado} PecaEmE1 RotE1 SoproLigado VacuoLigado
+141 : {Cil. Recuado} PecaMagazine RotE1 SoproLigado VacuoDesligado
+142 : {Cil. Recuado} PecaMagazine RotE2 SoproLigado VacuoLigado
+143 : {Cil. Avancado} PecaMagazine RotE2 SoproLigado VacuoDesligado
+144 : {Cil. Recuado} PecaEmE1*2 RotE2 SoproDesligado VacuoDesligado
+145 : {Cil. Recuado} PecaEmE1 RotE1 SoproDesligado VacuoLigado
+146 : {Cil. Avancado} PecaEmE1 RotE1 SoproDesligado VacuoDesligado
+147 : {Cil. Avancado} PecaEmE1 RotE2 SoproDesligado VacuoLigado
+148 : {Cil. Recuado} PecaMagazine RotE2 SoproDesligado VacuoDesligado
+149 : {Cil. Recuado} PecaEmE1*2 RotE2 SoproLigado VacuoDesligado
+150 : {Cil. Recuado} PecaEmE1 RotE1 SoproLigado VacuoLigado
+151 : {Cil. Avancado} PecaEmE1 RotE1 SoproLigado VacuoDesligado
+152 : {Cil. Avancado} PecaEmE1 RotE2 SoproLigado VacuoLigado
+153 : {Cil. Recuado} PecaMagazine RotE2 SoproLigado VacuoDesligado
+154 : {Cil. Recuado} PecaEmE1 RotE1 SoproDesligado VacuoDesligado
+155 : {Cil. Recuado} PecaEmE1 RotE2 SoproDesligado VacuoLigado
+156 : {Cil. Avancado} PecaEmE1 RotE2 SoproDesligado VacuoDesligado
+157 : {Cil. Avancado} RotE1 SoproDesligado VacuoLigado
+158 : {Cil. Recuado} PecaEmE1 RotE1 SoproLigado VacuoDesligado
+159 : {Cil. Recuado} PecaEmE1 RotE2 SoproLigado VacuoLigado
+160 : {Cil. Avancado} PecaEmE1 RotE2 SoproLigado VacuoDesligado
+161 : {Cil. Avancado} RotE1 SoproLigado VacuoLigado
+162 : {Cil. Recuado} PecaEmE1 RotE2 SoproDesligado VacuoDesligado
+163 : {Cil. Recuado} RotE1 SoproDesligado VacuoLigado
+164 : {Cil. Avancado} RotE1 SoproDesligado VacuoDesligado
+165 : {Cil. Avancado} RotE2 SoproDesligado VacuoLigado
+166 : {Cil. Recuado} PecaEmE1 RotE2 SoproLigado VacuoDesligado
+167 : {Cil. Recuado} RotE1 SoproLigado VacuoLigado
+168 : {Cil. Avancado} RotE1 SoproLigado VacuoDesligado
+169 : {Cil. Avancado} RotE2 SoproLigado VacuoLigado
+170 : {Cil. Recuado} RotE1 SoproDesligado VacuoDesligado
+171 : {Cil. Recuado} RotE2 SoproDesligado VacuoLigado
+172 : {Cil. Avancado} RotE2 SoproDesligado VacuoDesligado
+173 : {Cil. Recuado} RotE1 SoproLigado VacuoDesligado
+174 : {Cil. Recuado} RotE2 SoproLigado VacuoLigado
+175 : {Cil. Avancado} RotE2 SoproLigado VacuoDesligado
+176 : {Cil. Recuado} RotE2 SoproDesligado VacuoDesligado
+177 : {Cil. Recuado} RotE2 SoproLigado VacuoDesligado
+
+REACHABILITY GRAPH:
+
+0 -> AvancarCil/1, LigarSopro/2
+1 -> LigarSopro/3, RecuarCil/4, Rot_E2_E1/5
+2 -> AvancarCil/3, DesligarSopro/0
+3 -> DesligarSopro/1, RecuarCil/6, Rot_E2_E1/7
+4 -> AvancarCil/8, LigarSopro/6, Rot_E2_E1/9
+5 -> LigarSopro/7, LigarVacuo/10, RecuarCil/9
+6 -> AvancarCil/11, DesligarSopro/4, Rot_E2_E1/12
+7 -> DesligarSopro/5, LigarVacuo/13, RecuarCil/12
+8 -> LigarSopro/11, RecuarCil/14, Rot_E2_E1/15
+9 -> AvancarCil/15, LigarSopro/12, LigarVacuo/16
+10 -> RecuarCil/16, Rot_E1_E2/17
+11 -> DesligarSopro/8, RecuarCil/18, Rot_E2_E1/19
+12 -> AvancarCil/19, DesligarSopro/9, LigarVacuo/20
+13 -> DesligarSopro/10, RecuarCil/20, Rot_E1_E2/21
+14 -> AvancarCil/22, LigarSopro/18, Rot_E2_E1/23
+15 -> LigarSopro/19, LigarVacuo/24, RecuarCil/23
+16 -> AvancarCil/24, Rot_E1_E2/25
+17 -> DesligarVacuo/26, RecuarCil/25
+18 -> AvancarCil/27, DesligarSopro/14, Rot_E2_E1/28
+19 -> DesligarSopro/15, LigarVacuo/29, RecuarCil/28
+20 -> AvancarCil/29, DesligarSopro/16, Rot_E1_E2/30
+21 -> DesligarSopro/17, DesligarVacuo/31, RecuarCil/30
+22 -> LigarSopro/27, RecuarCil/32, Rot_E2_E1/33
+23 -> AvancarCil/33, LigarSopro/28, LigarVacuo/34
+24 -> RecuarCil/34, Rot_E1_E2/35
+25 -> AvancarCil/35, DesligarVacuo/36
+26 -> LigarSopro/31, RecuarCil/36
+27 -> DesligarSopro/22, RecuarCil/37, Rot_E2_E1/38
+28 -> AvancarCil/38, DesligarSopro/23, LigarVacuo/39
+29 -> DesligarSopro/24, RecuarCil/39, Rot_E1_E2/40
+30 -> AvancarCil/40, DesligarSopro/25, DesligarVacuo/41
+31 -> DesligarSopro/26, RecuarCil/41
+32 -> AvancarCil/42, LigarSopro/37, Rot_E2_E1/43
+33 -> LigarSopro/38, LigarVacuo/44, RecuarCil/43
+34 -> AvancarCil/44, Rot_E1_E2/45
+35 -> DesligarVacuo/46, RecuarCil/45, Rot_E2_E1/47
+36 -> AvancarCil/46, LigarSopro/41
+37 -> AvancarCil/48, DesligarSopro/32, Rot_E2_E1/49
+38 -> DesligarSopro/33, LigarVacuo/50, RecuarCil/49
+39 -> AvancarCil/50, DesligarSopro/34, Rot_E1_E2/51
+40 -> DesligarSopro/35, DesligarVacuo/52, RecuarCil/51, Rot_E2_E1/53
+41 -> AvancarCil/52, DesligarSopro/36
+42 -> LigarSopro/48, RecuarCil/54, Rot_E2_E1/55
+43 -> AvancarCil/55, LigarSopro/49, LigarVacuo/56
+44 -> RecuarCil/56, Rot_E1_E2/57
+45 -> AvancarCil/57, DesligarVacuo/58, Rot_E2_E1/59
+46 -> LigarSopro/52, RecuarCil/58, Rot_E2_E1/60
+47 -> RecuarCil/59, Rot_E1_E2/61
+48 -> DesligarSopro/42, RecuarCil/62, Rot_E2_E1/63
+49 -> AvancarCil/63, DesligarSopro/43, LigarVacuo/64
+50 -> DesligarSopro/44, RecuarCil/64, Rot_E1_E2/65
+51 -> AvancarCil/65, DesligarSopro/45, DesligarVacuo/66, Rot_E2_E1/67
+52 -> DesligarSopro/46, RecuarCil/66, Rot_E2_E1/68
+53 -> DesligarSopro/47, RecuarCil/67, Rot_E1_E2/69
+54 -> LigarSopro/62, Rot_E2_E1/70
+55 -> LigarSopro/63, LigarVacuo/71, RecuarCil/70
+56 -> AvancarCil/71, Rot_E1_E2/72
+57 -> DesligarVacuo/73, RecuarCil/72, Rot_E2_E1/74
+58 -> AvancarCil/73, LigarSopro/66, Rot_E2_E1/75
+59 -> AvancarCil/74, Rot_E1_E2/76
+60 -> LigarSopro/68, LigarVacuo/47, RecuarCil/75
+61 -> DesligarVacuo/77, RecuarCil/76
+62 -> DesligarSopro/54, Rot_E2_E1/78
+63 -> DesligarSopro/55, LigarVacuo/79, RecuarCil/78
+64 -> AvancarCil/79, DesligarSopro/56, Rot_E1_E2/80
+65 -> DesligarSopro/57, DesligarVacuo/81, RecuarCil/80, Rot_E2_E1/82
+66 -> AvancarCil/81, DesligarSopro/58, Rot_E2_E1/83
+67 -> AvancarCil/82, DesligarSopro/59, Rot_E1_E2/84
+68 -> DesligarSopro/60, LigarVacuo/53, RecuarCil/83
+69 -> DesligarSopro/61, DesligarVacuo/85, RecuarCil/84
+70 -> LigarSopro/78, LigarVacuo/86
+71 -> RecuarCil/86, Rot_E1_E2/87
+72 -> AvancarCil/87, DesligarVacuo/88, Rot_E2_E1/89
+73 -> LigarSopro/81, RecuarCil/88, Rot_E2_E1/90
+74 -> RecuarCil/89, Rot_E1_E2/91
+75 -> AvancarCil/90, LigarSopro/83, LigarVacuo/59
+76 -> AvancarCil/91, DesligarVacuo/92
+77 -> LigarSopro/85, RecuarCil/92
+78 -> DesligarSopro/70, LigarVacuo/93
+79 -> DesligarSopro/71, RecuarCil/93, Rot_E1_E2/94
+80 -> AvancarCil/94, DesligarSopro/72, DesligarVacuo/95, Rot_E2_E1/96
+81 -> DesligarSopro/73, RecuarCil/95, Rot_E2_E1/97
+82 -> DesligarSopro/74, RecuarCil/96, Rot_E1_E2/98
+83 -> AvancarCil/97, DesligarSopro/75, LigarVacuo/67
+84 -> AvancarCil/98, DesligarSopro/76, DesligarVacuo/99
+85 -> DesligarSopro/77, RecuarCil/99
+86 -> Rot_E1_E2/100
+87 -> DesligarVacuo/101, RecuarCil/100, Rot_E2_E1/102
+88 -> AvancarCil/101, LigarSopro/95, Rot_E2_E1/103
+89 -> AvancarCil/102, Rot_E1_E2/104
+90 -> LigarSopro/97, LigarVacuo/74, RecuarCil/103
+91 -> DesligarVacuo/105, RecuarCil/104, Rot_E2_E1/106
+92 -> AvancarCil/105, LigarSopro/99
+93 -> DesligarSopro/86, Rot_E1_E2/107
+94 -> DesligarSopro/87, DesligarVacuo/108, RecuarCil/107, Rot_E2_E1/109
+95 -> AvancarCil/108, DesligarSopro/88, Rot_E2_E1/110
+96 -> AvancarCil/109, DesligarSopro/89, Rot_E1_E2/111
+97 -> DesligarSopro/90, LigarVacuo/82, RecuarCil/110
+98 -> DesligarSopro/91, DesligarVacuo/112, RecuarCil/111, Rot_E2_E1/113
+99 -> AvancarCil/112, DesligarSopro/92
+100 -> DesligarVacuo/114, Rot_E2_E1/115
+101 -> LigarSopro/108, RecuarCil/114, Rot_E2_E1/116
+102 -> RecuarCil/115, Rot_E1_E2/117
+103 -> AvancarCil/116, LigarSopro/110, LigarVacuo/89
+104 -> AvancarCil/117, DesligarVacuo/118, Rot_E2_E1/119
+105 -> LigarSopro/112, RecuarCil/118, Rot_E2_E1/120
+106 -> RecuarCil/119, Rot_E1_E2/121
+107 -> DesligarSopro/100, DesligarVacuo/122, Rot_E2_E1/123
+108 -> DesligarSopro/101, RecuarCil/122, Rot_E2_E1/124
+109 -> DesligarSopro/102, RecuarCil/123, Rot_E1_E2/125
+110 -> AvancarCil/124, DesligarSopro/103, LigarVacuo/96
+111 -> AvancarCil/125, DesligarSopro/104, DesligarVacuo/126, Rot_E2_E1/127
+112 -> DesligarSopro/105, RecuarCil/126, Rot_E2_E1/128
+113 -> DesligarSopro/106, RecuarCil/127, Rot_E1_E2/129
+114 -> LigarSopro/122, Rot_E2_E1/130
+115 -> Rot_E1_E2/131
+116 -> LigarSopro/124, LigarVacuo/102, RecuarCil/130
+117 -> DesligarVacuo/132, RecuarCil/131, Rot_E2_E1/133
+118 -> AvancarCil/132, LigarSopro/126, Rot_E2_E1/134
+119 -> AvancarCil/133, Rot_E1_E2/135
+120 -> LigarSopro/128, LigarVacuo/106, RecuarCil/134
+121 -> DesligarVacuo/136, RecuarCil/135
+122 -> DesligarSopro/114, Rot_E2_E1/137
+123 -> DesligarSopro/115, Rot_E1_E2/138
+124 -> DesligarSopro/116, LigarVacuo/109, RecuarCil/137
+125 -> DesligarSopro/117, DesligarVacuo/139, RecuarCil/138, Rot_E2_E1/140
+126 -> AvancarCil/139, DesligarSopro/118, Rot_E2_E1/141
+127 -> AvancarCil/140, DesligarSopro/119, Rot_E1_E2/142
+128 -> DesligarSopro/120, LigarVacuo/113, RecuarCil/141
+129 -> DesligarSopro/121, DesligarVacuo/143, RecuarCil/142
+130 -> LigarSopro/137, LigarVacuo/115
+131 -> DesligarVacuo/144, Rot_E2_E1/145
+132 -> LigarSopro/139, RecuarCil/144, Rot_E2_E1/146
+133 -> RecuarCil/145, Rot_E1_E2/147
+134 -> AvancarCil/146, LigarSopro/141, LigarVacuo/119
+135 -> AvancarCil/147, DesligarVacuo/148
+136 -> LigarSopro/143, RecuarCil/148
+137 -> DesligarSopro/130, LigarVacuo/123
+138 -> DesligarSopro/131, DesligarVacuo/149, Rot_E2_E1/150
+139 -> DesligarSopro/132, RecuarCil/149, Rot_E2_E1/151
+140 -> DesligarSopro/133, RecuarCil/150, Rot_E1_E2/152
+141 -> AvancarCil/151, DesligarSopro/134, LigarVacuo/127
+142 -> AvancarCil/152, DesligarSopro/135, DesligarVacuo/153
+143 -> DesligarSopro/136, RecuarCil/153
+144 -> LigarSopro/149, Rot_E2_E1/154
+145 -> Rot_E1_E2/155
+146 -> LigarSopro/151, LigarVacuo/133, RecuarCil/154
+147 -> DesligarVacuo/156, RecuarCil/155, Rot_E2_E1/157
+148 -> AvancarCil/156, LigarSopro/153
+149 -> DesligarSopro/144, Rot_E2_E1/158
+150 -> DesligarSopro/145, Rot_E1_E2/159
+151 -> DesligarSopro/146, LigarVacuo/140, RecuarCil/158
+152 -> DesligarSopro/147, DesligarVacuo/160, RecuarCil/159, Rot_E2_E1/161
+153 -> AvancarCil/160, DesligarSopro/148
+154 -> LigarSopro/158, LigarVacuo/145
+155 -> DesligarVacuo/162, Rot_E2_E1/163
+156 -> LigarSopro/160, RecuarCil/162, Rot_E2_E1/164
+157 -> RecuarCil/163, Rot_E1_E2/165
+158 -> DesligarSopro/154, LigarVacuo/150
+159 -> DesligarSopro/155, DesligarVacuo/166, Rot_E2_E1/167
+160 -> DesligarSopro/156, RecuarCil/166, Rot_E2_E1/168
+161 -> DesligarSopro/157, RecuarCil/167, Rot_E1_E2/169
+162 -> LigarSopro/166, Rot_E2_E1/170
+163 -> Rot_E1_E2/171
+164 -> LigarSopro/168, LigarVacuo/157, RecuarCil/170
+165 -> DesligarVacuo/172, RecuarCil/171
+166 -> DesligarSopro/162, Rot_E2_E1/173
+167 -> DesligarSopro/163, Rot_E1_E2/174
+168 -> DesligarSopro/164, LigarVacuo/161, RecuarCil/173
+169 -> DesligarSopro/165, DesligarVacuo/175, RecuarCil/174
+170 -> LigarSopro/173, LigarVacuo/163
+171 -> DesligarVacuo/176
+172 -> LigarSopro/175, RecuarCil/176
+173 -> DesligarSopro/170, LigarVacuo/167
+174 -> DesligarSopro/171, DesligarVacuo/177
+175 -> DesligarSopro/172, RecuarCil/177
+176 -> LigarSopro/177
+177 -> DesligarSopro/176
+
+0.000s
+
+LIVENESS ANALYSIS ----------------------------------------------- 
+
+not live
+not reversible
+
+0 dead marking(s), 2 live marking(s)
+0 dead transition(s), 2 live transition(s)
+
+STRONG CONNECTED COMPONENTS:
+
+0 : 177 176
+1 : 171
+2 : 163
+3 : 174
+4 : 167
+5 : 173 170
+6 : 166 162
+7 : 155
+8 : 145
+9 : 159
+10 : 150
+11 : 158 154
+12 : 149 144
+13 : 131
+14 : 115
+15 : 138
+16 : 123
+17 : 137 130
+18 : 122 114
+19 : 100
+20 : 86
+21 : 107
+22 : 93
+23 : 78 70
+24 : 62 54
+25 : 175 172
+26 : 165
+27 : 157
+28 : 169
+29 : 161
+30 : 168 164
+31 : 160 156
+32 : 147
+33 : 133
+34 : 152
+35 : 140
+36 : 151 146
+37 : 139 132
+38 : 117
+39 : 102
+40 : 125
+41 : 109
+42 : 124 116
+43 : 108 101
+44 : 87
+45 : 71
+46 : 94
+47 : 79
+48 : 63 55
+49 : 48 42
+50 : 153 148
+51 : 135
+52 : 119
+53 : 142
+54 : 127
+55 : 141 134
+56 : 126 118
+57 : 104
+58 : 89
+59 : 111
+60 : 96
+61 : 110 103
+62 : 95 88
+63 : 72
+64 : 56
+65 : 80
+66 : 64
+67 : 49 43
+68 : 37 32
+69 : 143 136
+70 : 121
+71 : 106
+72 : 129
+73 : 113
+74 : 128 120
+75 : 112 105
+76 : 91
+77 : 74
+78 : 98
+79 : 82
+80 : 97 90
+81 : 81 73
+82 : 57
+83 : 44
+84 : 65
+85 : 50
+86 : 38 33
+87 : 27 22
+88 : 99 92
+89 : 76
+90 : 59
+91 : 84
+92 : 67
+93 : 83 75
+94 : 66 58
+95 : 45
+96 : 34
+97 : 51
+98 : 39
+99 : 28 23
+100 : 18 14
+101 : 85 77
+102 : 61
+103 : 47
+104 : 69
+105 : 53
+106 : 68 60
+107 : 52 46
+108 : 35
+109 : 24
+110 : 40
+111 : 29
+112 : 19 15
+113 : 11 8
+114 : 41 36
+115 : 25
+116 : 16
+117 : 30
+118 : 20
+119 : 12 9
+120 : 6 4
+121 : 31 26
+122 : 17
+123 : 10
+124 : 21
+125 : 13
+126 : 7 5
+127 : 3 1
+128 : 2 0
+
+SCC GRAPH:
+
+0 -> DesligarSopro/0, LigarSopro/0
+1 -> DesligarVacuo/0
+2 -> Rot_E1_E2/1
+3 -> DesligarSopro/1, DesligarVacuo/0
+4 -> DesligarSopro/2, Rot_E1_E2/3
+5 -> DesligarSopro/5, LigarVacuo/4, LigarSopro/5, LigarVacuo/2
+6 -> DesligarSopro/6, Rot_E2_E1/5, LigarSopro/6
+7 -> DesligarVacuo/6, Rot_E2_E1/2
+8 -> Rot_E1_E2/7
+9 -> DesligarSopro/7, DesligarVacuo/6, Rot_E2_E1/4
+10 -> DesligarSopro/8, Rot_E1_E2/9
+11 -> DesligarSopro/11, LigarVacuo/10, LigarSopro/11, LigarVacuo/8
+12 -> DesligarSopro/12, Rot_E2_E1/11, LigarSopro/12
+13 -> DesligarVacuo/12, Rot_E2_E1/8
+14 -> Rot_E1_E2/13
+15 -> DesligarSopro/13, DesligarVacuo/12, Rot_E2_E1/10
+16 -> DesligarSopro/14, Rot_E1_E2/15
+17 -> DesligarSopro/17, LigarVacuo/16, LigarSopro/17, LigarVacuo/14
+18 -> DesligarSopro/18, Rot_E2_E1/17, LigarSopro/18
+19 -> DesligarVacuo/18, Rot_E2_E1/14
+20 -> Rot_E1_E2/19
+21 -> DesligarSopro/19, DesligarVacuo/18, Rot_E2_E1/16
+22 -> DesligarSopro/20, Rot_E1_E2/21
+23 -> DesligarSopro/23, LigarVacuo/22, LigarSopro/23, LigarVacuo/20
+24 -> DesligarSopro/24, Rot_E2_E1/23, LigarSopro/24
+25 -> DesligarSopro/25, RecuarCil/0, LigarSopro/25
+26 -> DesligarVacuo/25, RecuarCil/1
+27 -> RecuarCil/2, Rot_E1_E2/26
+28 -> DesligarSopro/26, DesligarVacuo/25, RecuarCil/3
+29 -> DesligarSopro/27, RecuarCil/4, Rot_E1_E2/28
+30 -> DesligarSopro/30, LigarVacuo/29, RecuarCil/5, LigarSopro/30, LigarVacuo/27
+31 -> DesligarSopro/31, RecuarCil/6, Rot_E2_E1/30, LigarSopro/31
+32 -> DesligarVacuo/31, RecuarCil/7, Rot_E2_E1/27
+33 -> RecuarCil/8, Rot_E1_E2/32
+34 -> DesligarSopro/32, DesligarVacuo/31, RecuarCil/9, Rot_E2_E1/29
+35 -> DesligarSopro/33, RecuarCil/10, Rot_E1_E2/34
+36 -> DesligarSopro/36, LigarVacuo/35, RecuarCil/11, LigarSopro/36, LigarVacuo/33
+37 -> DesligarSopro/37, RecuarCil/12, Rot_E2_E1/36, LigarSopro/37
+38 -> DesligarVacuo/37, RecuarCil/13, Rot_E2_E1/33
+39 -> RecuarCil/14, Rot_E1_E2/38
+40 -> DesligarSopro/38, DesligarVacuo/37, RecuarCil/15, Rot_E2_E1/35
+41 -> DesligarSopro/39, RecuarCil/16, Rot_E1_E2/40
+42 -> DesligarSopro/42, LigarVacuo/41, RecuarCil/17, LigarSopro/42, LigarVacuo/39
+43 -> DesligarSopro/43, RecuarCil/18, Rot_E2_E1/42, LigarSopro/43
+44 -> DesligarVacuo/43, RecuarCil/19, Rot_E2_E1/39
+45 -> RecuarCil/20, Rot_E1_E2/44
+46 -> DesligarSopro/44, DesligarVacuo/43, RecuarCil/21, Rot_E2_E1/41
+47 -> DesligarSopro/45, RecuarCil/22, Rot_E1_E2/46
+48 -> DesligarSopro/48, LigarVacuo/47, RecuarCil/23, LigarSopro/48, LigarVacuo/45
+49 -> DesligarSopro/49, RecuarCil/24, Rot_E2_E1/48, LigarSopro/49
+50 -> AvancarCil/31, DesligarSopro/50, LigarSopro/50
+51 -> AvancarCil/32, DesligarVacuo/50
+52 -> AvancarCil/33, Rot_E1_E2/51
+53 -> AvancarCil/34, DesligarSopro/51, DesligarVacuo/50
+54 -> AvancarCil/35, DesligarSopro/52, Rot_E1_E2/53
+55 -> AvancarCil/36, DesligarSopro/55, LigarVacuo/54, LigarSopro/55, LigarVacuo/52
+56 -> AvancarCil/37, DesligarSopro/56, Rot_E2_E1/55, LigarSopro/56
+57 -> AvancarCil/38, DesligarVacuo/56, Rot_E2_E1/52
+58 -> AvancarCil/39, Rot_E1_E2/57
+59 -> AvancarCil/40, DesligarSopro/57, DesligarVacuo/56, Rot_E2_E1/54
+60 -> AvancarCil/41, DesligarSopro/58, Rot_E1_E2/59
+61 -> AvancarCil/42, DesligarSopro/61, LigarVacuo/60, LigarSopro/61, LigarVacuo/58
+62 -> AvancarCil/43, DesligarSopro/62, Rot_E2_E1/61, LigarSopro/62
+63 -> AvancarCil/44, DesligarVacuo/62, Rot_E2_E1/58
+64 -> AvancarCil/45, Rot_E1_E2/63
+65 -> AvancarCil/46, DesligarSopro/63, DesligarVacuo/62, Rot_E2_E1/60
+66 -> AvancarCil/47, DesligarSopro/64, Rot_E1_E2/65
+67 -> AvancarCil/48, DesligarSopro/67, LigarVacuo/66, LigarSopro/67, LigarVacuo/64
+68 -> AvancarCil/49, DesligarSopro/68, Rot_E2_E1/67, LigarSopro/68
+69 -> DesligarSopro/69, RecuarCil/50, LigarSopro/69
+70 -> DesligarVacuo/69, RecuarCil/51
+71 -> RecuarCil/52, Rot_E1_E2/70
+72 -> DesligarSopro/70, DesligarVacuo/69, RecuarCil/53
+73 -> DesligarSopro/71, RecuarCil/54, Rot_E1_E2/72
+74 -> DesligarSopro/74, LigarVacuo/73, RecuarCil/55, LigarSopro/74, LigarVacuo/71
+75 -> DesligarSopro/75, RecuarCil/56, Rot_E2_E1/74, LigarSopro/75
+76 -> DesligarVacuo/75, RecuarCil/57, Rot_E2_E1/71
+77 -> RecuarCil/58, Rot_E1_E2/76
+78 -> DesligarSopro/76, DesligarVacuo/75, RecuarCil/59, Rot_E2_E1/73
+79 -> DesligarSopro/77, RecuarCil/60, Rot_E1_E2/78
+80 -> DesligarSopro/80, LigarVacuo/79, RecuarCil/61, LigarSopro/80, LigarVacuo/77
+81 -> DesligarSopro/81, RecuarCil/62, Rot_E2_E1/80, LigarSopro/81
+82 -> DesligarVacuo/81, RecuarCil/63, Rot_E2_E1/77
+83 -> RecuarCil/64, Rot_E1_E2/82
+84 -> DesligarSopro/82, DesligarVacuo/81, RecuarCil/65, Rot_E2_E1/79
+85 -> DesligarSopro/83, RecuarCil/66, Rot_E1_E2/84
+86 -> DesligarSopro/86, LigarVacuo/85, RecuarCil/67, LigarSopro/86, LigarVacuo/83
+87 -> DesligarSopro/87, RecuarCil/68, Rot_E2_E1/86, LigarSopro/87
+88 -> AvancarCil/75, DesligarSopro/88, LigarSopro/88
+89 -> AvancarCil/76, DesligarVacuo/88
+90 -> AvancarCil/77, Rot_E1_E2/89
+91 -> AvancarCil/78, DesligarSopro/89, DesligarVacuo/88
+92 -> AvancarCil/79, DesligarSopro/90, Rot_E1_E2/91
+93 -> AvancarCil/80, DesligarSopro/93, LigarVacuo/92, LigarSopro/93, LigarVacuo/90
+94 -> AvancarCil/81, DesligarSopro/94, Rot_E2_E1/93, LigarSopro/94
+95 -> AvancarCil/82, DesligarVacuo/94, Rot_E2_E1/90
+96 -> AvancarCil/83, Rot_E1_E2/95
+97 -> AvancarCil/84, DesligarSopro/95, DesligarVacuo/94, Rot_E2_E1/92
+98 -> AvancarCil/85, DesligarSopro/96, Rot_E1_E2/97
+99 -> AvancarCil/86, DesligarSopro/99, LigarVacuo/98, LigarSopro/99, LigarVacuo/96
+100 -> AvancarCil/87, DesligarSopro/100, Rot_E2_E1/99, LigarSopro/100
+101 -> DesligarSopro/101, RecuarCil/88, LigarSopro/101
+102 -> DesligarVacuo/101, RecuarCil/89
+103 -> RecuarCil/90, Rot_E1_E2/102
+104 -> DesligarSopro/102, DesligarVacuo/101, RecuarCil/91
+105 -> DesligarSopro/103, RecuarCil/92, Rot_E1_E2/104
+106 -> DesligarSopro/106, LigarVacuo/105, RecuarCil/93, LigarSopro/106, LigarVacuo/103
+107 -> DesligarSopro/107, RecuarCil/94, Rot_E2_E1/106, LigarSopro/107
+108 -> DesligarVacuo/107, RecuarCil/95, Rot_E2_E1/103
+109 -> RecuarCil/96, Rot_E1_E2/108
+110 -> DesligarSopro/108, DesligarVacuo/107, RecuarCil/97, Rot_E2_E1/105
+111 -> DesligarSopro/109, RecuarCil/98, Rot_E1_E2/110
+112 -> DesligarSopro/112, LigarVacuo/111, RecuarCil/99, LigarSopro/112, LigarVacuo/109
+113 -> DesligarSopro/113, RecuarCil/100, Rot_E2_E1/112, LigarSopro/113
+114 -> AvancarCil/107, DesligarSopro/114, LigarSopro/114
+115 -> AvancarCil/108, DesligarVacuo/114
+116 -> AvancarCil/109, Rot_E1_E2/115
+117 -> AvancarCil/110, DesligarSopro/115, DesligarVacuo/114
+118 -> AvancarCil/111, DesligarSopro/116, Rot_E1_E2/117
+119 -> AvancarCil/112, DesligarSopro/119, LigarVacuo/118, LigarSopro/119, LigarVacuo/116
+120 -> AvancarCil/113, DesligarSopro/120, Rot_E2_E1/119, LigarSopro/120
+121 -> DesligarSopro/121, RecuarCil/114, LigarSopro/121
+122 -> DesligarVacuo/121, RecuarCil/115
+123 -> RecuarCil/116, Rot_E1_E2/122
+124 -> DesligarSopro/122, DesligarVacuo/121, RecuarCil/117
+125 -> DesligarSopro/123, RecuarCil/118, Rot_E1_E2/124
+126 -> DesligarSopro/126, LigarVacuo/125, RecuarCil/119, LigarSopro/126, LigarVacuo/123
+127 -> DesligarSopro/127, RecuarCil/120, Rot_E2_E1/126, LigarSopro/127
+128 -> AvancarCil/127, DesligarSopro/128, LigarSopro/128
+
+0.000s
+
+ANALYSIS COMPLETED ---------------------------------------------- 
+
+
+

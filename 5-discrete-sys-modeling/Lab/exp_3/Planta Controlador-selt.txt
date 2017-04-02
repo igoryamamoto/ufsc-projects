@@ -1,0 +1,6 @@
+Selt version 3.4.4 -- 01/05/16 -- LAAS/CNRS
+ktz loaded, 178 states, 466 transitions
+0.000s
+
+- 
+

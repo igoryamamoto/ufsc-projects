@@ -1,0 +1,11 @@
+p 120.0 50.0 {M1 livre} 1 n
+p 120.0 215.0 {M1 operando} 0 n
+t 205.0 120.0 fimM1 n 0 w n {} ne
+t 30.0 125.0 inicM1 n 0 w n {} ne
+e fimM1 {M1 livre} 1 n
+e {M1 operando} fimM1 1 n
+e inicM1 {M1 operando} 1 n
+e {M1 livre} inicM1 1 n
+h maq1
+
+

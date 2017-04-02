@@ -1,0 +1,14 @@
+t 205.0 145.0 fim_p4 n 0 w n {} ne
+p 85.0 90.0 P4_livre 1 n
+p 85.0 205.0 P4_operando 0 s
+t 30.0 145.0 inic_P4 n 0 w n {} ne
+p 295.0 145.0 P4_pronto 0 n
+n 45.0 20.0 n14 1 {Funcionamento P4}
+e fim_p4 P4_pronto 1 n
+e P4_operando fim_p4 1 n
+e inic_P4 P4_operando 1 n
+e P4_livre inic_P4 1 n
+e fim_p4 P4_livre 1 n
+h Funcionamento_P4
+
+

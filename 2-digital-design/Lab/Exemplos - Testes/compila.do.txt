@@ -1,0 +1,34 @@
+quit -sim 
+
+# cria a biblioteca work
+vlib work
+
+# liga o nome work a biblioteca work
+vmap work work
+
+# compila os arquivos vhd
+vcom teste.vhd
+
+vsim -gui work.teste
+add wave -position insertpoint sim:/teste/CLOCK_50
+add wave -position insertpoint sim:/teste/KEY
+add wave -position insertpoint sim:/teste/HEX0
+add wave -position insertpoint sim:/teste/HEX1
+add wave -position insertpoint sim:/teste/HEX2
+add wave -position insertpoint sim:/teste/HEX3
+add wave -position insertpoint sim:/teste/HEX4
+add wave -position insertpoint sim:/teste/s
+add wave -position insertpoint sim:/teste/clock
+add wave -position insertpoint sim:/teste/reset
+
+force -freeze sim:/teste/CLOCK_50 1 0, 0 {50 ps} -r 100
+force -freeze sim:/teste/KEY 00 0
+
+run 100 ps
+
+force -freeze sim:/teste/KEY 01 0
+
+run 10 ns
+
+# vsim -t 10ps work.tb
+# run 40 ns

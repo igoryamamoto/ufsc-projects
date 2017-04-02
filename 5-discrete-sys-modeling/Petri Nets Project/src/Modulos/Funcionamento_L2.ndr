@@ -1,0 +1,17 @@
+p 30.0 120.0 Pr_pre 0 n
+t 85.0 120.0 inic_L2 n 0 w n {} ne
+p 150.0 120.0 iniciando_L2 0 s
+t 205.0 120.0 inic_P3_L2 n 0 w n {} ne
+p 265.0 120.0 L2_operando 0 s
+t 315.0 120.0 fim_L2 n 0 w n {} ne
+p 370.0 120.0 Pr1 0 n
+n 145.0 20.0 n16 1 {Funcionamento L2}
+e fim_L2 Pr1 1 n
+e inic_L2 iniciando_L2 1 n
+e iniciando_L2 inic_P3_L2 1 n
+e inic_P3_L2 L2_operando 1 n
+e L2_operando fim_L2 1 n
+e Pr_pre inic_L2 1 n
+h Funcionamento_L2
+
+

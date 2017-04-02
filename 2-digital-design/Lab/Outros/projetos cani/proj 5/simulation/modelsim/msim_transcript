@@ -1,0 +1,74 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do topo_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/fsm_calculadora.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity fsm_calculadora
+# -- Compiling architecture FSM_beh of fsm_calculadora
+# vcom -93 -work work {C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity topo
+# -- Compiling architecture topo_estru of topo
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(124): (vcom-1436) Actual expression (prefix expression) of formal "RST" is not globally static.
+# 
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(124): (vcom-1436) Actual expression (prefix expression) of formal "EN" is not globally static.
+# 
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(137): (vcom-1436) Actual expression (prefix expression) of formal "RST" is not globally static.
+# 
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(137): (vcom-1436) Actual expression (prefix expression) of formal "EN" is not globally static.
+# 
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(139): (vcom-1436) Actual expression (prefix expression) of formal "RST" is not globally static.
+# 
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(139): (vcom-1436) Actual expression (prefix expression) of formal "EN" is not globally static.
+# 
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(141): (vcom-1436) Actual expression (prefix expression) of formal "RST" is not globally static.
+# 
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(141): (vcom-1436) Actual expression (prefix expression) of formal "EN" is not globally static.
+# 
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(149): (vcom-1436) Actual expression (prefix expression) of formal "reset" is not globally static.
+# 
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(149): (vcom-1436) Actual expression (prefix expression) of formal "enter" is not globally static.
+# 
+# ** Error: C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd(151): VHDL Compiler exiting
+# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./topo_run_msim_rtl_vhdl.do line 9
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd}"
+vsim work.topo
+# vsim work.topo 
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/simulation/modelsim/rtl_work.topo' has no architecture.
+# 
+# Error loading design
+vsim work.fsm_calculadora(fsm_beh)
+# vsim work.fsm_calculadora(fsm_beh) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.fsm_calculadora(fsm_beh)
+vsim work.topo
+# vsim work.topo 
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/simulation/modelsim/rtl_work.topo' has no architecture.
+# 
+# Error loading design

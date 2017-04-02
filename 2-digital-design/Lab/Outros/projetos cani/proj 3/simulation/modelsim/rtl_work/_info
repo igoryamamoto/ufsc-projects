@@ -1,0 +1,114 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\projetos\proj 3\simulation\modelsim
+Econtador_ascii
+Z1 w1412341420
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\altera\13.0sp1\projetos\proj 3\simulation\modelsim
+Z7 8C:/altera/13.0sp1/projetos/proj 3/contador_ascii.vhd
+Z8 FC:/altera/13.0sp1/projetos/proj 3/contador_ascii.vhd
+l0
+L5
+V;U8Q<0nhM0zf1GMfhRXg60
+!s100 ?Wkiz3YbKo<G:NY6EgKD51
+Z9 OV;C;10.1d;51
+31
+!i10b 1
+Z10 !s108 1412882454.935000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/projetos/proj 3/contador_ascii.vhd|
+Z12 !s107 C:/altera/13.0sp1/projetos/proj 3/contador_ascii.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+Afsm_beh
+R2
+R3
+R4
+R5
+DEx4 work 14 contador_ascii 0 22 ;U8Q<0nhM0zf1GMfhRXg60
+l19
+L13
+VFS=g7Y<MdY;lG9UaVY<IB0
+!s100 <gNo=3Uia?ZK8g=[Z<Zol2
+R9
+31
+!i10b 1
+R10
+R11
+R12
+R13
+R14
+Edecog7seg
+Z15 w1411129445
+R4
+R5
+R6
+Z16 8C:/altera/13.0sp1/projetos/proj 3/decog7seg.vhd
+Z17 FC:/altera/13.0sp1/projetos/proj 3/decog7seg.vhd
+l0
+L4
+VVQ=OgoVn92]=6_Zlk;I?<0
+R9
+31
+Z18 !s108 1412882454.721000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/projetos/proj 3/decog7seg.vhd|
+Z20 !s107 C:/altera/13.0sp1/projetos/proj 3/decog7seg.vhd|
+R13
+R14
+!s100 PTVe>O?^TG=3?jJk_leg_0
+!i10b 1
+Adecog_bhv
+R4
+R5
+DEx4 work 9 decog7seg 0 22 VQ=OgoVn92]=6_Zlk;I?<0
+l11
+L10
+VY_[ZN7E^Bm?2@1J:Mf1BR1
+R9
+31
+R18
+R19
+R20
+R13
+R14
+!s100 JhXS78CecDzC^j<S4zLG53
+!i10b 1
+Etopo
+Z21 w1412882403
+R4
+R5
+R6
+Z22 8C:/altera/13.0sp1/projetos/proj 3/topo.vhd
+Z23 FC:/altera/13.0sp1/projetos/proj 3/topo.vhd
+l0
+L26
+VzFPjEbVdM:g;i8iS<TkjO2
+R9
+31
+Z24 !s108 1412882454.197000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/altera/13.0sp1/projetos/proj 3/topo.vhd|
+Z26 !s107 C:/altera/13.0sp1/projetos/proj 3/topo.vhd|
+R13
+R14
+!s100 NIDmERZJ0J6S5XV2?57ig3
+!i10b 1
+Atopo_estru
+R4
+R5
+DEx4 work 4 topo 0 22 zFPjEbVdM:g;i8iS<TkjO2
+l55
+L36
+VB3>0`7MQCh8nj1]I1SKn92
+R9
+31
+R24
+R25
+R26
+R13
+R14
+!s100 ?dLXKVE=51[d8?laEM]<`0
+!i10b 1

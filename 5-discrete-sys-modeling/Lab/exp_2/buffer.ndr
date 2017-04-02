@@ -1,0 +1,30 @@
+p 120.0 65.0 {M1 livre} 1 n
+p 120.0 230.0 {M1 operando} 0 n
+p 645.0 80.0 {M2 livre} 1 n
+p 645.0 245.0 {M2 operando} 0 n
+t 205.0 135.0 fimM1 n 0 w n {} ne
+t 560.0 145.0 inicM2 n 0 w n {} ne
+p 385.0 245.0 {buffer ocupado} 0 n
+p 385.0 50.0 {buffer livre} 3 n
+t 30.0 140.0 inicM1 n 0 w n {} ne
+t 720.0 150.0 fimM2 n 0 w n {} ne
+p 390.0 550.0 Recurso 1 n
+e {M1 livre} inicM1 1 n
+e inicM1 {M1 operando} 1 n
+e {M2 operando} fimM2 1 n
+e fimM2 {M2 livre} 1 n
+e fimM1 0.8573883563 57.62811814 {buffer ocupado} 0.4841372413 50.24937811 1 n
+e {buffer ocupado} 0.02983026972 59.03388857 inicM2 0.6335946057 52.40229003 1 n
+e inicM2 0.3931105604 49.81967483 {buffer livre} 0.9541545517 56.32051136 1 n
+e {buffer livre} 0.5197917121 48.37354649 fimM1 0.1204539526 74.27651042 1 n
+e {M1 operando} fimM1 1 n
+e fimM1 {M1 livre} 1 n
+e {M2 livre} inicM2 1 n
+e inicM2 {M2 operando} 1 n
+e Recurso 0.4956406811 219.0821764 inicM1 0.7370970043 160.5272563 1 n
+e fimM1 Recurso 1 n
+e Recurso inicM2 1 n
+e fimM2 0.7640068086 170.6604817 Recurso 0.001268140039 251.007968 1 n
+h buffer
+
+

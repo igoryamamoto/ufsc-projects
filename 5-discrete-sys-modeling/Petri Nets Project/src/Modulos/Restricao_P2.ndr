@@ -1,0 +1,17 @@
+t 30.0 150.0 fim_P2 n 0 w n {} ne
+t 260.0 150.0 inic_P2 n 0 w n {} ne
+p 145.0 150.0 F3 0 n
+p 145.0 235.0 OP1 0 n
+p 145.0 80.0 F1 0 n
+n 110.0 20.0 n10 1 {Restrição P2}
+p 150.0 295.0 P4_pronto 0 s
+e P4_pronto inic_P2 1 n
+e fim_P2 F1 1 n
+e fim_P2 F3 1 n
+e F3 inic_P2 1 n
+e F1 inic_P2 1 n
+e fim_P2 OP1 1 n
+e OP1 inic_P2 1 n
+h Restricao_P2
+
+

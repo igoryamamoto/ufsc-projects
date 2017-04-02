@@ -1,0 +1,27 @@
+s 345.0 105.0 7
+s 90.0 75.0 8
+s 535.0 435.0 0
+s 285.0 405.0 1
+s 465.0 215.0 4
+s 350.0 295.0 2
+s 145.0 315.0 3
+s 225.0 195.0 5
+s 220.0 40.0 10
+s 70.0 190.0 6
+s 30.0 30.0 9
+e 0 1 inicM1' n
+e 1 2 fimM1 n
+e 2 3 inicM1' n
+e 2 4 inicM2 n
+e 3 5 fimM1 n
+e 4 0 fimM2' n
+e 5 6 inicM1' n
+e 5 7 inicM2 n
+e 6 8 fimM1 n
+e 7 2 fimM2' n
+e 8 9 inicM1' n
+e 8 10 inicM2 n
+e 10 5 fimM2' n
+h {buffer1.2}
+
+

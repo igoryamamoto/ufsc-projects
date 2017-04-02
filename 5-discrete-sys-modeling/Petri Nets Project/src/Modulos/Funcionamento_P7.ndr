@@ -1,0 +1,20 @@
+t 45.0 115.0 inic_P7_L2 n 0 w n {} ne
+t 45.0 225.0 inic_P7_L3 n 0 w n {} ne
+t 355.0 165.0 fim_P7 n 0 w n {} ne
+p 120.0 165.0 iniciando_P7 0 n
+t 220.0 165.0 inic_p7 n 0 0 s {} ne
+p 280.0 115.0 P7_livre 1 n
+p 280.0 230.0 P7_operando 0 s
+p 420.0 165.0 P7_pronto 0 n
+n 155.0 20.0 n20 1 {Funcionamento P7}
+e iniciando_P7 inic_p7 1 n
+e inic_P7_L3 iniciando_P7 1 n
+e inic_P7_L2 iniciando_P7 1 n
+e fim_P7 P7_pronto 1 n
+e fim_P7 P7_livre 1 n
+e P7_operando fim_P7 1 n
+e inic_p7 P7_operando 1 n
+e P7_livre inic_p7 1 n
+h Funcionamento_P7
+
+

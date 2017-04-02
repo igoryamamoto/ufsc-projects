@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Nov 23 20:46:00 2014
+Quartus II 64-Bit Version : 12.1 Build 177 11/07/2012 SJ Web Edition
+Revision Name : topo
+Top-level Entity Name : topo
+Family : Cyclone II
+Total logic elements : 101
+    Total combinational functions : 77
+    Dedicated logic registers : 44
+Total registers : 44
+Total pins : 57
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

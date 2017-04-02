@@ -1,0 +1,9 @@
+[] -(J_saindo /\ 7h10_7h20);
+
+
+[] -((J_saindo /\ 7h10_7h20) /\ <> (J_chegando /\ 10_20min));
+
+
+[] -((J_saindo /\ 7h10_7h20) /\ <> ((J_chegando /\ 10_20min) /\ (F_chegando /\ 8h00_8h10)));
+
+[] -((J_saindo /\ 7h10_7h20) /\ <> ((J_chegando /\ 10_20min) /\ (F_chegando /\ 8h00_8h10)) /\ <> J_onibus /\ <> F_carona);

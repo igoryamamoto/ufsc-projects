@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1405595160 source:c:\users\Õgor\onedrive\automaÁ„o\inform·tica\server\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<winsock.h>
+	<windows.h>
+
+1405602867 >
+
+1405602867 source:c:\users\Õgor\onedrive\automaÁ„o\inform·tica\Õgor - projeto c\server\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<winsock.h>
+	<windows.h>
+
+1405602867 source:/media/igor/Windows10/Users/Igor/Google Drive/Automacao/14.1-1aFase/DAS 5334 - Introdu√ß√£o √† Inform√°tica para Automa√ß√£o/Projetos Finais/Projeto em C - Cadastros/server/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<winsock.h>
+	<windows.h>
+

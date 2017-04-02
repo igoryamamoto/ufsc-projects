@@ -1,0 +1,169 @@
+t 380.0 100.0 fim_L1 n 0 w n {} ne
+p 470.0 100.0 Pr_pre 0 s
+t 1000.0 260.0 inic_P3 n 0 0 c {} ne
+t 1000.0 350.0 fim_P3 n 0 w n {} ne
+p 155.0 465.0 P4_pronto 0 w
+p 150.0 270.0 P1_pronto 0 w
+t 850.0 415.0 inic_P5 n 0 w n {} ne
+p 1000.0 415.0 P3_pronto 0 n
+p 980.0 645.0 iniciando_P7 0 w
+t 980.0 700.0 inic_p7 w 0 0 c {} ne
+t 940.0 605.0 inic_P7porL2 n 0 w n {} ne
+t 1035.0 605.0 inic_P7porL3 n 0 w n {} ne
+t 980.0 795.0 fim_P7 n 0 w n {} ne
+p 940.0 535.0 P5_pronto 0 n
+t 255.0 230.0 fim_P1 n 0 w n {} ne
+t 255.0 470.0 inic_P2 n 0 w n {} ne
+p 320.0 100.0 pecasEmL1 0 s
+p 185.0 100.0 iniciando_L1 0 s
+t 120.0 100.0 inic_L1 n 0 w n {} ne
+p 70.0 100.0 materia_prima 5 s
+p 860.0 95.0 Pr1 0 n
+t 530.0 100.0 inic_L2 n 0 w n {} ne
+p 595.0 100.0 iniciando_L2 0 s
+p 1000.0 195.0 iniciando_P3 0 w
+t 1150.0 505.0 fim_P6 s 0 w n {} ne
+p 1260.0 85.0 Pr_2 0 s
+p 1125.0 85.0 pecasEmL3 0 s
+t 1050.0 85.0 inic_P3porL3 n 0 w n {} ne
+p 745.0 95.0 pecasEmL2 0 s
+t 665.0 95.0 inic_P3porL2 n 0 w n {} ne
+p 1155.0 230.0 pedidosPr2 0 n
+p 495.0 460.0 OP2 1 n
+p 985.0 85.0 iniciando_L3 0 s
+p 795.0 250.0 pedidosPr1 0 n
+p 1035.0 535.0 P6_pronto 0 n
+t 1150.0 415.0 inic_P6 n 0 w n {} ne
+p 1085.0 805.0 P7_pronto 0 n
+p 1295.0 605.0 P7porL3 0 s
+p 705.0 605.0 P7porL2 0 s
+t 255.0 295.0 inic_P4 n 0 w n {} ne
+p 500.0 265.0 F2 2 n
+p 500.0 330.0 F3 2 n
+p 255.0 165.0 P1_operando 0 w
+p 255.0 350.0 P4_operando 0 w
+p 95.0 565.0 P2_pronto 0 w
+p 255.0 515.0 P2_operando 0 w
+t 255.0 565.0 fim_P2 n 0 w n {} ne
+t 855.0 540.0 fim_P5 s 0 w n {} ne
+p 855.0 475.0 P5_operando 0 w
+p 1150.0 460.0 P6_operando 0 w
+p 1000.0 305.0 P3_operando 0 w
+p 975.0 745.0 P7_operando 0 w
+t 255.0 400.0 fim_P4 n 0 w n {} ne
+t 255.0 100.0 inic_P1 n 0 w n {} ne
+t 805.0 90.0 fim_L2 n 0 w n {} ne
+t 935.0 85.0 inic_L3 n 0 w n {} ne
+t 1190.0 85.0 fim_L3 n 0 w n {} ne
+p 500.0 195.0 F1 2 n
+p 495.0 395.0 OP1 1 n
+e fim_P2 F1 1 n
+e fim_P2 F3 1 n
+e F3 inic_P2 1 n
+e F1 inic_P2 1 n
+e fim_P4 F1 2 n
+e F1 inic_P4 2 n
+e fim_P1 F2 1 n
+e fim_P1 F1 1 n
+e F2 inic_P1 1 n
+e F1 inic_P1 1 n
+e P4_operando fim_P4 1 n
+e inic_P4 P4_operando 1 n
+e P1_operando fim_P1 1 n
+e inic_P1 P1_operando 1 n
+e P7porL3 fim_L3 1 n
+e P7porL2 fim_L2 1 n
+e inic_P7porL3 P7porL3 1 n
+e pedidosPr2 inic_P6 1 n
+e pedidosPr1 inic_P5 1 n
+e P7_pronto fim_L2 1 n
+e P7_pronto fim_L3 1 n
+e P6_pronto inic_P7porL3 1 n
+e OP2 inic_P7porL3 1 n
+e F3 inic_P7porL3 1 n
+e F2 inic_P7porL3 1 n
+e F1 inic_P7porL3 1 n
+e P5_pronto inic_P7porL2 1 n
+e OP2 inic_P7porL2 1 n
+e F3 inic_P7porL2 1 n
+e F2 inic_P7porL2 1 n
+e F1 inic_P7porL2 1 n
+e fim_P7 OP2 1 n
+e fim_P7 F3 1 n
+e fim_P7 F2 1 n
+e fim_P7 F1 1 n
+e inic_p7 P7_operando 1 n
+e P7_operando fim_P7 1 n
+e fim_P7 P7_pronto 1 n
+e inic_P7porL2 iniciando_P7 1 n
+e inic_P7porL3 iniciando_P7 1 n
+e iniciando_P7 inic_p7 1 n
+e P3_pronto inic_P5 1 n
+e OP2 inic_P5 1 n
+e F2 inic_P5 2 n
+e fim_P5 F2 2 n
+e fim_P5 OP2 1 n
+e fim_P3 P3_pronto 1 n
+e pecasEmL3 fim_L3 1 n
+e inic_P3porL3 pecasEmL3 1 n
+e F3 inic_P6 2 n
+e OP2 inic_P6 1 n
+e P3_pronto inic_P6 1 n
+e fim_P6 F3 2 n
+e fim_P6 OP2 1 n
+e inic_P6 P6_operando 1 n
+e P6_operando fim_P6 1 n
+e fim_P6 P6_pronto 1 n
+e fim_P5 P5_pronto 1 n
+e P5_operando fim_P5 1 n
+e inic_P5 P5_operando 1 n
+e OP2 inic_P3porL3 1 n
+e F3 inic_P3porL3 1 n
+e F2 inic_P3porL3 1 n
+e fim_P3 F2 1 n
+e fim_P3 F3 1 n
+e F3 inic_P3porL2 1 n
+e F2 inic_P3porL2 1 n
+e fim_P3 OP2 1 n
+e OP2 inic_P3porL2 1 n
+e iniciando_L3 inic_P3porL3 1 n
+e inic_L3 iniciando_L3 1 n
+e fim_L3 Pr_2 1 n
+e Pr_pre 0.09231030848 145.3806191 inic_L3 0.4006836466 129.177652 1 n
+e inic_P3 P3_operando 1 n
+e P3_operando fim_P3 1 n
+e inic_P3porL2 iniciando_P3 1 n
+e inic_P3porL3 iniciando_P3 1 n
+e iniciando_P3 inic_P3 1 n
+e OP1 inic_P2 1 n
+e fim_P2 OP1 1 n
+e P4_pronto inic_P2 1 n
+e fim_P2 P2_pronto 1 n
+e inic_P2 P2_operando 1 n
+e P2_operando fim_P2 1 n
+e fim_P4 OP1 1 n
+e OP1 inic_P4 1 n
+e P1_pronto inic_P4 1 n
+e fim_P1 OP1 1 n
+e OP1 inic_P1 1 n
+e fim_P4 P4_pronto 1 n
+e fim_P1 P1_pronto 1 n
+e Pr_pre inic_L2 1 n
+e pecasEmL2 fim_L2 1 n
+e inic_P3porL2 pecasEmL2 1 n
+e iniciando_L2 inic_P3porL2 1 n
+e inic_L2 iniciando_L2 1 n
+e fim_L2 Pr1 1 n
+e fim_L1 Pr_pre 1 n
+e P2_pronto fim_L1 1 n
+e inic_L1 iniciando_L1 1 n
+e iniciando_L1 inic_P1 1 n
+e inic_P1 pecasEmL1 1 n
+e pecasEmL1 fim_L1 1 n
+e materia_prima inic_L1 1 n
+e inic_P3porL2 pedidosPr1 1 n
+e inic_P3porL3 pedidosPr2 1 n
+e inic_P7porL2 P7porL2 1 n
+h SistemaMonolitico1_v6_TESTE
+
+

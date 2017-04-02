@@ -1,0 +1,23 @@
+
+state 0
+props {Cil. Recuado} PecaMagazine*4 RotE2 SoproDesligado VacuoDesligado
+trans AvancarCil/1
+
+state 1
+props {Cil. Avancado} PecaEmE1 PecaMagazine*3 RotE2 SoproDesligado VacuoDesligado
+trans RecuarCil/2 Rot_E2_E1/3
+
+state 2
+props {Cil. Recuado} PecaEmE1 PecaMagazine*3 RotE2 SoproDesligado VacuoDesligado
+trans AvancarCil/4 Rot_E2_E1/5
+
+state 3
+props {Cil. Avancado} PecaMagazine*3 RotE1 SoproDesligado VacuoDesligado
+trans RecuarCil/5 LigarVacuo/6
+
+state 4
+props {Cil. Avancado} PecaEmE1*2 PecaMagazine*2 RotE2 SoproDesligado VacuoDesligado
+trans RecuarCil/7 Rot_E2_E1/8
+
+
+

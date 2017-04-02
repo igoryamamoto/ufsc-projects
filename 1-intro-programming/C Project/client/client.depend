@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1405548621 source:c:\users\Ígor\onedrive\automação\informática\client\main.c
+	<stdio.h>
+	<winsock.h>
+	<conio.h>
+	<windows.h>
+	<string.h>
+
+1405603472 source:c:\users\Ígor\onedrive\automação\informática\Ígor - projeto c\client\main.c
+	<stdio.h>
+	<winsock.h>
+	<conio.h>
+	<windows.h>
+	<string.h>
+

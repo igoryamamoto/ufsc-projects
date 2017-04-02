@@ -1,0 +1,35 @@
+s 150.0 480.0 0
+s 270.0 510.0 1
+s 390.0 480.0 2
+s 475.0 390.0 3
+s 60.0 390.0 4
+s 510.0 270.0 5
+s 30.0 270.0 6
+s 475.0 150.0 7
+s 60.0 150.0 8
+s 390.0 60.0 9
+s 150.0 60.0 10
+s 270.0 30.0 11
+e 11 5 fimM2' nw
+e 10 11 fimM1 nw
+e 10 3 fimM2' e
+e 9 11 inicM2 ne
+e 8 10 inicM1' nw
+e 8 2 fimM2' e
+e 7 10 inicM2 n
+e 7 9 fimM1 e
+e 6 8 fimM1 w
+e 6 1 fimM2' n
+e 5 8 inicM2 n
+e 5 7 inicM1' e
+e 4 6 inicM1' se
+e 4 0 fimM2' n
+e 3 6 inicM2 n
+e 3 5 fimM1 nw
+e 2 4 inicM2 n
+e 2 3 inicM1' se
+e 1 2 fimM1 s
+e 0 1 inicM1' w
+h modeloGlobal
+
+

@@ -1,0 +1,1215 @@
+TimeQuest Timing Analyzer report for topo
+Fri Oct 10 08:42:36 2014
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'CLOCK_27'
+ 12. Slow Model Hold: 'CLOCK_27'
+ 13. Slow Model Minimum Pulse Width: 'CLOCK_27'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'CLOCK_27'
+ 24. Fast Model Hold: 'CLOCK_27'
+ 25. Fast Model Minimum Pulse Width: 'CLOCK_27'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; topo                                                              ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                               ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; CLOCK_27   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_27 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 307.79 MHz ; 307.79 MHz      ; CLOCK_27   ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-----------------------------------+
+; Slow Model Setup Summary          ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; CLOCK_27 ; -2.249 ; -66.065       ;
++----------+--------+---------------+
+
+
++----------------------------------+
+; Slow Model Hold Summary          ;
++----------+-------+---------------+
+; Clock    ; Slack ; End Point TNS ;
++----------+-------+---------------+
+; CLOCK_27 ; 0.391 ; 0.000         ;
++----------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++----------+--------+--------------------+
+; Clock    ; Slack  ; End Point TNS      ;
++----------+--------+--------------------+
+; CLOCK_27 ; -1.380 ; -48.380            ;
++----------+--------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'CLOCK_27'                                                                                                                                   ;
++--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                              ; To Node                                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.249 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 3.166      ;
+; -2.233 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.272      ;
+; -2.215 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 3.132      ;
+; -2.194 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.233      ;
+; -2.162 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.201      ;
+; -2.149 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 3.066      ;
+; -2.133 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[1]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.002     ; 3.053      ;
+; -2.123 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.162      ;
+; -2.119 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.158      ;
+; -2.111 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[3]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.002     ; 3.031      ;
+; -2.094 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 3.011      ;
+; -2.091 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.130      ;
+; -2.060 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.977      ;
+; -2.052 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.091      ;
+; -2.048 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.087      ;
+; -2.026 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.943      ;
+; -2.020 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.059      ;
+; -2.020 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.059      ;
+; -1.996 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.913      ;
+; -1.994 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[4]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.911      ;
+; -1.994 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.911      ;
+; -1.992 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.909      ;
+; -1.986 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 3.022      ;
+; -1.981 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.020      ;
+; -1.977 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 3.016      ;
+; -1.962 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.879      ;
+; -1.956 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[3]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.002     ; 2.876      ;
+; -1.949 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.988      ;
+; -1.926 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.843      ;
+; -1.906 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.945      ;
+; -1.896 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.813      ;
+; -1.892 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.931      ;
+; -1.888 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[3]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.002     ; 2.808      ;
+; -1.883 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.800      ;
+; -1.878 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.917      ;
+; -1.864 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|EA.INC               ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 2.899      ;
+; -1.863 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|EA.INICIO            ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 2.898      ;
+; -1.861 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.900      ;
+; -1.854 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[2]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.002     ; 2.774      ;
+; -1.853 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; contador_ascii:L0|EA.INC               ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 2.888      ;
+; -1.852 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; contador_ascii:L0|EA.INICIO            ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 2.887      ;
+; -1.849 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.766      ;
+; -1.839 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[4]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.756      ;
+; -1.831 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 2.867      ;
+; -1.822 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.861      ;
+; -1.821 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.860      ;
+; -1.817 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.734      ;
+; -1.807 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.846      ;
+; -1.790 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.829      ;
+; -1.786 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.825      ;
+; -1.783 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.700      ;
+; -1.771 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[4]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.688      ;
+; -1.763 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 2.799      ;
+; -1.755 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 2.791      ;
+; -1.751 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.668      ;
+; -1.751 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.790      ;
+; -1.750 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.789      ;
+; -1.750 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.789      ;
+; -1.747 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.786      ;
+; -1.741 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[4]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.658      ;
+; -1.733 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 2.769      ;
+; -1.719 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.758      ;
+; -1.715 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.754      ;
+; -1.706 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.623      ;
+; -1.699 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[2]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.002     ; 2.619      ;
+; -1.680 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.719      ;
+; -1.679 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.718      ;
+; -1.679 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.718      ;
+; -1.676 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.715      ;
+; -1.666 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[1]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.002     ; 2.586      ;
+; -1.651 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[1]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 2.572      ;
+; -1.648 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.687      ;
+; -1.648 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.687      ;
+; -1.644 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.683      ;
+; -1.640 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.679      ;
+; -1.620 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 2.656      ;
+; -1.609 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.648      ;
+; -1.608 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.647      ;
+; -1.608 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.647      ;
+; -1.605 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.644      ;
+; -1.588 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 2.624      ;
+; -1.577 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.616      ;
+; -1.577 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.616      ;
+; -1.573 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.612      ;
+; -1.569 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.608      ;
+; -1.543 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[3]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.002     ; 2.463      ;
+; -1.538 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.577      ;
+; -1.537 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.576      ;
+; -1.537 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.576      ;
+; -1.536 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.005     ; 2.453      ;
+; -1.534 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.573      ;
+; -1.520 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.559      ;
+; -1.512 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|EA.INC               ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 2.547      ;
+; -1.506 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[14]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.545      ;
+; -1.506 ; contador_ascii:L0|atraso[9]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.545      ;
+; -1.506 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.545      ;
+; -1.498 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.537      ;
+; -1.480 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|EA.INICIO            ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 2.515      ;
+; -1.467 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[14]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.506      ;
+; -1.466 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.003      ; 2.505      ;
++--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'CLOCK_27'                                                                                                                                   ;
++-------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                              ; To Node                                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; contador_ascii:L0|cont[7]~_Duplicate_1 ; contador_ascii:L0|cont[7]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.657      ;
+; 0.516 ; contador_ascii:L0|EA.D4                ; contador_ascii:L0|EA.D2                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.782      ;
+; 0.524 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|EA.D3                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.790      ;
+; 0.530 ; contador_ascii:L0|atraso[23]           ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.796      ;
+; 0.538 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|EA.TESTE             ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.804      ;
+; 0.664 ; contador_ascii:L0|EA.D3                ; contador_ascii:L0|EA.TESTE             ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.930      ;
+; 0.665 ; contador_ascii:L0|EA.D3                ; contador_ascii:L0|EA.D4                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.931      ;
+; 0.690 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|EA.D1                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.956      ;
+; 0.726 ; contador_ascii:L0|atraso[23]           ; contador_ascii:L0|EA.D4                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 0.993      ;
+; 0.795 ; contador_ascii:L0|atraso[12]           ; contador_ascii:L0|atraso[12]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.061      ;
+; 0.802 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[7]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.068      ;
+; 0.804 ; contador_ascii:L0|atraso[13]           ; contador_ascii:L0|atraso[13]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.070      ;
+; 0.805 ; contador_ascii:L0|atraso[21]           ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.071      ;
+; 0.805 ; contador_ascii:L0|EA.TESTE             ; contador_ascii:L0|EA.INICIO            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.071      ;
+; 0.806 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[3]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[5]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.806 ; contador_ascii:L0|EA.TESTE             ; contador_ascii:L0|EA.INC               ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.072      ;
+; 0.807 ; contador_ascii:L0|atraso[11]           ; contador_ascii:L0|atraso[11]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.073      ;
+; 0.809 ; contador_ascii:L0|atraso[14]           ; contador_ascii:L0|atraso[14]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.075      ;
+; 0.810 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[0]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.076      ;
+; 0.810 ; contador_ascii:L0|atraso[9]            ; contador_ascii:L0|atraso[9]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.076      ;
+; 0.810 ; contador_ascii:L0|atraso[10]           ; contador_ascii:L0|atraso[10]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.076      ;
+; 0.810 ; contador_ascii:L0|atraso[16]           ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.076      ;
+; 0.814 ; contador_ascii:L0|atraso[19]           ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.080      ;
+; 0.832 ; contador_ascii:L0|atraso[20]           ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.098      ;
+; 0.835 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[2]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.101      ;
+; 0.838 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[4]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[6]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[8]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.104      ;
+; 0.839 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[1]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.105      ;
+; 0.842 ; contador_ascii:L0|atraso[17]           ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.108      ;
+; 0.843 ; contador_ascii:L0|atraso[18]           ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.109      ;
+; 0.846 ; contador_ascii:L0|atraso[15]           ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.112      ;
+; 0.854 ; contador_ascii:L0|EA.D1                ; contador_ascii:L0|EA.D2                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.120      ;
+; 0.978 ; contador_ascii:L0|atraso[22]           ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.244      ;
+; 0.999 ; contador_ascii:L0|atraso[23]           ; contador_ascii:L0|EA.TESTE             ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.266      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[12]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[13]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[14]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.143 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 1.408      ;
+; 1.178 ; contador_ascii:L0|atraso[12]           ; contador_ascii:L0|atraso[13]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.444      ;
+; 1.185 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[8]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.451      ;
+; 1.187 ; contador_ascii:L0|atraso[13]           ; contador_ascii:L0|atraso[14]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.453      ;
+; 1.188 ; contador_ascii:L0|atraso[21]           ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.454      ;
+; 1.189 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[6]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.455      ;
+; 1.192 ; contador_ascii:L0|atraso[14]           ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.458      ;
+; 1.193 ; contador_ascii:L0|atraso[10]           ; contador_ascii:L0|atraso[11]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.459      ;
+; 1.193 ; contador_ascii:L0|atraso[9]            ; contador_ascii:L0|atraso[10]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.459      ;
+; 1.193 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[1]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.459      ;
+; 1.193 ; contador_ascii:L0|atraso[16]           ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.459      ;
+; 1.218 ; contador_ascii:L0|atraso[20]           ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.484      ;
+; 1.221 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[3]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.487      ;
+; 1.224 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[7]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.490      ;
+; 1.224 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[5]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.490      ;
+; 1.224 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[9]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.490      ;
+; 1.225 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[2]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.491      ;
+; 1.228 ; contador_ascii:L0|atraso[17]           ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.494      ;
+; 1.229 ; contador_ascii:L0|atraso[18]           ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.495      ;
+; 1.232 ; contador_ascii:L0|atraso[15]           ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.498      ;
+; 1.244 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[7]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.511      ;
+; 1.246 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[3]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.513      ;
+; 1.246 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[4]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.513      ;
+; 1.247 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[2]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.514      ;
+; 1.247 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[5]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.514      ;
+; 1.249 ; contador_ascii:L0|atraso[12]           ; contador_ascii:L0|atraso[14]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.515      ;
+; 1.256 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[9]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.522      ;
+; 1.258 ; contador_ascii:L0|atraso[13]           ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.524      ;
+; 1.259 ; contador_ascii:L0|atraso[21]           ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.525      ;
+; 1.260 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[7]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.526      ;
+; 1.263 ; contador_ascii:L0|atraso[14]           ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.529      ;
+; 1.264 ; contador_ascii:L0|atraso[9]            ; contador_ascii:L0|atraso[11]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.530      ;
+; 1.264 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[2]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.530      ;
+; 1.264 ; contador_ascii:L0|atraso[16]           ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.530      ;
+; 1.279 ; contador_ascii:L0|atraso[11]           ; contador_ascii:L0|atraso[12]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.003      ; 1.548      ;
+; 1.281 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[4]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.547      ;
+; 1.287 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[7]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.554      ;
+; 1.289 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[3]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.556      ;
+; 1.289 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[4]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.556      ;
+; 1.289 ; contador_ascii:L0|atraso[19]           ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.555      ;
+; 1.289 ; contador_ascii:L0|atraso[20]           ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.555      ;
+; 1.291 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[2]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.558      ;
+; 1.291 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[5]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 1.558      ;
+; 1.295 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[8]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.561      ;
+; 1.295 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[6]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.561      ;
+; 1.295 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[10]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.561      ;
+; 1.296 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[3]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.562      ;
+; 1.299 ; contador_ascii:L0|atraso[17]           ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.565      ;
+; 1.303 ; contador_ascii:L0|atraso[15]           ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 1.569      ;
++-------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLOCK_27'                                                                                 ;
++--------+--------------+----------------+------------------+----------+------------+----------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                                 ;
++--------+--------------+----------------+------------------+----------+------------+----------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLOCK_27 ; Rise       ; CLOCK_27                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D1                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D1                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D2                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D2                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D3                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D3                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D4                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D4                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.INC               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.INC               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.INICIO            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.INICIO            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.TESTE             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.TESTE             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[0]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[0]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[10]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[10]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[11]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[11]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[12]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[12]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[13]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[13]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[14]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[14]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[15]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[15]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[16]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[16]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[17]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[17]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[18]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[18]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[19]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[19]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[1]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[1]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[20]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[20]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[21]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[21]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[22]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[22]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[23]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[23]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[2]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[2]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[3]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[3]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[4]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[4]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[5]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[5]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[6]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[6]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[7]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[7]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[8]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[8]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[9]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[9]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[0]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[0]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[0]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[0]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[1]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[1]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[1]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[1]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[2]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[2]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[2]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[2]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[3]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[3]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[3]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[3]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[4]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[4]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[4]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[4]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[5]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[5]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[5]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[5]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[6]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[6]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[6]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[6]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[7]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[7]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[7]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[7]~_Duplicate_1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; CLOCK_27|combout                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; CLOCK_27|combout                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; CLOCK_27~clkctrl|inclk[0]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; CLOCK_27~clkctrl|inclk[0]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; CLOCK_27~clkctrl|outclk                ;
++--------+--------------+----------------+------------------+----------+------------+----------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; KEY[*]    ; CLOCK_27   ; 6.311 ; 6.311 ; Rise       ; CLOCK_27        ;
+;  KEY[0]   ; CLOCK_27   ; 6.311 ; 6.311 ; Rise       ; CLOCK_27        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; KEY[*]    ; CLOCK_27   ; -4.214 ; -4.214 ; Rise       ; CLOCK_27        ;
+;  KEY[0]   ; CLOCK_27   ; -4.214 ; -4.214 ; Rise       ; CLOCK_27        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; CLOCK_27   ; 9.924 ; 9.924 ; Rise       ; CLOCK_27        ;
+;  HEX0[0]  ; CLOCK_27   ; 9.924 ; 9.924 ; Rise       ; CLOCK_27        ;
+;  HEX0[1]  ; CLOCK_27   ; 9.891 ; 9.891 ; Rise       ; CLOCK_27        ;
+;  HEX0[2]  ; CLOCK_27   ; 9.903 ; 9.903 ; Rise       ; CLOCK_27        ;
+;  HEX0[3]  ; CLOCK_27   ; 9.675 ; 9.675 ; Rise       ; CLOCK_27        ;
+;  HEX0[4]  ; CLOCK_27   ; 9.676 ; 9.676 ; Rise       ; CLOCK_27        ;
+;  HEX0[5]  ; CLOCK_27   ; 9.666 ; 9.666 ; Rise       ; CLOCK_27        ;
+;  HEX0[6]  ; CLOCK_27   ; 9.661 ; 9.661 ; Rise       ; CLOCK_27        ;
+; HEX1[*]   ; CLOCK_27   ; 8.375 ; 8.375 ; Rise       ; CLOCK_27        ;
+;  HEX1[0]  ; CLOCK_27   ; 8.375 ; 8.375 ; Rise       ; CLOCK_27        ;
+;  HEX1[1]  ; CLOCK_27   ; 8.370 ; 8.370 ; Rise       ; CLOCK_27        ;
+;  HEX1[2]  ; CLOCK_27   ; 8.186 ; 8.186 ; Rise       ; CLOCK_27        ;
+;  HEX1[3]  ; CLOCK_27   ; 8.211 ; 8.211 ; Rise       ; CLOCK_27        ;
+;  HEX1[4]  ; CLOCK_27   ; 8.241 ; 8.241 ; Rise       ; CLOCK_27        ;
+;  HEX1[5]  ; CLOCK_27   ; 8.230 ; 8.230 ; Rise       ; CLOCK_27        ;
+;  HEX1[6]  ; CLOCK_27   ; 8.281 ; 8.281 ; Rise       ; CLOCK_27        ;
+; LEDG[*]   ; CLOCK_27   ; 5.837 ; 5.837 ; Rise       ; CLOCK_27        ;
+;  LEDG[0]  ; CLOCK_27   ; 5.820 ; 5.820 ; Rise       ; CLOCK_27        ;
+;  LEDG[1]  ; CLOCK_27   ; 5.820 ; 5.820 ; Rise       ; CLOCK_27        ;
+;  LEDG[2]  ; CLOCK_27   ; 5.800 ; 5.800 ; Rise       ; CLOCK_27        ;
+;  LEDG[3]  ; CLOCK_27   ; 5.800 ; 5.800 ; Rise       ; CLOCK_27        ;
+;  LEDG[4]  ; CLOCK_27   ; 5.837 ; 5.837 ; Rise       ; CLOCK_27        ;
+;  LEDG[5]  ; CLOCK_27   ; 5.827 ; 5.827 ; Rise       ; CLOCK_27        ;
+;  LEDG[6]  ; CLOCK_27   ; 5.817 ; 5.817 ; Rise       ; CLOCK_27        ;
+;  LEDG[7]  ; CLOCK_27   ; 5.767 ; 5.767 ; Rise       ; CLOCK_27        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; CLOCK_27   ; 8.960 ; 8.960 ; Rise       ; CLOCK_27        ;
+;  HEX0[0]  ; CLOCK_27   ; 9.234 ; 9.234 ; Rise       ; CLOCK_27        ;
+;  HEX0[1]  ; CLOCK_27   ; 9.202 ; 9.202 ; Rise       ; CLOCK_27        ;
+;  HEX0[2]  ; CLOCK_27   ; 9.208 ; 9.208 ; Rise       ; CLOCK_27        ;
+;  HEX0[3]  ; CLOCK_27   ; 8.984 ; 8.984 ; Rise       ; CLOCK_27        ;
+;  HEX0[4]  ; CLOCK_27   ; 8.988 ; 8.988 ; Rise       ; CLOCK_27        ;
+;  HEX0[5]  ; CLOCK_27   ; 8.960 ; 8.960 ; Rise       ; CLOCK_27        ;
+;  HEX0[6]  ; CLOCK_27   ; 8.969 ; 8.969 ; Rise       ; CLOCK_27        ;
+; HEX1[*]   ; CLOCK_27   ; 7.682 ; 7.682 ; Rise       ; CLOCK_27        ;
+;  HEX1[0]  ; CLOCK_27   ; 7.844 ; 7.844 ; Rise       ; CLOCK_27        ;
+;  HEX1[1]  ; CLOCK_27   ; 7.841 ; 7.841 ; Rise       ; CLOCK_27        ;
+;  HEX1[2]  ; CLOCK_27   ; 7.682 ; 7.682 ; Rise       ; CLOCK_27        ;
+;  HEX1[3]  ; CLOCK_27   ; 7.683 ; 7.683 ; Rise       ; CLOCK_27        ;
+;  HEX1[4]  ; CLOCK_27   ; 7.710 ; 7.710 ; Rise       ; CLOCK_27        ;
+;  HEX1[5]  ; CLOCK_27   ; 7.700 ; 7.700 ; Rise       ; CLOCK_27        ;
+;  HEX1[6]  ; CLOCK_27   ; 7.751 ; 7.751 ; Rise       ; CLOCK_27        ;
+; LEDG[*]   ; CLOCK_27   ; 5.767 ; 5.767 ; Rise       ; CLOCK_27        ;
+;  LEDG[0]  ; CLOCK_27   ; 5.820 ; 5.820 ; Rise       ; CLOCK_27        ;
+;  LEDG[1]  ; CLOCK_27   ; 5.820 ; 5.820 ; Rise       ; CLOCK_27        ;
+;  LEDG[2]  ; CLOCK_27   ; 5.800 ; 5.800 ; Rise       ; CLOCK_27        ;
+;  LEDG[3]  ; CLOCK_27   ; 5.800 ; 5.800 ; Rise       ; CLOCK_27        ;
+;  LEDG[4]  ; CLOCK_27   ; 5.837 ; 5.837 ; Rise       ; CLOCK_27        ;
+;  LEDG[5]  ; CLOCK_27   ; 5.827 ; 5.827 ; Rise       ; CLOCK_27        ;
+;  LEDG[6]  ; CLOCK_27   ; 5.817 ; 5.817 ; Rise       ; CLOCK_27        ;
+;  LEDG[7]  ; CLOCK_27   ; 5.767 ; 5.767 ; Rise       ; CLOCK_27        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------+
+; Fast Model Setup Summary          ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; CLOCK_27 ; -0.559 ; -9.056        ;
++----------+--------+---------------+
+
+
++----------------------------------+
+; Fast Model Hold Summary          ;
++----------+-------+---------------+
+; Clock    ; Slack ; End Point TNS ;
++----------+-------+---------------+
+; CLOCK_27 ; 0.215 ; 0.000         ;
++----------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++----------+--------+--------------------+
+; Clock    ; Slack  ; End Point TNS      ;
++----------+--------+--------------------+
+; CLOCK_27 ; -1.380 ; -48.380            ;
++----------+--------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CLOCK_27'                                                                                                                                   ;
++--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                              ; To Node                                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.559 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.593      ;
+; -0.552 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.461      ;
+; -0.546 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.455      ;
+; -0.535 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.569      ;
+; -0.524 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.558      ;
+; -0.515 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.424      ;
+; -0.500 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.534      ;
+; -0.500 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.534      ;
+; -0.489 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.523      ;
+; -0.485 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[3]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.051     ; 1.396      ;
+; -0.478 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[1]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.051     ; 1.389      ;
+; -0.467 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.376      ;
+; -0.465 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.499      ;
+; -0.465 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.499      ;
+; -0.461 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.370      ;
+; -0.454 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.488      ;
+; -0.451 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.485      ;
+; -0.438 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[4]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.347      ;
+; -0.434 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.343      ;
+; -0.430 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.339      ;
+; -0.430 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.464      ;
+; -0.430 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.464      ;
+; -0.428 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.337      ;
+; -0.416 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.325      ;
+; -0.416 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.450      ;
+; -0.410 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.319      ;
+; -0.400 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[3]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.051     ; 1.311      ;
+; -0.397 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.306      ;
+; -0.395 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.429      ;
+; -0.381 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.415      ;
+; -0.379 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.288      ;
+; -0.370 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.404      ;
+; -0.369 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[2]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.051     ; 1.280      ;
+; -0.367 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[3]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.051     ; 1.278      ;
+; -0.363 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.272      ;
+; -0.360 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.394      ;
+; -0.357 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.266      ;
+; -0.353 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[4]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.262      ;
+; -0.349 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 1.381      ;
+; -0.346 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.380      ;
+; -0.339 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.248      ;
+; -0.336 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.370      ;
+; -0.335 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.369      ;
+; -0.326 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.235      ;
+; -0.325 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.359      ;
+; -0.322 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.356      ;
+; -0.320 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[4]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.229      ;
+; -0.313 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[1]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.050     ; 1.225      ;
+; -0.308 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.217      ;
+; -0.302 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[4]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.211      ;
+; -0.301 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.335      ;
+; -0.301 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.335      ;
+; -0.300 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.334      ;
+; -0.300 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.334      ;
+; -0.290 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.324      ;
+; -0.290 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[1]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.051     ; 1.201      ;
+; -0.288 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; contador_ascii:L0|EA.INC               ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 1.319      ;
+; -0.287 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; contador_ascii:L0|EA.INICIO            ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 1.318      ;
+; -0.287 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.321      ;
+; -0.286 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.195      ;
+; -0.284 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[2]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.051     ; 1.195      ;
+; -0.283 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|EA.INC               ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 1.314      ;
+; -0.282 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|EA.INICIO            ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.001     ; 1.313      ;
+; -0.266 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.300      ;
+; -0.266 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.300      ;
+; -0.265 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.299      ;
+; -0.265 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.299      ;
+; -0.264 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 1.296      ;
+; -0.255 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.289      ;
+; -0.252 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.286      ;
+; -0.252 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.286      ;
+; -0.252 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.286      ;
+; -0.244 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[3]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.051     ; 1.155      ;
+; -0.240 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.053     ; 1.149      ;
+; -0.231 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.265      ;
+; -0.231 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 1.263      ;
+; -0.231 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.265      ;
+; -0.231 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.265      ;
+; -0.230 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.264      ;
+; -0.223 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[6]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.052     ; 1.133      ;
+; -0.220 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.254      ;
+; -0.220 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[1]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 1.252      ;
+; -0.219 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.052     ; 1.129      ;
+; -0.219 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[2]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.050     ; 1.131      ;
+; -0.217 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.052     ; 1.127      ;
+; -0.217 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.251      ;
+; -0.217 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.251      ;
+; -0.217 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[4]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.052     ; 1.127      ;
+; -0.217 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.251      ;
+; -0.216 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|cont[3]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.050     ; 1.128      ;
+; -0.213 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[6]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.000      ; 1.245      ;
+; -0.206 ; contador_ascii:L0|cont[0]~_Duplicate_1 ; contador_ascii:L0|cont[0]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.051     ; 1.117      ;
+; -0.196 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.230      ;
+; -0.196 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.230      ;
+; -0.196 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.230      ;
+; -0.195 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[5]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.052     ; 1.105      ;
+; -0.195 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 1.000        ; 0.002      ; 1.229      ;
+; -0.195 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[2]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.050     ; 1.107      ;
+; -0.194 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[7]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.052     ; 1.104      ;
+; -0.193 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[4]              ; CLOCK_27     ; CLOCK_27    ; 1.000        ; -0.052     ; 1.103      ;
++--------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'CLOCK_27'                                                                                                                                   ;
++-------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                              ; To Node                                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; contador_ascii:L0|cont[3]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; contador_ascii:L0|cont[2]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; contador_ascii:L0|cont[4]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; contador_ascii:L0|cont[5]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; contador_ascii:L0|cont[7]~_Duplicate_1 ; contador_ascii:L0|cont[7]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.367      ;
+; 0.238 ; contador_ascii:L0|EA.D4                ; contador_ascii:L0|EA.D2                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.390      ;
+; 0.241 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|EA.D3                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.393      ;
+; 0.243 ; contador_ascii:L0|atraso[23]           ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.395      ;
+; 0.268 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|EA.TESTE             ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.420      ;
+; 0.299 ; contador_ascii:L0|EA.D3                ; contador_ascii:L0|EA.TESTE             ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.451      ;
+; 0.325 ; contador_ascii:L0|EA.D3                ; contador_ascii:L0|EA.D4                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.477      ;
+; 0.331 ; contador_ascii:L0|atraso[23]           ; contador_ascii:L0|EA.D4                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 0.484      ;
+; 0.341 ; contador_ascii:L0|EA.INC               ; contador_ascii:L0|EA.D1                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.493      ;
+; 0.355 ; contador_ascii:L0|atraso[12]           ; contador_ascii:L0|atraso[12]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.507      ;
+; 0.359 ; contador_ascii:L0|atraso[13]           ; contador_ascii:L0|atraso[13]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.511      ;
+; 0.360 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[5]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[7]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; contador_ascii:L0|atraso[21]           ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.363 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[0]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; contador_ascii:L0|atraso[9]            ; contador_ascii:L0|atraso[9]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; contador_ascii:L0|atraso[10]           ; contador_ascii:L0|atraso[10]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; contador_ascii:L0|atraso[11]           ; contador_ascii:L0|atraso[11]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.515      ;
+; 0.363 ; contador_ascii:L0|EA.TESTE             ; contador_ascii:L0|EA.INICIO            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[3]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.516      ;
+; 0.365 ; contador_ascii:L0|atraso[14]           ; contador_ascii:L0|atraso[14]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.517      ;
+; 0.366 ; contador_ascii:L0|atraso[16]           ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.518      ;
+; 0.366 ; contador_ascii:L0|atraso[19]           ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.518      ;
+; 0.368 ; contador_ascii:L0|atraso[20]           ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.520      ;
+; 0.369 ; contador_ascii:L0|EA.TESTE             ; contador_ascii:L0|EA.INC               ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.521      ;
+; 0.371 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[4]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.371 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[6]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.523      ;
+; 0.372 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[1]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[2]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[8]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.524      ;
+; 0.376 ; contador_ascii:L0|atraso[15]           ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; contador_ascii:L0|atraso[17]           ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.528      ;
+; 0.376 ; contador_ascii:L0|atraso[18]           ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.528      ;
+; 0.391 ; contador_ascii:L0|EA.D1                ; contador_ascii:L0|EA.D2                ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.543      ;
+; 0.438 ; contador_ascii:L0|atraso[22]           ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.590      ;
+; 0.453 ; contador_ascii:L0|atraso[23]           ; contador_ascii:L0|EA.TESTE             ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 0.606      ;
+; 0.493 ; contador_ascii:L0|atraso[12]           ; contador_ascii:L0|atraso[13]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.645      ;
+; 0.497 ; contador_ascii:L0|atraso[13]           ; contador_ascii:L0|atraso[14]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.649      ;
+; 0.498 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[6]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.650      ;
+; 0.498 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[8]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.650      ;
+; 0.498 ; contador_ascii:L0|atraso[21]           ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.650      ;
+; 0.501 ; contador_ascii:L0|atraso[9]            ; contador_ascii:L0|atraso[10]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.653      ;
+; 0.501 ; contador_ascii:L0|atraso[10]           ; contador_ascii:L0|atraso[11]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.653      ;
+; 0.501 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[1]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.653      ;
+; 0.503 ; contador_ascii:L0|atraso[14]           ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.655      ;
+; 0.504 ; contador_ascii:L0|atraso[16]           ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.656      ;
+; 0.508 ; contador_ascii:L0|atraso[20]           ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.660      ;
+; 0.511 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[5]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.663      ;
+; 0.511 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[7]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.663      ;
+; 0.512 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[9]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.664      ;
+; 0.512 ; contador_ascii:L0|atraso[2]            ; contador_ascii:L0|atraso[3]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.664      ;
+; 0.512 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[2]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.664      ;
+; 0.516 ; contador_ascii:L0|atraso[15]           ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.668      ;
+; 0.516 ; contador_ascii:L0|atraso[18]           ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.668      ;
+; 0.516 ; contador_ascii:L0|atraso[17]           ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.668      ;
+; 0.528 ; contador_ascii:L0|atraso[12]           ; contador_ascii:L0|atraso[14]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.680      ;
+; 0.532 ; contador_ascii:L0|atraso[13]           ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.684      ;
+; 0.533 ; contador_ascii:L0|atraso[21]           ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.685      ;
+; 0.533 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[7]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.685      ;
+; 0.533 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[9]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.685      ;
+; 0.536 ; contador_ascii:L0|atraso[9]            ; contador_ascii:L0|atraso[11]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.688      ;
+; 0.536 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[2]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.688      ;
+; 0.538 ; contador_ascii:L0|atraso[14]           ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.690      ;
+; 0.539 ; contador_ascii:L0|atraso[16]           ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.691      ;
+; 0.543 ; contador_ascii:L0|atraso[20]           ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.695      ;
+; 0.546 ; contador_ascii:L0|atraso[11]           ; contador_ascii:L0|atraso[12]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.002      ; 0.700      ;
+; 0.546 ; contador_ascii:L0|atraso[4]            ; contador_ascii:L0|atraso[6]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.698      ;
+; 0.546 ; contador_ascii:L0|atraso[6]            ; contador_ascii:L0|atraso[8]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.698      ;
+; 0.547 ; contador_ascii:L0|atraso[8]            ; contador_ascii:L0|atraso[10]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.699      ;
+; 0.547 ; contador_ascii:L0|atraso[1]            ; contador_ascii:L0|atraso[3]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.699      ;
+; 0.551 ; contador_ascii:L0|atraso[15]           ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.703      ;
+; 0.551 ; contador_ascii:L0|atraso[17]           ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.703      ;
+; 0.557 ; contador_ascii:L0|atraso[3]            ; contador_ascii:L0|atraso[4]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.709      ;
+; 0.559 ; contador_ascii:L0|atraso[19]           ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.711      ;
+; 0.563 ; contador_ascii:L0|atraso[12]           ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.715      ;
+; 0.567 ; contador_ascii:L0|atraso[13]           ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.719      ;
+; 0.568 ; contador_ascii:L0|atraso[5]            ; contador_ascii:L0|atraso[8]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.720      ;
+; 0.568 ; contador_ascii:L0|atraso[7]            ; contador_ascii:L0|atraso[10]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.720      ;
+; 0.571 ; contador_ascii:L0|atraso[0]            ; contador_ascii:L0|atraso[3]            ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.723      ;
+; 0.573 ; contador_ascii:L0|atraso[14]           ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[12]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[13]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[14]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[15]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[16]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[17]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[18]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[20]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[21]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[22]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.D2                ; contador_ascii:L0|atraso[23]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; -0.001     ; 0.725      ;
+; 0.574 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[7]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 0.727      ;
+; 0.574 ; contador_ascii:L0|atraso[16]           ; contador_ascii:L0|atraso[19]           ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.000      ; 0.726      ;
+; 0.575 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[3]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 0.728      ;
+; 0.575 ; contador_ascii:L0|EA.INICIO            ; contador_ascii:L0|cont[4]~_Duplicate_1 ; CLOCK_27     ; CLOCK_27    ; 0.000        ; 0.001      ; 0.728      ;
++-------+----------------------------------------+----------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLOCK_27'                                                                                 ;
++--------+--------------+----------------+------------------+----------+------------+----------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                                 ;
++--------+--------------+----------------+------------------+----------+------------+----------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; CLOCK_27 ; Rise       ; CLOCK_27                               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D1                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D1                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D2                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D2                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D3                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D3                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D4                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.D4                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.INC               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.INC               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.INICIO            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.INICIO            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.TESTE             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|EA.TESTE             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[0]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[0]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[10]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[10]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[11]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[11]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[12]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[12]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[13]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[13]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[14]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[14]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[15]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[15]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[16]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[16]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[17]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[17]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[18]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[18]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[19]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[19]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[1]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[1]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[20]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[20]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[21]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[21]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[22]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[22]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[23]           ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[23]           ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[2]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[2]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[3]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[3]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[4]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[4]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[5]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[5]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[6]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[6]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[7]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[7]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[8]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[8]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[9]            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|atraso[9]            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[0]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[0]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[0]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[0]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[1]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[1]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[1]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[1]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[2]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[2]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[2]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[2]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[3]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[3]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[3]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[3]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[4]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[4]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[4]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[4]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[5]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[5]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[5]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[5]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[6]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[6]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[6]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[6]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[7]              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[7]              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[7]~_Duplicate_1 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; contador_ascii:L0|cont[7]~_Duplicate_1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; CLOCK_27|combout                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; CLOCK_27|combout                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; CLOCK_27~clkctrl|inclk[0]              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLOCK_27 ; Rise       ; CLOCK_27~clkctrl|inclk[0]              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLOCK_27 ; Rise       ; CLOCK_27~clkctrl|outclk                ;
++--------+--------------+----------------+------------------+----------+------------+----------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; KEY[*]    ; CLOCK_27   ; 3.359 ; 3.359 ; Rise       ; CLOCK_27        ;
+;  KEY[0]   ; CLOCK_27   ; 3.359 ; 3.359 ; Rise       ; CLOCK_27        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; KEY[*]    ; CLOCK_27   ; -2.452 ; -2.452 ; Rise       ; CLOCK_27        ;
+;  KEY[0]   ; CLOCK_27   ; -2.452 ; -2.452 ; Rise       ; CLOCK_27        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; CLOCK_27   ; 5.485 ; 5.485 ; Rise       ; CLOCK_27        ;
+;  HEX0[0]  ; CLOCK_27   ; 5.485 ; 5.485 ; Rise       ; CLOCK_27        ;
+;  HEX0[1]  ; CLOCK_27   ; 5.452 ; 5.452 ; Rise       ; CLOCK_27        ;
+;  HEX0[2]  ; CLOCK_27   ; 5.468 ; 5.468 ; Rise       ; CLOCK_27        ;
+;  HEX0[3]  ; CLOCK_27   ; 5.369 ; 5.369 ; Rise       ; CLOCK_27        ;
+;  HEX0[4]  ; CLOCK_27   ; 5.366 ; 5.366 ; Rise       ; CLOCK_27        ;
+;  HEX0[5]  ; CLOCK_27   ; 5.358 ; 5.358 ; Rise       ; CLOCK_27        ;
+;  HEX0[6]  ; CLOCK_27   ; 5.354 ; 5.354 ; Rise       ; CLOCK_27        ;
+; HEX1[*]   ; CLOCK_27   ; 4.647 ; 4.647 ; Rise       ; CLOCK_27        ;
+;  HEX1[0]  ; CLOCK_27   ; 4.647 ; 4.647 ; Rise       ; CLOCK_27        ;
+;  HEX1[1]  ; CLOCK_27   ; 4.640 ; 4.640 ; Rise       ; CLOCK_27        ;
+;  HEX1[2]  ; CLOCK_27   ; 4.517 ; 4.517 ; Rise       ; CLOCK_27        ;
+;  HEX1[3]  ; CLOCK_27   ; 4.519 ; 4.519 ; Rise       ; CLOCK_27        ;
+;  HEX1[4]  ; CLOCK_27   ; 4.546 ; 4.546 ; Rise       ; CLOCK_27        ;
+;  HEX1[5]  ; CLOCK_27   ; 4.537 ; 4.537 ; Rise       ; CLOCK_27        ;
+;  HEX1[6]  ; CLOCK_27   ; 4.577 ; 4.577 ; Rise       ; CLOCK_27        ;
+; LEDG[*]   ; CLOCK_27   ; 3.409 ; 3.409 ; Rise       ; CLOCK_27        ;
+;  LEDG[0]  ; CLOCK_27   ; 3.391 ; 3.391 ; Rise       ; CLOCK_27        ;
+;  LEDG[1]  ; CLOCK_27   ; 3.391 ; 3.391 ; Rise       ; CLOCK_27        ;
+;  LEDG[2]  ; CLOCK_27   ; 3.371 ; 3.371 ; Rise       ; CLOCK_27        ;
+;  LEDG[3]  ; CLOCK_27   ; 3.371 ; 3.371 ; Rise       ; CLOCK_27        ;
+;  LEDG[4]  ; CLOCK_27   ; 3.409 ; 3.409 ; Rise       ; CLOCK_27        ;
+;  LEDG[5]  ; CLOCK_27   ; 3.399 ; 3.399 ; Rise       ; CLOCK_27        ;
+;  LEDG[6]  ; CLOCK_27   ; 3.389 ; 3.389 ; Rise       ; CLOCK_27        ;
+;  LEDG[7]  ; CLOCK_27   ; 3.339 ; 3.339 ; Rise       ; CLOCK_27        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; CLOCK_27   ; 4.951 ; 4.951 ; Rise       ; CLOCK_27        ;
+;  HEX0[0]  ; CLOCK_27   ; 5.091 ; 5.091 ; Rise       ; CLOCK_27        ;
+;  HEX0[1]  ; CLOCK_27   ; 5.058 ; 5.058 ; Rise       ; CLOCK_27        ;
+;  HEX0[2]  ; CLOCK_27   ; 5.063 ; 5.063 ; Rise       ; CLOCK_27        ;
+;  HEX0[3]  ; CLOCK_27   ; 4.971 ; 4.971 ; Rise       ; CLOCK_27        ;
+;  HEX0[4]  ; CLOCK_27   ; 4.974 ; 4.974 ; Rise       ; CLOCK_27        ;
+;  HEX0[5]  ; CLOCK_27   ; 4.951 ; 4.951 ; Rise       ; CLOCK_27        ;
+;  HEX0[6]  ; CLOCK_27   ; 4.959 ; 4.959 ; Rise       ; CLOCK_27        ;
+; HEX1[*]   ; CLOCK_27   ; 4.292 ; 4.292 ; Rise       ; CLOCK_27        ;
+;  HEX1[0]  ; CLOCK_27   ; 4.418 ; 4.418 ; Rise       ; CLOCK_27        ;
+;  HEX1[1]  ; CLOCK_27   ; 4.416 ; 4.416 ; Rise       ; CLOCK_27        ;
+;  HEX1[2]  ; CLOCK_27   ; 4.294 ; 4.294 ; Rise       ; CLOCK_27        ;
+;  HEX1[3]  ; CLOCK_27   ; 4.292 ; 4.292 ; Rise       ; CLOCK_27        ;
+;  HEX1[4]  ; CLOCK_27   ; 4.318 ; 4.318 ; Rise       ; CLOCK_27        ;
+;  HEX1[5]  ; CLOCK_27   ; 4.309 ; 4.309 ; Rise       ; CLOCK_27        ;
+;  HEX1[6]  ; CLOCK_27   ; 4.350 ; 4.350 ; Rise       ; CLOCK_27        ;
+; LEDG[*]   ; CLOCK_27   ; 3.339 ; 3.339 ; Rise       ; CLOCK_27        ;
+;  LEDG[0]  ; CLOCK_27   ; 3.391 ; 3.391 ; Rise       ; CLOCK_27        ;
+;  LEDG[1]  ; CLOCK_27   ; 3.391 ; 3.391 ; Rise       ; CLOCK_27        ;
+;  LEDG[2]  ; CLOCK_27   ; 3.371 ; 3.371 ; Rise       ; CLOCK_27        ;
+;  LEDG[3]  ; CLOCK_27   ; 3.371 ; 3.371 ; Rise       ; CLOCK_27        ;
+;  LEDG[4]  ; CLOCK_27   ; 3.409 ; 3.409 ; Rise       ; CLOCK_27        ;
+;  LEDG[5]  ; CLOCK_27   ; 3.399 ; 3.399 ; Rise       ; CLOCK_27        ;
+;  LEDG[6]  ; CLOCK_27   ; 3.389 ; 3.389 ; Rise       ; CLOCK_27        ;
+;  LEDG[7]  ; CLOCK_27   ; 3.339 ; 3.339 ; Rise       ; CLOCK_27        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -2.249  ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+;  CLOCK_27        ; -2.249  ; 0.215 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -66.065 ; 0.0   ; 0.0      ; 0.0     ; -48.38              ;
+;  CLOCK_27        ; -66.065 ; 0.000 ; N/A      ; N/A     ; -48.380             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; KEY[*]    ; CLOCK_27   ; 6.311 ; 6.311 ; Rise       ; CLOCK_27        ;
+;  KEY[0]   ; CLOCK_27   ; 6.311 ; 6.311 ; Rise       ; CLOCK_27        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; KEY[*]    ; CLOCK_27   ; -2.452 ; -2.452 ; Rise       ; CLOCK_27        ;
+;  KEY[0]   ; CLOCK_27   ; -2.452 ; -2.452 ; Rise       ; CLOCK_27        ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; CLOCK_27   ; 9.924 ; 9.924 ; Rise       ; CLOCK_27        ;
+;  HEX0[0]  ; CLOCK_27   ; 9.924 ; 9.924 ; Rise       ; CLOCK_27        ;
+;  HEX0[1]  ; CLOCK_27   ; 9.891 ; 9.891 ; Rise       ; CLOCK_27        ;
+;  HEX0[2]  ; CLOCK_27   ; 9.903 ; 9.903 ; Rise       ; CLOCK_27        ;
+;  HEX0[3]  ; CLOCK_27   ; 9.675 ; 9.675 ; Rise       ; CLOCK_27        ;
+;  HEX0[4]  ; CLOCK_27   ; 9.676 ; 9.676 ; Rise       ; CLOCK_27        ;
+;  HEX0[5]  ; CLOCK_27   ; 9.666 ; 9.666 ; Rise       ; CLOCK_27        ;
+;  HEX0[6]  ; CLOCK_27   ; 9.661 ; 9.661 ; Rise       ; CLOCK_27        ;
+; HEX1[*]   ; CLOCK_27   ; 8.375 ; 8.375 ; Rise       ; CLOCK_27        ;
+;  HEX1[0]  ; CLOCK_27   ; 8.375 ; 8.375 ; Rise       ; CLOCK_27        ;
+;  HEX1[1]  ; CLOCK_27   ; 8.370 ; 8.370 ; Rise       ; CLOCK_27        ;
+;  HEX1[2]  ; CLOCK_27   ; 8.186 ; 8.186 ; Rise       ; CLOCK_27        ;
+;  HEX1[3]  ; CLOCK_27   ; 8.211 ; 8.211 ; Rise       ; CLOCK_27        ;
+;  HEX1[4]  ; CLOCK_27   ; 8.241 ; 8.241 ; Rise       ; CLOCK_27        ;
+;  HEX1[5]  ; CLOCK_27   ; 8.230 ; 8.230 ; Rise       ; CLOCK_27        ;
+;  HEX1[6]  ; CLOCK_27   ; 8.281 ; 8.281 ; Rise       ; CLOCK_27        ;
+; LEDG[*]   ; CLOCK_27   ; 5.837 ; 5.837 ; Rise       ; CLOCK_27        ;
+;  LEDG[0]  ; CLOCK_27   ; 5.820 ; 5.820 ; Rise       ; CLOCK_27        ;
+;  LEDG[1]  ; CLOCK_27   ; 5.820 ; 5.820 ; Rise       ; CLOCK_27        ;
+;  LEDG[2]  ; CLOCK_27   ; 5.800 ; 5.800 ; Rise       ; CLOCK_27        ;
+;  LEDG[3]  ; CLOCK_27   ; 5.800 ; 5.800 ; Rise       ; CLOCK_27        ;
+;  LEDG[4]  ; CLOCK_27   ; 5.837 ; 5.837 ; Rise       ; CLOCK_27        ;
+;  LEDG[5]  ; CLOCK_27   ; 5.827 ; 5.827 ; Rise       ; CLOCK_27        ;
+;  LEDG[6]  ; CLOCK_27   ; 5.817 ; 5.817 ; Rise       ; CLOCK_27        ;
+;  LEDG[7]  ; CLOCK_27   ; 5.767 ; 5.767 ; Rise       ; CLOCK_27        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX0[*]   ; CLOCK_27   ; 4.951 ; 4.951 ; Rise       ; CLOCK_27        ;
+;  HEX0[0]  ; CLOCK_27   ; 5.091 ; 5.091 ; Rise       ; CLOCK_27        ;
+;  HEX0[1]  ; CLOCK_27   ; 5.058 ; 5.058 ; Rise       ; CLOCK_27        ;
+;  HEX0[2]  ; CLOCK_27   ; 5.063 ; 5.063 ; Rise       ; CLOCK_27        ;
+;  HEX0[3]  ; CLOCK_27   ; 4.971 ; 4.971 ; Rise       ; CLOCK_27        ;
+;  HEX0[4]  ; CLOCK_27   ; 4.974 ; 4.974 ; Rise       ; CLOCK_27        ;
+;  HEX0[5]  ; CLOCK_27   ; 4.951 ; 4.951 ; Rise       ; CLOCK_27        ;
+;  HEX0[6]  ; CLOCK_27   ; 4.959 ; 4.959 ; Rise       ; CLOCK_27        ;
+; HEX1[*]   ; CLOCK_27   ; 4.292 ; 4.292 ; Rise       ; CLOCK_27        ;
+;  HEX1[0]  ; CLOCK_27   ; 4.418 ; 4.418 ; Rise       ; CLOCK_27        ;
+;  HEX1[1]  ; CLOCK_27   ; 4.416 ; 4.416 ; Rise       ; CLOCK_27        ;
+;  HEX1[2]  ; CLOCK_27   ; 4.294 ; 4.294 ; Rise       ; CLOCK_27        ;
+;  HEX1[3]  ; CLOCK_27   ; 4.292 ; 4.292 ; Rise       ; CLOCK_27        ;
+;  HEX1[4]  ; CLOCK_27   ; 4.318 ; 4.318 ; Rise       ; CLOCK_27        ;
+;  HEX1[5]  ; CLOCK_27   ; 4.309 ; 4.309 ; Rise       ; CLOCK_27        ;
+;  HEX1[6]  ; CLOCK_27   ; 4.350 ; 4.350 ; Rise       ; CLOCK_27        ;
+; LEDG[*]   ; CLOCK_27   ; 3.339 ; 3.339 ; Rise       ; CLOCK_27        ;
+;  LEDG[0]  ; CLOCK_27   ; 3.391 ; 3.391 ; Rise       ; CLOCK_27        ;
+;  LEDG[1]  ; CLOCK_27   ; 3.391 ; 3.391 ; Rise       ; CLOCK_27        ;
+;  LEDG[2]  ; CLOCK_27   ; 3.371 ; 3.371 ; Rise       ; CLOCK_27        ;
+;  LEDG[3]  ; CLOCK_27   ; 3.371 ; 3.371 ; Rise       ; CLOCK_27        ;
+;  LEDG[4]  ; CLOCK_27   ; 3.409 ; 3.409 ; Rise       ; CLOCK_27        ;
+;  LEDG[5]  ; CLOCK_27   ; 3.399 ; 3.399 ; Rise       ; CLOCK_27        ;
+;  LEDG[6]  ; CLOCK_27   ; 3.389 ; 3.389 ; Rise       ; CLOCK_27        ;
+;  LEDG[7]  ; CLOCK_27   ; 3.339 ; 3.339 ; Rise       ; CLOCK_27        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK_27   ; CLOCK_27 ; 519      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK_27   ; CLOCK_27 ; 519      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 47    ; 47   ;
+; Unconstrained Output Ports      ; 22    ; 22   ;
+; Unconstrained Output Port Paths ; 64    ; 64   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Oct 10 08:42:35 2014
+Info: Command: quartus_sta topo -c topo
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'topo.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLOCK_27 CLOCK_27
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.249
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.249       -66.065 CLOCK_27 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 CLOCK_27 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -48.380 CLOCK_27 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.559
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.559        -9.056 CLOCK_27 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 CLOCK_27 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -48.380 CLOCK_27 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 407 megabytes
+    Info: Processing ended: Fri Oct 10 08:42:36 2014
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

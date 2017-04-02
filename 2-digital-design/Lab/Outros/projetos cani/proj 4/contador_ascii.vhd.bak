@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all; 
+
+entity contador_ascii is
+	port (
+		valorASCII: out std_logic_vector(7 downto 0);
+		clock: in std_logic;
+		reset: in std_logic
+	);
+end contador_ascii;
+
+architecture FSM_beh of contador_ascii is
+	type states is (S0, S1, S2, S3, D1, D2, D3, D4);
+	signal EA, PE: states;
+	signal signal_clock: std_logic;
+	signal reset: std_logic;
+begin
+
+process(clock, … ) -- Ao usar o clock de 27MHz, esse process será
+ begin -- executado 27 milhões de vezes por segundo.
+… -- Colocar aqui os estados do contador ASCII (ex. Inicio, inc, fim). 
+when D1 => -- Estado para iniciar contador do atraso
+ atraso <= ( others => '0' );
+ EA <= D2;
+when D2 => -- Estado para gerar atraso ao mostrar dado no LEDG
+ atraso <= atraso + 1; -- “atraso” foi inicializado com zero em D1.
+ EA <= D3;
+when D3 => -- Estado para testar se atingiu o valor máximo.
+ if atraso >= x"800000" then -- 8.388.608 / 27.000.000 = 0,3 * 3 = 1 s.
+ EA <= S1; -- Ao atingir o valor máximo, sai do laço de atraso
+ else -- e volta para o processamento do contador ASCII.
+ EA <= D4; -- Permanece no laço de contagem para gerar atraso.
+ end if;
+when D4 => -- Estado para continuar contagem do atraso.
+ EA <= D2; -- Es

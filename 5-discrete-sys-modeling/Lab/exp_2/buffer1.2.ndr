@@ -1,0 +1,33 @@
+p 120.0 65.0 {M1 livre} 1 n
+p 120.0 230.0 {M1 operando} 0 n
+p 645.0 80.0 {M2 livre} 1 n
+p 645.0 245.0 {M2 operando} 0 n
+t 205.0 135.0 fimM1 n 0 w n {} ne
+t 560.0 145.0 inicM2 n 0 w n {} ne
+p 385.0 245.0 {buffer ocupado} 0 n
+p 385.0 50.0 {buffer livre} 3 n
+t 720.0 150.0 fimM2' n 0 w n {} ne
+t 30.0 140.0 inicM1' n 0 w n {} ne
+p 395.0 660.0 palletsLivres 5 n
+p 395.0 540.0 recursoMaquinas 1 n
+e fimM1 0.8573883567 57.62811826 {buffer ocupado} 0.4841372413 50.24937811 1 n
+e {buffer ocupado} 0.02983026972 59.03388857 inicM2 0.6335946057 52.40229003 1 n
+e inicM2 0.3931105604 49.81967483 {buffer livre} 0.9541545518 56.32051134 1 n
+e {buffer livre} 0.5592938518 93.40770846 fimM1 0.07983276469 106.0660172 1 n
+e {M1 operando} fimM1 1 n
+e fimM1 {M1 livre} 1 n
+e {M2 livre} inicM2 1 n
+e inicM2 {M2 operando} 1 n
+e fimM2' 0.7433723779 144.1249458 palletsLivres 0.9950124501 319.1567013 1 n
+e palletsLivres 0.5021009333 303.0264015 inicM1' 0.7448677492 124.0644994 1 n
+e {M1 livre} inicM1' 1 n
+e inicM1' {M1 operando} 1 n
+e {M2 operando} fimM2' 1 n
+e fimM2' {M2 livre} 1 n
+e recursoMaquinas 0.5018613764 171.0116955 inicM1' 0.7852766236 145.5609838 1 n
+e fimM1 recursoMaquinas 1 n
+e recursoMaquinas inicM2 1 n
+e fimM2' 0.7307379197 149.0905765 recursoMaquinas 0.009011286192 247.396443 1 n
+h {buffer1.2}
+
+

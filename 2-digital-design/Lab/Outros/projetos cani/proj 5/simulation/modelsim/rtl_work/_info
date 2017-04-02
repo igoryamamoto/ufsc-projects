@@ -1,0 +1,63 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Ígor\Google Drive\Automação\14.2\Sistemas Digitais\Lab\projetos cani\proj 5\simulation\modelsim
+Efsm_calculadora
+Z1 w1415991165
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\Ígor\Google Drive\Automação\14.2\Sistemas Digitais\Lab\projetos cani\proj 5\simulation\modelsim
+Z7 8C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/fsm_calculadora.vhd
+Z8 FC:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/fsm_calculadora.vhd
+l0
+L5
+V6GFn9A_aXH_E]G]UR0=><2
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1416825860.805000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/fsm_calculadora.vhd|
+Z12 !s107 C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/fsm_calculadora.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 ZJfmNT5e^Dha]T1;R;OVN0
+!i10b 1
+Afsm_beh
+R2
+R3
+R4
+R5
+DEx4 work 15 fsm_calculadora 0 22 6GFn9A_aXH_E]G]UR0=><2
+l19
+L16
+VHM09SmC=`9fCD^[=VHIMn3
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 5Mm3i9[hTDnH[e`<?Q>mg2
+!i10b 1
+Etopo
+w1415991167
+R4
+R5
+R6
+8C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd
+FC:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd
+l0
+L34
+VWH1h^CJFP[hCWiJFNX6R:0
+!s100 =JMM775:;GDDGh`62I=QY0
+R9
+31
+!i10b 1
+!s108 1416825861.101000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd|
+!s107 C:/Users/Ígor/Google Drive/Automação/14.2/Sistemas Digitais/Lab/projetos cani/proj 5/topo.vhd|
+R13
+R14

@@ -1,0 +1,15 @@
+A seguir algumas explicacoes sobre o diagrama de blocos fornecido na expecificacao do trabalho.
+ 
+Os componentes CviaH e CviaV sao dois contadores, com os seguintes sinais de entrada e saida:
+ 
+- CTEN, "counter enable" - Quando essa entrada de 1 bit for '1', o contador e' habilitado, e o valor contido na entrada LOAD e' utilizado como valor inicial do contador.
+ 
+- LOAD - sinal de entrada de 1 bit utilizado para sinalizar que o valor de fim de contagem deve ser carregado. O valor de fim de contagem devera' ser 15, para o caso da temporização de 16 segundos (0 a 15), ou 3 para o caso da temporização de 4 segundos (0 a 3).
+ 
+- CviaH - sinal de saida de 4 bits que indica os estados do contador (0, 1, 2, 3, 4, ..., 15). No caso de um contador "crescente", o valor final de contagem será 15. No caso de um contador "decrescente", o valor final de contagem será 0. 
+ 
+- CviaV - sinal de saida de 4 bits que indica os estados do contador (0, 1, 2, 3, 4, 5). 
+ 
+- RESET - sinal de entrada de 1 bit utilizado para inicializar o contador, ou seja, colocando o contador em seu estado de contagem inicial. 
+ 
+O componente "Lógica de Controle" possui, além das entradas e saídas descritas anteriormente, a entrada X, e as saídas para as indicações luminosas das vias H e V.

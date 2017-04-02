@@ -1,0 +1,47 @@
+s 205.0 50.0 3
+s 70.0 60.0 4
+s 60.0 270.0 1
+s 155.0 250.0 2
+s 225.0 240.0 8
+s 305.0 235.0 5
+s 380.0 230.0 12
+s 455.0 220.0 13
+s 525.0 210.0 11
+s 590.0 125.0 15
+s 545.0 35.0 14
+s 450.0 30.0 9
+s 365.0 35.0 7
+s 285.0 45.0 10
+s 140.0 40.0 6
+s 30.0 160.0 0
+e 0 1 inicM1 n
+e 1 2 fimM1 n
+e 2 3 inicM1 n
+e 2 4 inicM2 n
+e 3 5 fimM1 n
+e 3 6 inicM2 n
+e 4 0 fimM2 n
+e 4 6 inicM1 n
+e 5 7 inicM1 n
+e 5 8 inicM2 n
+e 6 1 fimM2 n
+e 6 8 fimM1 n
+e 7 9 fimM1 n
+e 7 10 inicM2 n
+e 8 2 fimM2 n
+e 8 10 inicM1 n
+e 9 11 inicM1 n
+e 9 12 inicM2 n
+e 10 3 fimM2 n
+e 10 12 fimM1 n
+e 11 13 inicM2 n
+e 12 5 fimM2 n
+e 12 13 inicM1 n
+e 13 7 fimM2 n
+e 13 14 fimM1 n
+e 14 9 fimM2 n
+e 14 15 inicM1 n
+e 15 11 fimM2 n
+h {buffer1.0}
+
+
