@@ -1,0 +1,1287 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/peixeboi/ontologies/2017/8/untitled-ontology-9"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/peixeboi/ontologies/2017/8/untitled-ontology-9">
+    <Prefix name="" IRI="http://www.semanticweb.org/peixeboi/ontologies/2017/8/untitled-ontology-9"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="#eats"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VegetarianBurger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Katsu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Juice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChickenPizza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soda"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eatenBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lactoseFree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vegan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#madeBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#italianFoodLover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#glutenFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Temaki"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cuisine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoulGourmet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChinaInBox"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Elder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DiRoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#foodLover"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FortuneCookie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Igor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#goodForHypertensive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CheeseBurger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#japaneseDish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ItalianCuisine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hossomaki"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andrei"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#italianDish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hypertensive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AmericanCuisine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Juarez"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ichiro"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToCuisine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#likes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chineseDish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChineseCuisine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#japaneseFoodLover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#burgerLover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sushiHouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4CheesePizza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Felipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dish"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFavoriteCuisine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotRoll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#restaurant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VegetarianPizza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VeganBurger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#goodForDiabetics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChocolateSushi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#glutenIntolerant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lactoseIntolerant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BaconBurger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UsinaDoHamburger"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#neighborhood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diabetics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vegetarianDish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kretzer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vegetarian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Niguiri"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pizzeria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chineseHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#asianFoodLover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#veganDish"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uramaki"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JapaneseCuisine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFavoriteDish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harumaki"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yakisoba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VeganPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#americanDish"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#city"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#burgerShop"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#americanDish"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#dish"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#belongsToCuisine"/>
+                <NamedIndividual IRI="#AmericanCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#asianFoodLover"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#ChineseCuisine"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#JapaneseCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#burgerLover"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasFavoriteCuisine"/>
+                <NamedIndividual IRI="#AmericanCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#chineseDish"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#dish"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#belongsToCuisine"/>
+                <NamedIndividual IRI="#ChineseCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#diabetics"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <Class IRI="#goodForDiabetics"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#foodLover"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#likes"/>
+                <Class IRI="#cuisine"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#glutenIntolerant"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <Class IRI="#glutenFree"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#hypertensive"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <Class IRI="#goodForHypertensive"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#italianDish"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#dish"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#belongsToCuisine"/>
+                <NamedIndividual IRI="#ItalianCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#italianFoodLover"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasFavoriteCuisine"/>
+                <NamedIndividual IRI="#ItalianCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#japaneseDish"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#dish"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#belongsToCuisine"/>
+                <NamedIndividual IRI="#JapaneseCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#japaneseFoodLover"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasFavoriteCuisine"/>
+                <NamedIndividual IRI="#JapaneseCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#lactoseIntolerant"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <Class IRI="#lactoseFree"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#vegan"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <Class IRI="#veganDish"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#vegetarian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#eats"/>
+                <Class IRI="#vegetarianDish"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#americanDish"/>
+        <Class IRI="#dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#asianFoodLover"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#burgerLover"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#burgerShop"/>
+        <Class IRI="#restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chineseDish"/>
+        <Class IRI="#dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chineseHouse"/>
+        <Class IRI="#restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diabetics"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#foodLover"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#glutenFree"/>
+        <Class IRI="#dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#glutenIntolerant"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#goodForDiabetics"/>
+        <Class IRI="#dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#goodForHypertensive"/>
+        <Class IRI="#dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hypertensive"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#italianDish"/>
+        <Class IRI="#dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#italianFoodLover"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#japaneseDish"/>
+        <Class IRI="#dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#japaneseFoodLover"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lactoseFree"/>
+        <Class IRI="#dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lactoseIntolerant"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pizzeria"/>
+        <Class IRI="#restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sushiHouse"/>
+        <Class IRI="#restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vegan"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#veganDish"/>
+        <Class IRI="#vegetarianDish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vegetarian"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vegetarianDish"/>
+        <Class IRI="#dish"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#likes"/>
+                <Class IRI="#americanDish"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#likes"/>
+            <NamedIndividual IRI="#AmericanCuisine"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#likes"/>
+                <Class IRI="#chineseDish"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#likes"/>
+            <NamedIndividual IRI="#ChineseCuisine"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#likes"/>
+                <Class IRI="#italianDish"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#likes"/>
+            <NamedIndividual IRI="#ItalianCuisine"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#likes"/>
+                <Class IRI="#japaneseDish"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#likes"/>
+            <NamedIndividual IRI="#JapaneseCuisine"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#AmericanCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#SoulGourmet"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#UsinaDoHamburger"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#ChineseCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#likes"/>
+            <NamedIndividual IRI="#ChinaInBox"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#ItalianCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#DiRoma"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#Parma"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#JapaneseCuisine"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#Ichiro"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#likes"/>
+                <NamedIndividual IRI="#Katsu"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#cuisine"/>
+        <NamedIndividual IRI="#AmericanCuisine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#hypertensive"/>
+        <NamedIndividual IRI="#Andrei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#americanDish"/>
+        <NamedIndividual IRI="#BaconBurger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseFree"/>
+        <NamedIndividual IRI="#BaconBurger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#americanDish"/>
+        <NamedIndividual IRI="#CheeseBurger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#glutenFree"/>
+        <NamedIndividual IRI="#CheeseBurger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#italianDish"/>
+        <NamedIndividual IRI="#ChickenPizza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#chineseHouse"/>
+        <NamedIndividual IRI="#ChinaInBox"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cuisine"/>
+        <NamedIndividual IRI="#ChineseCuisine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#japaneseDish"/>
+        <NamedIndividual IRI="#ChocolateSushi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pizzeria"/>
+        <NamedIndividual IRI="#DiRoma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vegan"/>
+        <NamedIndividual IRI="#Elder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseIntolerant"/>
+        <NamedIndividual IRI="#Felipe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#chineseDish"/>
+        <NamedIndividual IRI="#FortuneCookie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForDiabetics"/>
+        <NamedIndividual IRI="#FortuneCookie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForHypertensive"/>
+        <NamedIndividual IRI="#FortuneCookie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#veganDish"/>
+        <NamedIndividual IRI="#FortuneCookie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForDiabetics"/>
+        <NamedIndividual IRI="#Harumaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForHypertensive"/>
+        <NamedIndividual IRI="#Harumaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#japaneseDish"/>
+        <NamedIndividual IRI="#Harumaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseFree"/>
+        <NamedIndividual IRI="#Harumaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#veganDish"/>
+        <NamedIndividual IRI="#Harumaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#glutenFree"/>
+        <NamedIndividual IRI="#Hossomaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForDiabetics"/>
+        <NamedIndividual IRI="#Hossomaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForHypertensive"/>
+        <NamedIndividual IRI="#Hossomaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#japaneseDish"/>
+        <NamedIndividual IRI="#Hossomaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseFree"/>
+        <NamedIndividual IRI="#Hossomaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#veganDish"/>
+        <NamedIndividual IRI="#Hossomaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForDiabetics"/>
+        <NamedIndividual IRI="#HotRoll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForHypertensive"/>
+        <NamedIndividual IRI="#HotRoll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#japaneseDish"/>
+        <NamedIndividual IRI="#HotRoll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseFree"/>
+        <NamedIndividual IRI="#HotRoll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#veganDish"/>
+        <NamedIndividual IRI="#HotRoll"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sushiHouse"/>
+        <NamedIndividual IRI="#Ichiro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#glutenIntolerant"/>
+        <NamedIndividual IRI="#Igor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cuisine"/>
+        <NamedIndividual IRI="#ItalianCuisine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cuisine"/>
+        <NamedIndividual IRI="#JapaneseCuisine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#Juarez"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dish"/>
+        <NamedIndividual IRI="#Juice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#sushiHouse"/>
+        <NamedIndividual IRI="#Katsu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diabetics"/>
+        <NamedIndividual IRI="#Kretzer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#glutenFree"/>
+        <NamedIndividual IRI="#Niguiri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForDiabetics"/>
+        <NamedIndividual IRI="#Niguiri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForHypertensive"/>
+        <NamedIndividual IRI="#Niguiri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#japaneseDish"/>
+        <NamedIndividual IRI="#Niguiri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseFree"/>
+        <NamedIndividual IRI="#Niguiri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#veganDish"/>
+        <NamedIndividual IRI="#Niguiri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pizzeria"/>
+        <NamedIndividual IRI="#Parma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#chineseDish"/>
+        <NamedIndividual IRI="#Rice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#glutenFree"/>
+        <NamedIndividual IRI="#Rice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForDiabetics"/>
+        <NamedIndividual IRI="#Rice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForHypertensive"/>
+        <NamedIndividual IRI="#Rice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseFree"/>
+        <NamedIndividual IRI="#Rice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#veganDish"/>
+        <NamedIndividual IRI="#Rice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#americanDish"/>
+        <NamedIndividual IRI="#Soda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vegetarianDish"/>
+        <NamedIndividual IRI="#Soda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#burgerShop"/>
+        <NamedIndividual IRI="#SoulGourmet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#glutenFree"/>
+        <NamedIndividual IRI="#Temaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForDiabetics"/>
+        <NamedIndividual IRI="#Temaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForHypertensive"/>
+        <NamedIndividual IRI="#Temaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#japaneseDish"/>
+        <NamedIndividual IRI="#Temaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseFree"/>
+        <NamedIndividual IRI="#Temaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#veganDish"/>
+        <NamedIndividual IRI="#Temaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#glutenFree"/>
+        <NamedIndividual IRI="#Uramaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForDiabetics"/>
+        <NamedIndividual IRI="#Uramaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForHypertensive"/>
+        <NamedIndividual IRI="#Uramaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#japaneseDish"/>
+        <NamedIndividual IRI="#Uramaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseFree"/>
+        <NamedIndividual IRI="#Uramaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#veganDish"/>
+        <NamedIndividual IRI="#Uramaki"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#burgerShop"/>
+        <NamedIndividual IRI="#UsinaDoHamburger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#americanDish"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseFree"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#veganDish"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#italianDish"/>
+        <NamedIndividual IRI="#VeganPizza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#veganDish"/>
+        <NamedIndividual IRI="#VeganPizza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#americanDish"/>
+        <NamedIndividual IRI="#VegetarianBurger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vegetarianDish"/>
+        <NamedIndividual IRI="#VegetarianBurger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#italianDish"/>
+        <NamedIndividual IRI="#VegetarianPizza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#vegetarianDish"/>
+        <NamedIndividual IRI="#VegetarianPizza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#chineseDish"/>
+        <NamedIndividual IRI="#Yakisoba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForDiabetics"/>
+        <NamedIndividual IRI="#Yakisoba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#goodForHypertensive"/>
+        <NamedIndividual IRI="#Yakisoba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#lactoseFree"/>
+        <NamedIndividual IRI="#Yakisoba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#italianDish"/>
+        <NamedIndividual IRI="#4CheesePizza"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Andrei"/>
+        <NamedIndividual IRI="#AmericanCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Andrei"/>
+        <NamedIndividual IRI="#ChocolateSushi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#BaconBurger"/>
+        <NamedIndividual IRI="#SoulGourmet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#CheeseBurger"/>
+        <NamedIndividual IRI="#UsinaDoHamburger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#ChickenPizza"/>
+        <NamedIndividual IRI="#DiRoma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#ChickenPizza"/>
+        <NamedIndividual IRI="#Parma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCuisine"/>
+        <NamedIndividual IRI="#ChinaInBox"/>
+        <NamedIndividual IRI="#ChineseCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#ChocolateSushi"/>
+        <NamedIndividual IRI="#Ichiro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#ChocolateSushi"/>
+        <NamedIndividual IRI="#Katsu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCuisine"/>
+        <NamedIndividual IRI="#DiRoma"/>
+        <NamedIndividual IRI="#ItalianCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Elder"/>
+        <NamedIndividual IRI="#JapaneseCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Elder"/>
+        <NamedIndividual IRI="#Parma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFavoriteDish"/>
+        <NamedIndividual IRI="#Felipe"/>
+        <NamedIndividual IRI="#BaconBurger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Felipe"/>
+        <NamedIndividual IRI="#VegetarianBurger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#FortuneCookie"/>
+        <NamedIndividual IRI="#ChinaInBox"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Harumaki"/>
+        <NamedIndividual IRI="#Ichiro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Hossomaki"/>
+        <NamedIndividual IRI="#Ichiro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Hossomaki"/>
+        <NamedIndividual IRI="#Katsu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#HotRoll"/>
+        <NamedIndividual IRI="#Ichiro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#HotRoll"/>
+        <NamedIndividual IRI="#Katsu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCuisine"/>
+        <NamedIndividual IRI="#Ichiro"/>
+        <NamedIndividual IRI="#JapaneseCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFavoriteCuisine"/>
+        <NamedIndividual IRI="#Igor"/>
+        <NamedIndividual IRI="#JapaneseCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Igor"/>
+        <NamedIndividual IRI="#Hossomaki"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Igor"/>
+        <NamedIndividual IRI="#JapaneseCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFavoriteCuisine"/>
+        <NamedIndividual IRI="#Juarez"/>
+        <NamedIndividual IRI="#AmericanCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCuisine"/>
+        <NamedIndividual IRI="#Katsu"/>
+        <NamedIndividual IRI="#JapaneseCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Kretzer"/>
+        <NamedIndividual IRI="#AmericanCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Kretzer"/>
+        <NamedIndividual IRI="#ItalianCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Kretzer"/>
+        <NamedIndividual IRI="#JapaneseCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Niguiri"/>
+        <NamedIndividual IRI="#Ichiro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Niguiri"/>
+        <NamedIndividual IRI="#Katsu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCuisine"/>
+        <NamedIndividual IRI="#Parma"/>
+        <NamedIndividual IRI="#ItalianCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Rice"/>
+        <NamedIndividual IRI="#ChinaInBox"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Soda"/>
+        <NamedIndividual IRI="#DiRoma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Soda"/>
+        <NamedIndividual IRI="#Parma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Soda"/>
+        <NamedIndividual IRI="#SoulGourmet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Soda"/>
+        <NamedIndividual IRI="#UsinaDoHamburger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCuisine"/>
+        <NamedIndividual IRI="#SoulGourmet"/>
+        <NamedIndividual IRI="#AmericanCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Temaki"/>
+        <NamedIndividual IRI="#Ichiro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Temaki"/>
+        <NamedIndividual IRI="#Katsu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Uramaki"/>
+        <NamedIndividual IRI="#Ichiro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Uramaki"/>
+        <NamedIndividual IRI="#Katsu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCuisine"/>
+        <NamedIndividual IRI="#UsinaDoHamburger"/>
+        <NamedIndividual IRI="#AmericanCuisine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#VeganBurger"/>
+        <NamedIndividual IRI="#UsinaDoHamburger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#VeganPizza"/>
+        <NamedIndividual IRI="#DiRoma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#VeganPizza"/>
+        <NamedIndividual IRI="#Parma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#VegetarianBurger"/>
+        <NamedIndividual IRI="#SoulGourmet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#VegetarianBurger"/>
+        <NamedIndividual IRI="#UsinaDoHamburger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#VegetarianPizza"/>
+        <NamedIndividual IRI="#DiRoma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#VegetarianPizza"/>
+        <NamedIndividual IRI="#Parma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#Yakisoba"/>
+        <NamedIndividual IRI="#ChinaInBox"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#4CheesePizza"/>
+        <NamedIndividual IRI="#DiRoma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#madeBy"/>
+        <NamedIndividual IRI="#4CheesePizza"/>
+        <NamedIndividual IRI="#Parma"/>
+    </ObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#likes"/>
+        <NamedIndividual IRI="#Felipe"/>
+        <NamedIndividual IRI="#JapaneseCuisine"/>
+    </NegativeObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#eats"/>
+        <ObjectProperty IRI="#likes"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFavoriteDish"/>
+        <ObjectProperty IRI="#likes"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#eatenBy"/>
+        <ObjectProperty IRI="#eats"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasDish"/>
+        <ObjectProperty IRI="#madeBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFavoriteCuisine"/>
+        <Class IRI="#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFavoriteDish"/>
+        <Class IRI="#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFavoriteCuisine"/>
+        <Class IRI="#cuisine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFavoriteDish"/>
+        <Class IRI="#dish"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#city"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age"/>
+        <Class IRI="#person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gender"/>
+        <Class IRI="#person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
